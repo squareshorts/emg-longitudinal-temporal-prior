@@ -21,8 +21,8 @@ The protocol-defined 30%-MVC trapezoidal trajectory, with no parameters fitted f
 - `results/` - frozen numerical summaries reported in the manuscript.
 - `.zenodo.json` and `CITATION.cff` - release metadata.
 
-A complete v1.0.0 source/reproducibility bundle, including manuscript source, scripts, and final figures, is prepared for the Zenodo version deposit.
+The repository includes the executable temporal-prior benchmark, frozen result tables, fixed analysis specifications, and recovered plotting provenance used for the presubmission reproducibility archive.
 
 ## Version
 
-v1.0.0 - presubmission reproducibility archive.
+v1.0.1 - corrected presubmission reproducibility archive.
