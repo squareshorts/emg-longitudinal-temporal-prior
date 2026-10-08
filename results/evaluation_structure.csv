@@ -1,0 +1,5 @@
+quantity,value,interpretation
+independent_participants,10,Subjects 1-10 are the biological inferential sample
+later_day_evaluation_days_per_participant,10,Days 2-11
+participant_day_evaluations,100,Repeated evaluations nested within 10 participants
+bootstrap_resamples,100000,Participant-level resampling

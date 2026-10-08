@@ -1,0 +1,4 @@
+method,metric,physical_time,normalized_duration
+protocol_prior,median_participant_r2,0.99327,0.99207
+protocol_prior_vs_day1_average,median_delta_r2,0.00866,0.00792
+day1_average_template,median_participant_r2,0.98323,0.98355

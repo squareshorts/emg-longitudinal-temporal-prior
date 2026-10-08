@@ -1,0 +1,6 @@
+comparator,median_delta_r2,ci95_low,ci95_high,participants_improved,participants_total,holm_p
+Day-1 average template,0.00866,0.00318,0.02729,9,10,0.0098
+Fixed EMG 8,0.05674,0.03143,0.11712,10,10,0.0098
+Adaptive EMG 8,0.05145,0.03347,0.08268,10,10,0.0098
+Fixed EMG 16,0.05434,0.02915,0.07233,10,10,0.0098
+Adaptive EMG 16,0.05262,0.02915,0.07233,10,10,0.0098

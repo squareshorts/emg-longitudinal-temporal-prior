@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this archive, please cite the versioned Zenodo release and the associated manuscript."
+title: "Prescribed Force Trajectories as Benchmarks for Longitudinal EMG Decoding: Reproducibility Archive"
+version: 1.0.0
+date-released: 2026-10-08
+authors:
+  - family-names: "Pereira"
+    given-names: "Antonio"
+    affiliation: "Institute of Technology, Federal University of Para, Belem, Brazil"
+keywords:
+  - surface electromyography
+  - force estimation
+  - longitudinal decoding
+  - temporal prior
+  - benchmarking
+  - CEMHSEY
+license: CC-BY-4.0
+repository-code: "https://github.com/squareshorts/emg-longitudinal-temporal-prior"

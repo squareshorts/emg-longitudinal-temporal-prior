@@ -1,0 +1,4 @@
+Replace the manuscript Data and Code Availability section after the Zenodo DOI is minted:
+
+\section*{Data and Code Availability}
+The CEMHSEY Part-I dataset used here is publicly available from Zenodo (DOI: 10.5281/zenodo.14224328) and is described by Yang \emph{et al.} \cite{Yang2025}. The presubmission reproducibility archive for this study, including the executable protocol-prior benchmark, fixed analysis specification, frozen numerical summaries, manuscript source, and final figures, is available from GitHub at https://github.com/squareshorts/emg-longitudinal-temporal-prior and Zenodo at DOI: [INSERT VERSION DOI].

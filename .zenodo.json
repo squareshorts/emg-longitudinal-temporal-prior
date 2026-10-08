@@ -1,0 +1,33 @@
+{
+  "title": "Prescribed Force Trajectories as Benchmarks for Longitudinal EMG Decoding: Reproducibility Archive",
+  "upload_type": "other",
+  "description": "Frozen presubmission reproducibility archive for the manuscript 'Prescribed Force Trajectories as Benchmarks for Longitudinal EMG Decoding'. The archive contains the fixed analysis specification and frozen numerical summaries supporting the manuscript.",
+  "creators": [
+    {
+      "name": "Pereira, Antonio",
+      "affiliation": "Institute of Technology, Federal University of Para, Belem, Brazil"
+    }
+  ],
+  "version": "1.0.0",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "surface electromyography",
+    "force estimation",
+    "longitudinal decoding",
+    "temporal prior",
+    "benchmarking",
+    "CEMHSEY",
+    "high-density EMG"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.14224328",
+      "relation": "isDerivedFrom"
+    },
+    {
+      "identifier": "10.1038/s41597-025-05733-y",
+      "relation": "references"
+    }
+  ]
+}

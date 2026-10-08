@@ -1,0 +1,13 @@
+method,electrodes,median_participant_r2,median_rmse
+protocol_prior,8,0.9933,0.0106
+protocol_prior,16,0.9933,0.0106
+day1_trial1_template,8,0.9801,0.0180
+day1_trial1_template,16,0.9801,0.0180
+day1_average_template,8,0.9832,0.0170
+day1_average_template,16,0.9832,0.0170
+emg_fixed_kf,8,0.9335,0.0325
+emg_fixed_kf,16,0.9356,0.0318
+emg_adaptive_kf,8,0.9388,0.0313
+emg_adaptive_kf,16,0.9370,0.0317
+hybrid_adaptive,8,0.9796,0.0182
+hybrid_adaptive,16,0.9785,0.0187

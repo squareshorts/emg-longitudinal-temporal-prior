@@ -1,0 +1,5 @@
+electrodes,method,positive_correlation_evaluations,total_evaluations,median_residual_correlation,positive_residual_r2_evaluations,median_residual_r2
+8,adaptive_kf,88,100,0.357,0,-5.31
+16,adaptive_kf,89,100,0.355,1,-4.10
+8,fixed_kf,87,100,,0,
+16,fixed_kf,89,100,,1,

@@ -1,0 +1,7 @@
+component,electrodes,median_delta_r2,ci95_low,ci95_high,participants_improved,participants_unchanged,holm_p
+session_alignment,8,0.081697,0.011109,0.230108,9,0,0.039
+session_alignment,16,0.068871,0.016384,0.199991,9,0,0.039
+temporal_filtering,8,0.009632,0.007770,0.022737,10,0,0.0117
+temporal_filtering,16,0.011658,0.006221,0.019429,10,0,0.0117
+adaptive_variance_matched_q,8,0.000000,0.000000,0.008986,4,6,0.25
+adaptive_variance_matched_q,16,0.000000,0.000000,0.006460,4,6,0.25
