@@ -1,14 +1,14 @@
 {
   "title": "Prescribed Force Trajectories as Benchmarks for Longitudinal EMG Decoding: Reproducibility Archive",
   "upload_type": "other",
-  "description": "Frozen presubmission reproducibility archive for the manuscript 'Prescribed Force Trajectories as Benchmarks for Longitudinal EMG Decoding'. The archive contains the fixed analysis specification and frozen numerical summaries supporting the manuscript.",
+  "description": "Frozen presubmission reproducibility archive for the manuscript 'Prescribed Force Trajectories as Benchmarks for Longitudinal EMG Decoding'. This release contains the executable reconstruction of the central protocol-defined temporal-prior benchmark, fixed analysis specifications, recovered plotting provenance for secondary analyses, and frozen numerical summaries supporting the manuscript.",
   "creators": [
     {
       "name": "Pereira, Antonio",
       "affiliation": "Institute of Technology, Federal University of Para, Belem, Brazil"
     }
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "access_right": "open",
   "license": "cc-by-4.0",
   "keywords": [
