@@ -1,0 +1,31 @@
+name: Publish v1.0.1 release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/publish-v1.0.1.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v1.0.1 --repo "${{ github.repository }}" >/dev/null 2>&1; then
+            echo "Release v1.0.1 already exists."
+            exit 0
+          fi
+
+          gh release create v1.0.1 \
+            --repo "${{ github.repository }}" \
+            --target "${{ github.sha }}" \
+            --title "v1.0.1 — Corrected presubmission reproducibility archive" \
+            --notes "Corrected single-author reproducibility archive for 'Prescribed Force Trajectories as Benchmarks for Longitudinal EMG Decoding'. Author: Antonio Pereira. This version includes the executable temporal-prior benchmark, fixed analysis specification, recovered plotting provenance, and frozen numerical summaries."
