@@ -8,7 +8,7 @@ The complete source archive includes `reproducibility/emg_reimplementation.py`, 
 
 ## Preserved historical outputs
 
-The `results/` CSV files preserve the final reported numerical summaries. The downloadable candidate ZIP contains the LaTeX manuscript, supplement, bibliography, and four original figure PDFs in `manuscript/`. The GitHub review branch currently includes only text-based manuscript source; the vector figure PDFs must be uploaded before any corresponding new version is released. The recovered Figure 3/4 script preserves plotting provenance; its original intermediate CSV inputs are unavailable. The full historical EMG execution script is also unavailable.
+The `results/` CSV files preserve the final reported numerical summaries. The downloadable candidate ZIP contains the LaTeX manuscript, supplement, bibliography, and four original figure PDFs in `manuscript/`. The GitHub repository currently includes text-based manuscript source; the vector figure PDFs must be uploaded before any corresponding new version is released. The recovered Figure 3/4 script preserves plotting provenance; its original intermediate CSV inputs are unavailable. The full historical EMG execution script is also unavailable.
 
 `docs/REIMPLEMENTATION_CONFORMANCE.md` lists the new reconstruction's explicit numerical assumptions, how to run the full-data check, and why those values must not be passed off as the original frozen implementation settings.
 

@@ -3,6 +3,7 @@ name: Reproducibility reconstruction smoke tests
 on:
   push:
     branches:
+      - main
       - reproducibility-v1.0.2-review
   pull_request:
 
