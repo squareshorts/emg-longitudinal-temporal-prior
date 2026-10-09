@@ -43,7 +43,7 @@ python reproducibility/compare_frozen_results.py --new results/new_emg_reimpleme
 
 ## Evidence and remaining work
 
-- The complete source package and original manuscript figure PDFs can be stored and compiled from this candidate release bundle.
+- The complete source package and original manuscript figure PDFs are included in the tagged source tree and corresponding Zenodo GitHub archive.
 - The force-only protocol benchmark has its own executable script.
 - The EMG branch has a new explicitly specified implementation and deterministic tests.
 - The original script `C:\work\CEMHSEY\build_feature_cache.py` and the old `analyze_force.py` were mentioned in the historical workflow, but their original file bytes are not available in this session. Neither the historical exact `epsilon` nor the historical `x0/P0` can be inferred from the published summary statistics.

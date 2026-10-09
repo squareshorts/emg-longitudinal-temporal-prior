@@ -1,3 +1,5 @@
-New v1.0.2 Zenodo version DOI is not minted yet. Do not replace the v1.0.1 DOI in the manuscript until an actual v1.0.2 release has been published and its Zenodo record verified.
+Upon Zenodo completion of GitHub release v1.0.2, use the new version-specific DOI in the submitted manuscript. The GitHub v1.0.2 archive's own LaTeX snapshot predates DOI minting and can retain the older v1.0.1 reference. The journal submission should cite the newly minted v1.0.2 version DOI.
 
-For any new version, the Data and Code Availability statement must distinguish the executable force-only benchmark, the newly specified but not empirically reconciled EMG reconstruction, the frozen historical summary tables, and the source dataset.
+Do not reuse DOI 10.5281/zenodo.23249424 to identify v1.0.2; that DOI belongs to v1.0.1.
+
+The availability statement should describe the executable temporal-prior benchmark, the independently reconstructed EMG source with disclosed new numeric initialization, the frozen historical numerical tables, the original figure PDFs, and the remaining historical execution/trace limitations.

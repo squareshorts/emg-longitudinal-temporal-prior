@@ -10,7 +10,7 @@ Original dataset: https://doi.org/10.5281/zenodo.14224328
 
 ## Reproducibility materials
 
-- `manuscript/` - LaTeX main manuscript, supplementary material, bibliography and four original figure PDFs in the downloadable candidate ZIP. The figure PDFs require a separate remote binary upload before a new GitHub/Zenodo release can claim the complete manuscript source.
+- `manuscript/` - LaTeX main manuscript, supplementary material, bibliography and four original figure PDFs in the tagged GitHub source tree.
 - `reproducibility/protocol_prior_benchmark.py` - reproducible force-only protocol-prior and Day-1 force-template benchmark.
 - `reproducibility/emg_reimplementation.py` - independent, explicitly specified EMG reconstruction; **new and not yet reconciled to historical results**.
 - `reproducibility/compare_frozen_results.py` - report-only comparison of new results with frozen study summaries.
@@ -52,4 +52,4 @@ This independent EMG reconstruction fixes the numeric safeguards and Kalman init
 
 ## Version
 
-v1.0.2 release candidate, intended to supersede the published v1.0.1 archive after source checks and publication.
+v1.0.2 - complete manuscript/figure archive with a new independently specified and tested EMG reconstruction. The historical EMG execution program remains unavailable.
