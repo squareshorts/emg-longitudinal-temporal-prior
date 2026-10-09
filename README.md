@@ -20,6 +20,16 @@ Original dataset: https://doi.org/10.5281/zenodo.14224328
 - `docs/REIMPLEMENTATION_CONFORMANCE.md` - exact new numerical choices, conformance procedure and boundaries.
 - `results/` - frozen historical summary tables, not outputs of the independent reimplementation.
 
+## One-command Windows conformance run
+
+With the CEMHSEY Part-I MAT directory already present on your machine, use:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\run_full_conformance.ps1 -DataRoot "C:\work\CEMHSEY"
+```
+
+The script tests the code, builds the 220-recording manifest, runs both analysis implementations, and exports `CONFORMANCE_REPORT.zip`. A discrepancy is reported as a failure; old manuscript values are never overwritten.
+
 ## Reproduce the primary benchmark
 
 Download CEMHSEY Part-I. Generate the path manifest automatically using the downloaded Subject 1-10, Session 1, Task 2, Day 1-11, Trial 1-2 `.mat` files:
