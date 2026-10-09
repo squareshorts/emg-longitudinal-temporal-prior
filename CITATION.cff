@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this archive, please cite the versioned Zenodo release and the associated manuscript."
 title: "Prescribed Force Trajectories as Benchmarks for Longitudinal EMG Decoding: Reproducibility Archive"
-version: 1.0.2
+version: 1.0.3
 date-released: 2026-10-09
 authors:
   - family-names: "Pereira"

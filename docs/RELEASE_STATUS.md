@@ -1,7 +1,11 @@
-# Version status
+# v1.0.3 release and DOI status
 
-The DOI 10.5281/zenodo.23249424 identifies the earlier immutable v1.0.1 release. The corrected v1.0.2 GitHub tag provides a separate release with complete manuscript figures and additional reconstruction code.
+The current version is `v1.0.3`, preserving independently executed full-data validation evidence in `validation/`. It supersedes v1.0.2 for **reproducibility archiving**, not for retrospective modification of frozen experimental results.
 
-The corrected v1.0.2 release is designed for Zenodo automatic ingestion. Each version has its own immutable DOI; the new DOI must be verified before it is added to the submitted manuscript.
+- `v1.0.1`: DOI 10.5281/zenodo.23249424, immutable earlier archive.
+- `v1.0.2`: restored manuscript/figure PDF source and independently specified EMG program; separate tag and release.
+- `v1.0.3`: archived full-data physical-time and normalized-duration Figure-4 checks.
 
-After Zenodo publishes v1.0.2, cite its exact version DOI in the manuscript. Do not reuse the v1.0.1 DOI for later bytes. The independent EMG reconstruction remains subject to full-data empirical conformance checking.
+The version DOI for v1.0.3 must be read from Zenodo after automatic ingestion. Never reuse v1.0.1's DOI for v1.0.3 files.
+
+The manuscript LaTeX embedded in this immutable reproducibility release remains a pre-DOI snapshot and may contain the earlier archive's citation. Prepare the corrected Overleaf submission ZIP after the new v1.0.3 Zenodo DOI is confirmed.

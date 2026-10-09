@@ -1,14 +1,14 @@
 {
   "title": "Prescribed Force Trajectories as Benchmarks for Longitudinal EMG Decoding: Reproducibility Archive",
   "upload_type": "other",
-  "description": "Prospective reproducibility repair for Prescribed Force Trajectories as Benchmarks for Longitudinal EMG Decoding. Includes the executable force-only temporal prior, a newly specified independent EMG reconstruction with declared numerical assumptions and synthetic tests, frozen historical summary tables, manuscript LaTeX source, and four original figure PDFs. The new EMG implementation has not been run on the entire source dataset or independently reconciled against historical reported values.",
+  "description": "Reproducibility archive for Prescribed Force Trajectories as Benchmarks for Longitudinal EMG Decoding. Includes the complete single-author manuscript LaTeX, four original vector figure PDFs, frozen study summaries, executable physical-time protocol-prior and independently reconstructed EMG/Ridge/Kalman analyses, and full-data validation ZIPs from the original 220 CEMHSEY Part-I recordings. Six of six EMG/hybrid cohort medians agree with historical summaries within 0.0005 in R-squared. All six Figure-4 component contrasts are supported by an independent normalized-time reconstruction; documented differences include Subject 5 (eight-electrode selected alpha) and the eight-electrode adaptive-variance bootstrap CI upper bound. The original historical executable was not recovered; the new reconstruction's numerical choices are documented.",
   "creators": [
     {
       "name": "Pereira, Antonio",
       "affiliation": "Institute of Technology, Federal University of Para, Belem, Brazil"
     }
   ],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "access_right": "open",
   "license": "cc-by-4.0",
   "keywords": [

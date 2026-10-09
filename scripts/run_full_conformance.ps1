@@ -18,7 +18,11 @@ function Invoke-Step {
 }
 
 Invoke-Step @('-m','pip','install','-r','requirements.txt')
-Invoke-Step @('-m','pytest','-q','tests')
+$projectTemp = Join-Path (Get-Location).Path '.emg_temp'
+New-Item -ItemType Directory -Force -Path $projectTemp | Out-Null
+$env:TEMP = $projectTemp
+$env:TMP = $projectTemp
+Invoke-Step @('-m','pytest','-q','tests','--basetemp',(Join-Path $projectTemp 'pytest'))
 Invoke-Step @('reproducibility/build_manifest.py','--data-root',$DataRoot,'--out','reproducibility/manifest.csv')
 Invoke-Step @('reproducibility/protocol_prior_benchmark.py','--manifest','reproducibility/manifest.csv','--out','results/new_protocol_prior')
 Invoke-Step @('reproducibility/emg_reimplementation.py','--manifest','reproducibility/manifest.csv','--out','results/new_emg_reimplementation')

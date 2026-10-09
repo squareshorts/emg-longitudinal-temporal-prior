@@ -1,15 +1,13 @@
-# Reproducibility scope
+# Reproducibility scope – v1.0.3
 
-## Executable reconstructed analyses
+The original CEMHSEY Part-I 220 MAT source recordings (Subjects 1–10, Days 1–11, Trials 1–2, Session 1, Task 2) were used to independently execute the protocol prior, Day-1 force-template benchmarks, EMG/Ridge/Kalman decoder, and normalized-duration Figure-4 component audit.
 
-The central force-only protocol prior and participant-specific Day-1 force-template comparisons are implemented in `reproducibility/protocol_prior_benchmark.py`, using the public CEMHSEY Part-I `.mat` files and a manifest with their paths.
+The exact historical EMG executable was not recovered. Instead, the new `reproducibility/emg_reimplementation.py` specifies all relevant numerical safeguards and selection rules explicitly. Two uploaded run archives from that implementation are preserved byte-for-byte in `validation/`.
 
-The complete source archive includes `reproducibility/emg_reimplementation.py`, a newly specified independent EMG/Ridge/Kalman reconstruction. It contains explicit numerical settings, Day-1-only model selection, force-label-free session alignment, a bounded hybrid weight, and a separate descriptive leave-one-day-out residual diagnostic. It has unit tests, but it has **not** been empirically reconciled against the historical EMG results.
+For physical-time results, all six fixed/adaptive EMG and adaptive-hybrid cohort median R² values are within 0.0005 of the frozen manuscript values. Residual-shape positive-correlation and positive-R² counts match all four reported configurations. Six of 80 three-decimal supplementary participant table entries differ beyond ±0.0005, notably Subject 7 with 16 electrodes; historical tables are preserved without rewriting.
 
-## Preserved historical outputs
+For normalized-duration Figure 4, all six median paired effects agree within 0.00003 and Holm-adjusted tests agree at reported precision. One of 20 normalized-duration Day-1 parameter sets differs in alpha (Subject 5, 8 electrodes, 0.25 reconstructed vs 0.5 historical), and the eight-electrode adaptive-variance upper CI differs (0.007045 reconstructed vs 0.008986 frozen).
 
-The `results/` CSV files preserve the final reported numerical summaries. The tagged GitHub source tree contains the LaTeX manuscript, supplement, bibliography, and four original figure PDFs in `manuscript/`. File identities are checked against fixed SHA-256 values by the release tests. The recovered Figure 3/4 script preserves plotting provenance; its original intermediate CSV inputs are unavailable. The full historical EMG execution script is also unavailable.
+These independently obtained results validate the published substantive conclusions, but do not certify bitwise execution or every table entry. Detailed comparisons and full-data evidence are in `docs/FULL_DATA_VALIDATION_v1.0.3.md` and `validation/`.
 
-`docs/REIMPLEMENTATION_CONFORMANCE.md` lists the new reconstruction's explicit numerical assumptions, how to run the full-data check, and why those values must not be passed off as the original frozen implementation settings.
-
-The source dataset is maintained by the original CEMHSEY investigators at DOI 10.5281/zenodo.14224328 and is not redistributed here.
+The original public MAT files are available separately at https://doi.org/10.5281/zenodo.14224328 and are not redistributed here.

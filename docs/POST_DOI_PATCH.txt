@@ -1,5 +1,7 @@
-Upon Zenodo completion of GitHub release v1.0.2, use the new version-specific DOI in the submitted manuscript. The GitHub v1.0.2 archive's own LaTeX snapshot predates DOI minting and can retain the older v1.0.1 reference. The journal submission should cite the newly minted v1.0.2 version DOI.
+Final journal submission action after Zenodo ingests GitHub release v1.0.3:
 
-Do not reuse DOI 10.5281/zenodo.23249424 to identify v1.0.2; that DOI belongs to v1.0.1.
-
-The availability statement should describe the executable temporal-prior benchmark, the independently reconstructed EMG source with disclosed new numeric initialization, the frozen historical numerical tables, the original figure PDFs, and the remaining historical execution/trace limitations.
+1. Verify the exact version-specific DOI and the GitHub release tag.
+2. Surgically update only the manuscript's Data and Code Availability paragraph to cite the v1.0.3 release DOI, corrected GitHub tag, executable physical-time and normalized-time independent reconstructions, and archived validation outputs.
+3. Keep the frozen historical numerical tables, figures, title, abstract, and Results text unchanged unless the author approves specific evidence-driven corrections.
+4. Validate bibliography, compile main.tex and supplementary_material.tex separately, render PDFs, and package a clean Overleaf ZIP with all 4 original figure PDFs.
+5. Never identify v1.0.3 using the earlier v1.0.1 version DOI 10.5281/zenodo.23249424.

@@ -1,0 +1,25 @@
+# Local virtual environments and interpreter caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.emg_temp/
+.pytest_temp/
+
+# Original public CEMHSEY raw recordings and local manifests
+*.mat
+reproducibility/manifest.csv
+
+# Regenerated non-frozen artifacts
+results/new_protocol_prior/
+results/new_emg_reimplementation/
+results/figure4_normalized_audit/
+results/reimplemented/
+figure_repairs/
+
+# Local IDE and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

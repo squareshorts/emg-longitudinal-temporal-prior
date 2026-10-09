@@ -1,0 +1,56 @@
+name: Publish v1.0.3 validated reproducibility archive
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/publish-v1.0.3.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install test dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Verify synthetic tests and uploaded archive integrity
+        run: |
+          python -m pytest -q tests
+          python - <<'PY'
+          from zipfile import ZipFile
+          from pathlib import Path
+          import hashlib
+          archives={
+            'validation/physical_time/CONFORMANCE_REPORT.zip':'fd17f3c0d94d3e5d445cad305d5883cd8d804710e5609ea7fa82911d5a974818',
+            'validation/figure4_normalized/FIGURE4_AUDIT.zip':'0dc9bb673960b3a4c421021ebe705d37e2f041f77f13064bdd1d917b44380190',
+          }
+          for p,expected in archives.items():
+            b=Path(p).read_bytes()
+            assert hashlib.sha256(b).hexdigest()==expected,p
+            with ZipFile(p) as f:
+              assert f.testzip() is None,p
+          print('Full-data audit ZIP SHA-256 and CRC verified')
+          PY
+      - name: Publish immutable GitHub v1.0.3 release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v1.0.3 --repo "${{ github.repository }}" >/dev/null 2>&1; then
+            echo "v1.0.3 already published"
+            exit 0
+          fi
+          gh release create v1.0.3 \
+            --repo "${{ github.repository }}" \
+            --target "${{ github.sha }}" \
+            --title "v1.0.3 - Full-data physical-time and Figure-4 conformance" \
+            --notes-file docs/RELEASE_NOTES_v1.0.3.md \
+            validation/physical_time/CONFORMANCE_REPORT.zip \
+            validation/figure4_normalized/FIGURE4_AUDIT.zip

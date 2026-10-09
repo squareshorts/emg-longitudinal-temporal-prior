@@ -1,55 +1,50 @@
 # Prescribed Force Trajectories as Benchmarks for Longitudinal EMG Decoding
 
-Reproducibility material for a manuscript by **Antonio Pereira**.
+Reproducibility archive for a single-author manuscript by **Antonio Pereira**.
 
-## Primary finding
+## Primary scientific result
 
-In CEMHSEY Part-I, a protocol-defined 30%-MVC trapezoidal target gave median participant-level cross-day R2 = 0.9933; the Day-1 average template gave 0.9832; adaptive EMG decoders gave 0.9388 (8 electrodes) and 0.9370 (16 electrodes). The inferential biological sample is N=10 participants, with 100 repeated participant-day evaluations. These values are preserved historical results.
+Using ten CEMHSEY Part-I GRASP participants (Subjects 1–10), 100 held-out later-day participant-day recordings, and a fixed 30%-MVC trapezoidal grasp target, the protocol-defined prior achieved a historical cohort median participant R² of **0.9933**. The Day-1 average template yielded **0.9832**; adaptive EMG-only state-space decoders yielded **0.9388 (8 electrodes)** and **0.9370 (16 electrodes)**.
 
-Original dataset: https://doi.org/10.5281/zenodo.14224328
+The independent biological sample is **N=10**, not 100.
 
-## Reproducibility materials
+## Full-data reproducibility verification (v1.0.3)
 
-- `manuscript/` - LaTeX main manuscript, supplementary material, bibliography and four original figure PDFs in the tagged GitHub source tree.
-- `reproducibility/protocol_prior_benchmark.py` - reproducible force-only protocol-prior and Day-1 force-template benchmark.
-- `reproducibility/emg_reimplementation.py` - independent, explicitly specified EMG reconstruction; **new and not yet reconciled to historical results**.
-- `reproducibility/compare_frozen_results.py` - report-only comparison of new results with frozen study summaries.
-- `reproducibility/make_figures_3_4_recovered.py` - recovered plotting source for secondary analyses; requires unavailable historical intermediate CSVs.
-- `tests/` - synthetic unit/regression checks for the new implementation.
-- `docs/ANALYSIS_LOCK.md` - frozen manuscript analysis plan.
-- `docs/REIMPLEMENTATION_CONFORMANCE.md` - exact new numerical choices, conformance procedure and boundaries.
-- `results/` - frozen historical summary tables, not outputs of the independent reimplementation.
+Two original, intact audit archives, executed against the 220 source MAT files, are preserved in `validation/`:
 
-## One-command Windows conformance run
+- `validation/physical_time/CONFORMANCE_REPORT.zip`: protocol-prior cohort summary, configuration, participant and recording metrics, Day-1 parameters, descriptive leave-one-day-out residuals, and six-way cohort-level conformance CSV.
+- `validation/figure4_normalized/FIGURE4_AUDIT.zip`: independent normalized-duration Figure-4 reconstruction, six contrasts, bootstrap intervals, participant effects, selected hyperparameters, and Subject-6 checks.
 
-With the CEMHSEY Part-I MAT directory already present on your machine, use:
+The six fixed/adaptive EMG and adaptive-hybrid cohort R² summaries agree with the frozen historical summaries within **5×10⁻⁴**; maximum |difference| = **0.0000731**.
+
+The six independently reconstructed Figure-4 paired median effects differ by at most **0.0000278**. All six Holm-adjusted tests reproduce the published inference to reported precision. Historical/recomputed differences are retained transparently in `docs/FULL_DATA_VALIDATION_v1.0.3.md`, including the adaptive-variance CI and one Day-1 alpha setting. Do not interpret agreement as proof that the historical and reconstructed source programs are identical.
+
+## Run analyses on original public recordings
+
+Dataset: https://doi.org/10.5281/zenodo.14224328
+
+Create a dedicated Python virtual environment; on Windows use its explicit interpreter instead of MSYS2 Python. Then:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\run_full_conformance.ps1 -DataRoot "C:\work\CEMHSEY"
+powershell -NoProfile -ExecutionPolicy Bypass -File .\run_emg.ps1 -DataRoot "C:\work\CEMHSEY"
+powershell -NoProfile -ExecutionPolicy Bypass -File .\run_figure4_audit.ps1 -DataRoot "C:\work\CEMHSEY"
 ```
 
-The script tests the code, builds the 220-recording manifest, runs both analysis implementations, and exports `CONFORMANCE_REPORT.zip`. A discrepancy is reported as a failure; old manuscript values are never overwritten.
+The two runners create a 220-row manifest (Subjects 1–10, Days 1–11, Trials 1–2, Session 1, Task 2) and regenerate the outputs. The runtime-specific manifest is intentionally not tracked.
 
-## Reproduce the primary benchmark
+## Archive contents
 
-Download CEMHSEY Part-I. Generate the path manifest automatically using the downloaded Subject 1-10, Session 1, Task 2, Day 1-11, Trial 1-2 `.mat` files:
+- `manuscript/`: final pre-DOI LaTeX manuscript, supplement, bibliography and four original vector PDF figures.
+- `reproducibility/protocol_prior_benchmark.py`: physical- and normalized-time protocol-prior and Day-1 template benchmarks.
+- `reproducibility/emg_reimplementation.py`: independent executable EMG decoder with explicit numerical choices and leakage boundaries.
+- `audit_figure4_normalized.py`, `run_figure4_audit.ps1`: independent normalized-time Figure-4 audit.
+- `results/`: preserved frozen historical summary tables (unchanged).
+- `validation/`: complete primary and Figure-4 empirical audit outputs.
+- `tests/`: synthetic and integration tests.
+- `docs/ANALYSIS_LOCK.md`, `docs/REIMPLEMENTATION_CONFORMANCE.md`, `docs/FULL_DATA_VALIDATION_v1.0.3.md`: locked specifications, independent choices, and audit interpretation.
 
-```bash
-python -m pip install -r requirements.txt
-python -m pytest -q tests
-python reproducibility/build_manifest.py --data-root PATH/TO/CEMHSEY_PART_I --out reproducibility/manifest.csv
-python reproducibility/protocol_prior_benchmark.py --manifest reproducibility/manifest.csv --out results/new_protocol_prior
-```
+## Versioning and DOI
 
-## Run the independent EMG reconstruction
+This archive is version **v1.0.3**. Use its own Zenodo version DOI after Zenodo completes GitHub ingestion. The DOI `10.5281/zenodo.23249424` belongs specifically to the earlier **v1.0.1** release and should not identify these newer files. The archived manuscript is a pre-DOI snapshot; the journal submission's Data and Code Availability statement must be patched to the verified v1.0.3 DOI without changing the numerical analyses.
 
-```bash
-python reproducibility/emg_reimplementation.py --manifest reproducibility/manifest.csv --out results/new_emg_reimplementation
-python reproducibility/compare_frozen_results.py --new results/new_emg_reimplementation/reimplemented_participant_metrics.csv --frozen results/longitudinal_performance_physical.csv --out results/new_emg_reimplementation/conformance.csv
-```
-
-This independent EMG reconstruction fixes the numeric safeguards and Kalman initial conditions **for the new implementation**. The original historical script is inaccessible; the archived old numerical summaries are not claimed to have been regenerated by this implementation.
-
-## Version
-
-v1.0.2 - complete manuscript/figure archive with a new independently specified and tested EMG reconstruction. The historical EMG execution program remains unavailable.
+`v1.0.2` remains immutable. Do not overwrite historical tags or claim exact source-program identity.
