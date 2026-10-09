@@ -1,0 +1,38 @@
+name: Publish v1.0.2 reproducibility archive
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/publish-v1.0.2.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install test dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Run reproducibility checks including original figure SHA-256
+        run: python -m pytest -q tests
+      - name: Publish GitHub tag and release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v1.0.2 --repo "${{ github.repository }}" >/dev/null 2>&1; then
+            echo "v1.0.2 already published"
+            exit 0
+          fi
+          gh release create v1.0.2 \
+            --repo "${{ github.repository }}" \
+            --target "${{ github.sha }}" \
+            --title "v1.0.2 - Complete manuscript assets and independent EMG reconstruction" \
+            --notes "Corrected single-author reproducibility archive for 'Prescribed Force Trajectories as Benchmarks for Longitudinal EMG Decoding'. Includes the original LaTeX manuscript, supplementary material, bibliography, four hash-verified vector figures, frozen numerical summaries, executable force-only benchmark, independent EMG/Kalman reconstruction, and synthetic tests. The original historical EMG execution script and its exact initialization constants were not recovered; the new reconstruction is explicitly documented and has not been empirically reconciled against the historical results. Author: Antonio Pereira."
