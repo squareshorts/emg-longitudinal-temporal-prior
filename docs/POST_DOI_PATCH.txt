@@ -1,4 +1,3 @@
-Replace the manuscript Data and Code Availability section after the Zenodo DOI is minted:
+New v1.0.2 Zenodo version DOI is not minted yet. Do not replace the v1.0.1 DOI in the manuscript until an actual v1.0.2 release has been published and its Zenodo record verified.
 
-\section*{Data and Code Availability}
-The CEMHSEY Part-I dataset used here is publicly available from Zenodo (DOI: 10.5281/zenodo.14224328) and is described by Yang \emph{et al.} \cite{Yang2025}. The presubmission reproducibility archive for this study, including the executable protocol-prior benchmark, fixed analysis specification, frozen numerical summaries, manuscript source, and final figures, is available from GitHub at https://github.com/squareshorts/emg-longitudinal-temporal-prior and Zenodo at DOI: [INSERT VERSION DOI].
+For any new version, the Data and Code Availability statement must distinguish the executable force-only benchmark, the newly specified but not empirically reconciled EMG reconstruction, the frozen historical summary tables, and the source dataset.

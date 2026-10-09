@@ -42,4 +42,4 @@ This independent EMG reconstruction fixes the numeric safeguards and Kalman init
 
 ## Version
 
-v1.0.2 release candidate; next fully packaged manuscript/source update to v1.0.1.
+v1.0.2 release candidate, intended to supersede the published v1.0.1 archive after source checks and publication.
