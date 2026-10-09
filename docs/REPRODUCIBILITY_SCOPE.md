@@ -1,19 +1,15 @@
 # Reproducibility scope
 
-This archive separates what is fully reconstructable from what is preserved only as a frozen numerical result.
+## Executable reconstructed analyses
 
-## Fully reconstructable in this archive
+The central force-only protocol prior and participant-specific Day-1 force-template comparisons are implemented in `reproducibility/protocol_prior_benchmark.py`, using the public CEMHSEY Part-I `.mat` files and a manifest with their paths.
 
-The central protocol-defined temporal-prior benchmark and participant-specific Day-1 force-template comparison are implemented in `reproducibility/protocol_prior_benchmark.py`. They require only the public CEMHSEY Part-I `.mat` files and a local path manifest.
+The complete source archive includes `reproducibility/emg_reimplementation.py`, a newly specified independent EMG/Ridge/Kalman reconstruction. It contains explicit numerical settings, Day-1-only model selection, force-label-free session alignment, a bounded hybrid weight, and a separate descriptive leave-one-day-out residual diagnostic. It has unit tests, but it has **not** been empirically reconciled against the historical EMG results.
 
-The script implements the physical sensor time base used for the primary result, the fixed 30%-MVC trapezoidal target, Day-1 Trial-1 and Day-1 average force templates, recording-level R2/RMSE/normalized-RMSE/MAE, participant-level medians, and the participant-level paired comparison of the protocol prior with the Day-1 average template.
+## Preserved historical outputs
 
-## Preserved but not claimed as complete executable reproduction
+The `results/` CSV files preserve the final reported numerical summaries. The downloadable candidate ZIP contains the LaTeX manuscript, supplement, bibliography, and four original figure PDFs in `manuscript/`. The GitHub review branch currently includes only text-based manuscript source; the vector figure PDFs must be uploaded before any corresponding new version is released. The recovered Figure 3/4 script preserves plotting provenance; its original intermediate CSV inputs are unavailable. The full historical EMG execution script is also unavailable.
 
-The EMG-only state-space branch, hybrid analysis, leave-one-day-out residual-shape diagnostic, and component ablations were developed interactively during the project. The final manuscript methods and numerical summaries are preserved here, and the original Figure 3/4 plotting script was recovered. The exact frozen execution script plus every intermediate CSV was not preserved as a single artifact.
+`docs/REIMPLEMENTATION_CONFORMANCE.md` lists the new reconstruction's explicit numerical assumptions, how to run the full-data check, and why those values must not be passed off as the original frozen implementation settings.
 
-Accordingly, this release does not claim bit-for-bit reproduction of the complete EMG branch. It is a frozen presubmission archive of the central executable benchmark, analysis specification, final numerical results, figures, and manuscript source.
-
-## Unresolved implementation details from the historical EMG branch
-
-The historical record does not preserve a reliable numerical value for the small epsilon used as a division-by-zero safeguard in robust disagreement, nor a fully recoverable statement of the Kalman initial state/covariance implementation. These values are not invented in this archive.
+The source dataset is maintained by the original CEMHSEY investigators at DOI 10.5281/zenodo.14224328 and is not redistributed here.

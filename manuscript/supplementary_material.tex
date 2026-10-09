@@ -1,0 +1,219 @@
+\documentclass[preprint,12pt]{elsarticle}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{microtype}
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries Supplementary Material}\\[0.6em]
+{\large Prescribed Force Trajectories as Benchmarks for Longitudinal EMG Decoding}
+\end{center}
+
+\section*{Supplementary Methods: fixed analysis choices}
+
+The analysis included the ten participants in the CEMHSEY Part-I GRASP record (Subjects 1--10). Each participant contributed ten later-day evaluation recordings from Days 2--11, giving 100 participant-day evaluations nested within an independent biological sample of $N=10$. Features were computed from the public recordings using 200-ms MAV, RMS, and waveform-length windows advanced by 100 ms. Electrode ranking used the absolute Pearson correlation between Day-1 Trial-1 MAV and force. Ridge regression penalties were selected independently for each electrode from 17 logarithmically spaced values between $10^{-3}$ and $10^5$. Feature means and population standard deviations were estimated from Day-1 Trial 1. Day-1 Trial 2 was used for ridge and Kalman parameter selection, baseline observation-noise estimation, the reference prediction distribution, and hybrid-weight fitting. On Days 2--11, Trial 1 supplied only EMG-derived predictions for session alignment, and Trial 2 was held out for scoring.
+
+The primary analysis used the physical sensor time bases: force sample $n$ was assigned time $n/200$ s, and each EMG window was assigned the time of its center sample at 2048 Hz, with a common $t=0$ and no optimized lag. Normalized-duration mapping was examined separately as a sensitivity analysis of time alignment. The prescribed Task-2 trajectory used as the protocol benchmark contained no parameters fitted from participant data: 0 from 0--5 s, a linear ramp to 0.30 MVC from 5--10 s, 0.30 MVC from 10--20 s, a linear ramp back to 0 from 20--25 s, and 0 from 25--30 s. This trajectory was determined entirely by the task schedule and used no measured force or EMG.
+
+The residual-shape control was descriptive and was not intended as a deployable prediction procedure. For each later held-out day, true and predicted residual trajectories were first formed relative to the average Day-1 measured-force template. The mean true-residual and prediction-residual trajectories from the other nine evaluation days of the same participant were then removed before computing the held-out-day residual correlation and residual $R^2$. This nuisance-removal step deliberately uses labels from other evaluation days to test whether a repeatable residual waveform explains the observed association.
+
+The EMG component ablation used the normalized-duration reconstruction and compared: (i) aligned versus unaligned robust consensus; (ii) fixed-variance Kalman filtering versus instantaneous inverse-variance weighting using the same observation variances; and (iii) adaptive versus fixed observation variance at the same process-noise scale.
+
+\section*{Interpretive scope}
+
+The prescribed protocol trajectory is used as a benchmark for the repeated task and is not intended as a decoder for unconstrained behavior. Positive residual correlations are interpreted as evidence of association only; they do not establish calibrated residual-force prediction. The leave-one-day-out residual-shape analysis is also non-deployable because it uses force labels from other evaluation days. The hybrid weight $\beta$ was fitted on Day-1 Trial 2, so performance on that same recording represents calibration performance and not independent validation. The protocol benchmark was introduced after reconstruction exposed strong task stereotypy, and the associated inferential comparisons are exploratory.
+
+\clearpage
+\section*{Supplementary Tables}
+
+\begin{table}[htbp]
+\caption{Participant-level median later-day $R^2$ under the physical time-base analysis. Protocol = prescribed protocol trajectory; Day-1 avg. = average Day-1 measured-force template; F = fixed-variance EMG Kalman filter; A = adaptive EMG Kalman filter; H = adaptive hybrid.}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{c rr rrr rrr}
+\toprule
+& \multicolumn{2}{c}{Time-only benchmarks}
+& \multicolumn{3}{c}{8 electrodes}
+& \multicolumn{3}{c}{16 electrodes} \\
+\cmidrule(lr){2-3}
+\cmidrule(lr){4-6}
+\cmidrule(lr){7-9}
+Participant
+& \multicolumn{1}{c}{Protocol}
+& \multicolumn{1}{c}{Day-1 avg.}
+& \multicolumn{1}{c}{F}
+& \multicolumn{1}{c}{A}
+& \multicolumn{1}{c}{H}
+& \multicolumn{1}{c}{F}
+& \multicolumn{1}{c}{A}
+& \multicolumn{1}{c}{H} \\
+\midrule
+1  & 0.996 & 0.996 & 0.974 & 0.974 & 0.995 & 0.972 & 0.974 & 0.995 \\
+2  & 0.996 & 0.996 & 0.971 & 0.971 & 0.994 & 0.976 & 0.976 & 0.995 \\
+3  & 0.993 & 0.988 & 0.956 & 0.956 & 0.988 & 0.964 & 0.964 & 0.987 \\
+4  & 0.995 & 0.981 & 0.949 & 0.949 & 0.981 & 0.951 & 0.951 & 0.980 \\
+5  & 0.994 & 0.986 & 0.956 & 0.952 & 0.980 & 0.948 & 0.943 & 0.978 \\
+6  & 0.991 & 0.903 & 0.910 & 0.910 & 0.946 & 0.923 & 0.923 & 0.952 \\
+7  & 0.989 & 0.983 & 0.752 & 0.901 & 0.963 & 0.811 & 0.883 & 0.954 \\
+8  & 0.993 & 0.984 & 0.837 & 0.837 & 0.951 & 0.917 & 0.917 & 0.964 \\
+9  & 0.991 & 0.946 & 0.913 & 0.913 & 0.937 & 0.919 & 0.919 & 0.941 \\
+10 & 0.985 & 0.976 & 0.918 & 0.929 & 0.979 & 0.922 & 0.931 & 0.979 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Primary exploratory participant-level contrasts for the prescribed protocol trajectory. $\Delta R^2$ is the protocol trajectory minus the comparator. Holm adjustment was applied across the five listed signed-rank tests. Evaluation wins are descriptive counts across the 100 participant-day evaluations.}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Comparator
+& \multicolumn{1}{c}{Median $\Delta R^2$}
+& \multicolumn{1}{c}{95\% CI}
+& \multicolumn{1}{c}{Participant wins}
+& \multicolumn{1}{c}{Evaluation wins}
+& \multicolumn{1}{c}{Holm $p$} \\
+\midrule
+Day-1 average template & 0.00866 & $[0.00318,0.02729]$ & 9/10  & 80/100  & 0.0098 \\
+Fixed EMG, 8           & 0.05674 & $[0.03143,0.11712]$ & 10/10 & 100/100 & 0.0098 \\
+Adaptive EMG, 8        & 0.05145 & $[0.03347,0.08268]$ & 10/10 & 100/100 & 0.0098 \\
+Fixed EMG, 16          & 0.05434 & $[0.02915,0.07233]$ & 10/10 & 99/100  & 0.0098 \\
+Adaptive EMG, 16       & 0.05262 & $[0.02915,0.07233]$ & 10/10 & 99/100  & 0.0098 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Sensitivity of the prescribed protocol trajectory to the force/EMG time-base convention. The protocol trajectory remained superior to the Day-1 average template under both mappings. Evaluation wins are descriptive counts across the 100 participant-day evaluations.}
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrr}
+\toprule
+Quantity
+& \multicolumn{1}{c}{Normalized duration}
+& \multicolumn{1}{c}{Physical time} \\
+\midrule
+Protocol trajectory: cohort median participant $R^2$
+& 0.99207 & 0.99327 \\
+Day-1 average template: cohort median participant $R^2$
+& 0.98355 & 0.98323 \\
+Protocol minus Day-1 average: median paired $\Delta R^2$
+& 0.00792 & 0.00866 \\
+Protocol wins versus Day-1 average
+& 76/100 & 80/100 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Sensitivity of empirical and EMG-based methods to the force/EMG time-base convention. Median $\Delta R^2$ is the median of the ten participant-wise paired differences (physical minus normalized), not the arithmetic difference between the displayed cohort medians.}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Method
+& \multicolumn{1}{c}{Normalized}
+& \multicolumn{1}{c}{Physical}
+& \multicolumn{1}{c}{Median $\Delta R^2$}
+& \multicolumn{1}{c}{95\% CI}
+& \multicolumn{1}{c}{$p$} \\
+\midrule
+\multicolumn{6}{l}{\textit{8 electrodes}} \\
+Average template   & 0.9836 & 0.9832 &  0.00003 & $[-0.00040,0.00031]$ & 0.695 \\
+Fixed EMG KF       & 0.9257 & 0.9335 &  0.00432 & $[-0.01059,0.02352]$ & 0.492 \\
+Adaptive EMG KF    & 0.9297 & 0.9388 &  0.00229 & $[-0.01038,0.01519]$ & 0.770 \\
+Fixed hybrid       & 0.9706 & 0.9774 &  0.00182 & $[-0.00033,0.00729]$ & 0.193 \\
+Adaptive hybrid    & 0.9702 & 0.9796 &  0.00155 & $[-0.00029,0.00715]$ & 0.275 \\
+\addlinespace[0.35em]
+\multicolumn{6}{l}{\textit{16 electrodes}} \\
+Average template   & 0.9836 & 0.9832 &  0.00003 & $[-0.00040,0.00031]$ & 0.695 \\
+Fixed EMG KF       & 0.9394 & 0.9356 &  0.00186 & $[-0.00347,0.00698]$ & 0.492 \\
+Adaptive EMG KF    & 0.9388 & 0.9370 &  0.00051 & $[-0.00381,0.00585]$ & 0.695 \\
+Fixed hybrid       & 0.9770 & 0.9779 & -0.00009 & $[-0.00103,0.00100]$ & 1.000 \\
+Adaptive hybrid    & 0.9774 & 0.9785 & -0.00008 & $[-0.00179,0.00120]$ & 0.846 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Leave-one-day-out residual-shape diagnostic using the physical time base. Each method contains 100 participant-day evaluations: ten held-out days nested within each of ten participants. Counts are descriptive and do not represent 100 independent biological observations. The control is non-deployable because nuisance trajectories use force labels from the other nine evaluation days.}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Method
+& \multicolumn{1}{c}{Median $r$}
+& \multicolumn{1}{c}{$r>0$}
+& \multicolumn{1}{c}{Median residual $R^2$}
+& \multicolumn{1}{c}{Residual $R^2>0$}
+& \multicolumn{1}{c}{Participant median $r$} \\
+\midrule
+Fixed KF, 8     & 0.321 & 87/100 & -6.338 & 0/100 & 0.301 \\
+Adaptive KF, 8  & 0.357 & 88/100 & -5.308 & 0/100 & 0.327 \\
+Fixed KF, 16    & 0.336 & 89/100 & -5.069 & 1/100 & 0.345 \\
+Adaptive KF, 16 & 0.355 & 89/100 & -4.102 & 1/100 & 0.366 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Selected adaptive-variance parameter $\alpha$ and process-noise scales. Of the 20 participant/electrode-count fits, 12 selected $\alpha=0$, indicating no disagreement-driven variance adaptation.}
+\centering
+\small
+\setlength{\tabcolsep}{7pt}
+\begin{tabular}{crrrr}
+\toprule
+& & & \multicolumn{2}{c}{Process-noise scale $q_s$} \\
+\cmidrule(lr){4-5}
+Participant
+& \multicolumn{1}{c}{$k$}
+& \multicolumn{1}{c}{$\alpha$}
+& \multicolumn{1}{c}{Adaptive}
+& \multicolumn{1}{c}{Fixed} \\
+\midrule
+1  & 8  & 0.1 & 0.3  & 0.3  \\
+1  & 16 & 0.5 & 0.3  & 0.3  \\
+2  & 8  & 0   & 0.3  & 0.3  \\
+2  & 16 & 0   & 0.3  & 0.3  \\
+3  & 8  & 0   & 0.3  & 0.3  \\
+3  & 16 & 0   & 0.1  & 0.1  \\
+4  & 8  & 0   & 1    & 1    \\
+4  & 16 & 0   & 0.3  & 0.3  \\
+5  & 8  & 0.5 & 1    & 0.3  \\
+5  & 16 & 1   & 1    & 0.3  \\
+6  & 8  & 0   & 3    & 3    \\
+6  & 16 & 0   & 1    & 1    \\
+7  & 8  & 2   & 0.1  & 0.1  \\
+7  & 16 & 0.1 & 0.03 & 0.03 \\
+8  & 8  & 0   & 0.3  & 0.3  \\
+8  & 16 & 0   & 0.1  & 0.1  \\
+9  & 8  & 0   & 1    & 1    \\
+9  & 16 & 0   & 0.3  & 0.3  \\
+10 & 8  & 1   & 3    & 3    \\
+10 & 16 & 0.1 & 3    & 3    \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}
