@@ -1,0 +1,13 @@
+{
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "numpy": "2.5.3",
+  "pandas": "2.3.3",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "remotezip": "installed",
+  "pipeline": "overhaul-1.0",
+  "pipeline_sha256": "68db332ee381b3c92156f71da7fc8658383e4b57e79eb9994fe8b6dd65efb280",
+  "driver_sha256": "a45379cee4f4711c77c5f000359508ea91a6ba57d307443c60ac7c8fce6fbb12",
+  "analysis_plan_sha256": "0d4cb9c0a887b5ea616eae8161a6432855a1fb71a1f1e58c94d8b73e186cbf3a"
+}

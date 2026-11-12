@@ -1,0 +1,28 @@
+{
+  "timing_ok": false,
+  "failing_conditions": [
+    {
+      "session": 2,
+      "task": 1,
+      "up50_median": 6.579234375228857,
+      "down50_median": 23.336403770151428,
+      "hold_ratio_median": 1.011349427308887,
+      "prior_rmse_median": 0.00986173764278149,
+      "flagged": 172,
+      "n": 286,
+      "ok": false
+    }
+  ],
+  "flagged_recordings": 653,
+  "n_recordings": 6005,
+  "reproduction_ok": true,
+  "reproduction_max_abs_diff": 4.669571380677695e-07,
+  "force_minus_emg_duration_s_median": 0.13070312500000014,
+  "passed": false,
+  "excluded_conditions": [
+    [
+      2,
+      1
+    ]
+  ]
+}

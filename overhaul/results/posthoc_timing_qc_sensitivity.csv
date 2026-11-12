@@ -1,0 +1,13 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: overhaul_results_posthoc_timing_qc_sensitivity.csv>
+index,analysis,model,scheme,sensitivity,n_records,n_participants,median_participant_skill,ci95_low,ci95_high,participants_positive,wilcoxon_p
+0,primary_bandpass_physical,ridge_8_residual,trial1_unlabelled_affine,all_eligible,2590,13,-0.0781626894339738,-0.333536865531476,-0.0438423840137922,3,0.080322265625
+1,primary_bandpass_physical,ridge_8_residual,trial1_unlabelled_affine,exclude_timing_flagged_test_records,2384,13,-0.107634124838422,-0.32179022394289,-0.0476226995636506,3,0.057373046875
+2,posthoc_robustness,ridge_all_residual,within_day,all_eligible,2590,13,0.130328556904816,0.0854678736218821,0.159239925018062,13,0.000244140625
+3,posthoc_robustness,ridge_all_residual,within_day,exclude_timing_flagged_test_records,2384,13,0.124184593642374,0.0876115001940115,0.154676684929073,13,0.000244140625
+4,posthoc_robustness,ridge_all_residual,across_fixed,all_eligible,2590,13,-0.200616128886575,-0.639677605686894,-0.0991035032501579,2,0.00244140625
+5,posthoc_robustness,ridge_all_residual,across_fixed,exclude_timing_flagged_test_records,2384,13,-0.194806631530408,-0.665982094016843,-0.0975861103484603,2,0.001708984375
+6,posthoc_robustness,ridge_8_residual,within_day,all_eligible,2590,13,0.118408725337948,0.0923494812368618,0.165927759648098,13,0.000244140625
+7,posthoc_robustness,ridge_8_residual,within_day,exclude_timing_flagged_test_records,2384,13,0.116183967758275,0.0674402946737548,0.161657075123429,13,0.000244140625
+8,posthoc_robustness,ridge_8_residual,across_fixed,all_eligible,2590,13,-0.120097464534704,-0.272413954576352,-0.0585912242612946,3,0.021484375
+9,posthoc_robustness,ridge_8_residual,across_fixed,exclude_timing_flagged_test_records,2384,13,-0.13072618835945,-0.277090574005816,-0.057341472938617,3,0.010498046875

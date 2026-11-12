@@ -1,0 +1,2073 @@
+subject,session,task,model,hyperparameter,selected_channels
+1,1,1,ridge_all_raw,10000.0,[]
+1,1,1,pls_all_raw,2.0,[]
+1,1,1,pca_ols_raw,5.0,[]
+1,1,1,ridge_all_residual,10000.0,[]
+1,1,1,pls_all_residual,2.0,[]
+1,1,1,pca_ols_residual,5.0,[]
+1,1,1,ridge_8_residual,10000.0,"[32, 63, 60, 59, 68, 69, 70, 265]"
+1,1,1,ridge_16_residual,10000.0,"[32, 63, 60, 59, 68, 69, 70, 265, 240, 74, 58, 75, 71, 266, 78, 194]"
+1,1,2,ridge_all_raw,100.0,[]
+1,1,2,pls_all_raw,5.0,[]
+1,1,2,pca_ols_raw,150.0,[]
+1,1,2,ridge_all_residual,1000.0,[]
+1,1,2,pls_all_residual,2.0,[]
+1,1,2,pca_ols_residual,10.0,[]
+1,1,2,ridge_8_residual,100.0,"[56, 57, 64, 65, 48, 58, 49, 195]"
+1,1,2,ridge_16_residual,1000.0,"[56, 57, 64, 65, 48, 58, 49, 195, 62, 63, 50, 196, 52, 197, 61, 53]"
+1,1,3,ridge_all_raw,1.0,[]
+1,1,3,pls_all_raw,20.0,[]
+1,1,3,pca_ols_raw,150.0,[]
+1,1,3,ridge_all_residual,1000.0,[]
+1,1,3,pls_all_residual,2.0,[]
+1,1,3,pca_ols_residual,20.0,[]
+1,1,3,ridge_8_residual,1000.0,"[222, 223, 211, 210, 40, 237, 116, 41]"
+1,1,3,ridge_16_residual,10.0,"[222, 223, 211, 210, 40, 237, 116, 41, 236, 48, 224, 209, 192, 263, 197, 33]"
+1,2,2,ridge_all_raw,10000.0,[]
+1,2,2,pls_all_raw,2.0,[]
+1,2,2,pca_ols_raw,5.0,[]
+1,2,2,ridge_all_residual,10000.0,[]
+1,2,2,pls_all_residual,2.0,[]
+1,2,2,pca_ols_residual,5.0,[]
+1,2,2,ridge_8_residual,0.1,"[21, 20, 13, 14, 18, 12, 22, 19]"
+1,2,2,ridge_16_residual,1.0,"[21, 20, 13, 14, 18, 12, 22, 19, 10, 11, 4, 5, 9, 26, 17, 3]"
+1,2,3,ridge_all_raw,1000.0,[]
+1,2,3,pls_all_raw,2.0,[]
+1,2,3,pca_ols_raw,20.0,[]
+1,2,3,ridge_all_residual,10000.0,[]
+1,2,3,pls_all_residual,2.0,[]
+1,2,3,pca_ols_residual,5.0,[]
+1,2,3,ridge_8_residual,10000.0,"[12, 20, 13, 11, 21, 10, 203, 204]"
+1,2,3,ridge_16_residual,10000.0,"[12, 20, 13, 11, 21, 10, 203, 204, 229, 19, 231, 9, 280, 279, 3, 228]"
+1,3,1,ridge_all_raw,1.0,[]
+1,3,1,pls_all_raw,2.0,[]
+1,3,1,pca_ols_raw,5.0,[]
+1,3,1,ridge_all_residual,10000.0,[]
+1,3,1,pls_all_residual,2.0,[]
+1,3,1,pca_ols_residual,5.0,[]
+1,3,1,ridge_8_residual,1.0,"[23, 14, 31, 15, 13, 64, 10, 5]"
+1,3,1,ridge_16_residual,1.0,"[23, 14, 31, 15, 13, 64, 10, 5, 72, 21, 22, 2, 9, 30, 18, 12]"
+1,3,2,ridge_all_raw,1000.0,[]
+1,3,2,pls_all_raw,5.0,[]
+1,3,2,pca_ols_raw,5.0,[]
+1,3,2,ridge_all_residual,10000.0,[]
+1,3,2,pls_all_residual,2.0,[]
+1,3,2,pca_ols_residual,5.0,[]
+1,3,2,ridge_8_residual,1000.0,"[260, 205, 257, 256, 261, 227, 203, 206]"
+1,3,2,ridge_16_residual,1000.0,"[260, 205, 257, 256, 261, 227, 203, 206, 90, 88, 93, 279, 89, 59, 259, 204]"
+1,3,3,ridge_all_raw,1.0,[]
+1,3,3,pls_all_raw,10.0,[]
+1,3,3,pca_ols_raw,100.0,[]
+1,3,3,ridge_all_residual,1000.0,[]
+1,3,3,pls_all_residual,2.0,[]
+1,3,3,pca_ols_residual,10.0,[]
+1,3,3,ridge_8_residual,1.0,"[211, 222, 212, 210, 223, 195, 196, 197]"
+1,3,3,ridge_16_residual,10.0,"[211, 222, 212, 210, 223, 195, 196, 197, 55, 237, 221, 248, 64, 198, 63, 236]"
+1,4,1,ridge_all_raw,10000.0,[]
+1,4,1,pls_all_raw,5.0,[]
+1,4,1,pca_ols_raw,5.0,[]
+1,4,1,ridge_all_residual,1000.0,[]
+1,4,1,pls_all_residual,2.0,[]
+1,4,1,pca_ols_residual,20.0,[]
+1,4,1,ridge_8_residual,10000.0,"[64, 72, 65, 48, 56, 40, 66, 73]"
+1,4,1,ridge_16_residual,10000.0,"[64, 72, 65, 48, 56, 40, 66, 73, 33, 41, 49, 42, 52, 57, 24, 59]"
+1,4,2,ridge_all_raw,1000.0,[]
+1,4,2,pls_all_raw,80.0,[]
+1,4,2,pca_ols_raw,10.0,[]
+1,4,2,ridge_all_residual,10000.0,[]
+1,4,2,pls_all_residual,2.0,[]
+1,4,2,pca_ols_residual,5.0,[]
+1,4,2,ridge_8_residual,1000.0,"[32, 288, 289, 273, 274, 290, 287, 261]"
+1,4,2,ridge_16_residual,1000.0,"[32, 288, 289, 273, 274, 290, 287, 261, 272, 271, 262, 297, 275, 291, 298, 260]"
+1,4,3,ridge_all_raw,1000.0,[]
+1,4,3,pls_all_raw,2.0,[]
+1,4,3,pca_ols_raw,5.0,[]
+1,4,3,ridge_all_residual,10000.0,[]
+1,4,3,pls_all_residual,2.0,[]
+1,4,3,pca_ols_residual,5.0,[]
+1,4,3,ridge_8_residual,1000.0,"[203, 202, 205, 228, 229, 204, 230, 280]"
+1,4,3,ridge_16_residual,1000.0,"[203, 202, 205, 228, 229, 204, 230, 280, 231, 66, 72, 23, 227, 281, 232, 252]"
+1,5,1,ridge_all_raw,100.0,[]
+1,5,1,pls_all_raw,5.0,[]
+1,5,1,pca_ols_raw,5.0,[]
+1,5,1,ridge_all_residual,10000.0,[]
+1,5,1,pls_all_residual,2.0,[]
+1,5,1,pca_ols_residual,5.0,[]
+1,5,1,ridge_8_residual,10000.0,"[33, 34, 196, 42, 197, 195, 41, 112]"
+1,5,1,ridge_16_residual,10.0,"[33, 34, 196, 42, 197, 195, 41, 112, 211, 72, 43, 104, 53, 64, 212, 120]"
+1,5,2,ridge_all_raw,0.01,[]
+1,5,2,pls_all_raw,40.0,[]
+1,5,2,pca_ols_raw,20.0,[]
+1,5,2,ridge_all_residual,10000.0,[]
+1,5,2,pls_all_residual,2.0,[]
+1,5,2,pca_ols_residual,5.0,[]
+1,5,2,ridge_8_residual,100.0,"[61, 70, 10, 2, 246, 62, 63, 69]"
+1,5,2,ridge_16_residual,0.01,"[61, 70, 10, 2, 246, 62, 63, 69, 1, 9, 60, 247, 3, 17, 71, 68]"
+1,5,3,ridge_all_raw,10000.0,[]
+1,5,3,pls_all_raw,5.0,[]
+1,5,3,pca_ols_raw,5.0,[]
+1,5,3,ridge_all_residual,10000.0,[]
+1,5,3,pls_all_residual,5.0,[]
+1,5,3,pca_ols_residual,10.0,[]
+1,5,3,ridge_8_residual,10000.0,"[37, 38, 64, 72, 31, 251, 65, 36]"
+1,5,3,ridge_16_residual,10000.0,"[37, 38, 64, 72, 31, 251, 65, 36, 30, 235, 209, 224, 39, 29, 208, 41]"
+1,6,1,ridge_all_raw,100.0,[]
+1,6,1,pls_all_raw,5.0,[]
+1,6,1,pca_ols_raw,5.0,[]
+1,6,1,ridge_all_residual,10000.0,[]
+1,6,1,pls_all_residual,2.0,[]
+1,6,1,pca_ols_residual,10.0,[]
+1,6,1,ridge_8_residual,10.0,"[199, 208, 207, 225, 200, 224, 223, 209]"
+1,6,1,ridge_16_residual,10000.0,"[199, 208, 207, 225, 200, 224, 223, 209, 198, 226, 210, 236, 235, 249, 197, 234]"
+1,6,2,ridge_all_raw,1.0,[]
+1,6,2,pls_all_raw,40.0,[]
+1,6,2,pca_ols_raw,10.0,[]
+1,6,2,ridge_all_residual,10000.0,[]
+1,6,2,pls_all_residual,2.0,[]
+1,6,2,pca_ols_residual,5.0,[]
+1,6,2,ridge_8_residual,100.0,"[13, 21, 14, 12, 20, 11, 4, 22]"
+1,6,2,ridge_16_residual,1000.0,"[13, 21, 14, 12, 20, 11, 4, 22, 3, 5, 10, 2, 6, 19, 18, 9]"
+1,6,3,ridge_all_raw,10.0,[]
+1,6,3,pls_all_raw,5.0,[]
+1,6,3,pca_ols_raw,5.0,[]
+1,6,3,ridge_all_residual,100.0,[]
+1,6,3,pls_all_residual,2.0,[]
+1,6,3,pca_ols_residual,20.0,[]
+1,6,3,ridge_8_residual,1.0,"[259, 260, 65, 64, 248, 275, 276, 258]"
+1,6,3,ridge_16_residual,10.0,"[259, 260, 65, 64, 248, 275, 276, 258, 261, 198, 53, 197, 247, 277, 285, 286]"
+1,7,1,ridge_all_raw,1000.0,[]
+1,7,1,pls_all_raw,2.0,[]
+1,7,1,pca_ols_raw,150.0,[]
+1,7,1,ridge_all_residual,10000.0,[]
+1,7,1,pls_all_residual,2.0,[]
+1,7,1,pca_ols_residual,10.0,[]
+1,7,1,ridge_8_residual,1000.0,"[13, 11, 14, 12, 10, 4, 5, 3]"
+1,7,1,ridge_16_residual,100.0,"[13, 11, 14, 12, 10, 4, 5, 3, 55, 19, 18, 54, 22, 254, 21, 231]"
+1,7,2,ridge_all_raw,100.0,[]
+1,7,2,pls_all_raw,10.0,[]
+1,7,2,pca_ols_raw,100.0,[]
+1,7,2,ridge_all_residual,10000.0,[]
+1,7,2,pls_all_residual,10.0,[]
+1,7,2,pca_ols_residual,5.0,[]
+1,7,2,ridge_8_residual,100.0,"[203, 204, 202, 229, 280, 230, 281, 306]"
+1,7,2,ridge_16_residual,100.0,"[203, 204, 202, 229, 280, 230, 281, 306, 205, 231, 282, 305, 212, 279, 256, 308]"
+1,7,3,ridge_all_raw,100.0,[]
+1,7,3,pls_all_raw,2.0,[]
+1,7,3,pca_ols_raw,50.0,[]
+1,7,3,ridge_all_residual,10000.0,[]
+1,7,3,pls_all_residual,2.0,[]
+1,7,3,pca_ols_residual,5.0,[]
+1,7,3,ridge_8_residual,1000.0,"[30, 29, 21, 22, 222, 237, 47, 236]"
+1,7,3,ridge_16_residual,1000.0,"[30, 29, 21, 22, 222, 237, 47, 236, 46, 31, 254, 223, 20, 248, 39, 38]"
+2,1,1,ridge_all_raw,1000.0,[]
+2,1,1,pls_all_raw,2.0,[]
+2,1,1,pca_ols_raw,100.0,[]
+2,1,1,ridge_all_residual,10000.0,[]
+2,1,1,pls_all_residual,2.0,[]
+2,1,1,pca_ols_residual,5.0,[]
+2,1,1,ridge_8_residual,10000.0,"[32, 39, 148, 208, 102, 147, 199, 110]"
+2,1,1,ridge_16_residual,10000.0,"[32, 39, 148, 208, 102, 147, 199, 110, 140, 304, 305, 139, 123, 200, 225, 156]"
+2,1,2,ridge_all_raw,1000.0,[]
+2,1,2,pls_all_raw,2.0,[]
+2,1,2,pca_ols_raw,100.0,[]
+2,1,2,ridge_all_residual,1000.0,[]
+2,1,2,pls_all_residual,2.0,[]
+2,1,2,pca_ols_residual,5.0,[]
+2,1,2,ridge_8_residual,1.0,"[23, 100, 91, 75, 92, 90, 93, 76]"
+2,1,2,ridge_16_residual,1000.0,"[23, 100, 91, 75, 92, 90, 93, 76, 98, 86, 68, 73, 89, 101, 85, 102]"
+2,1,3,ridge_all_raw,1.0,[]
+2,1,3,pls_all_raw,20.0,[]
+2,1,3,pca_ols_raw,5.0,[]
+2,1,3,ridge_all_residual,10000.0,[]
+2,1,3,pls_all_residual,5.0,[]
+2,1,3,pca_ols_residual,100.0,[]
+2,1,3,ridge_8_residual,100.0,"[47, 23, 119, 39, 286, 31, 287, 301]"
+2,1,3,ridge_16_residual,100.0,"[47, 23, 119, 39, 286, 31, 287, 301, 300, 285, 276, 299, 313, 275, 314, 59]"
+2,2,2,ridge_all_raw,10.0,[]
+2,2,2,pls_all_raw,10.0,[]
+2,2,2,pca_ols_raw,100.0,[]
+2,2,2,ridge_all_residual,10000.0,[]
+2,2,2,pls_all_residual,2.0,[]
+2,2,2,pca_ols_residual,10.0,[]
+2,2,2,ridge_8_residual,10000.0,"[13, 5, 4, 3, 12, 2, 11, 1]"
+2,2,2,ridge_16_residual,10000.0,"[13, 5, 4, 3, 12, 2, 11, 1, 10, 6, 255, 187, 14, 188, 186, 78]"
+2,2,3,ridge_all_raw,1000.0,[]
+2,2,3,pls_all_raw,5.0,[]
+2,2,3,pca_ols_raw,5.0,[]
+2,2,3,ridge_all_residual,1000.0,[]
+2,2,3,pls_all_residual,2.0,[]
+2,2,3,pca_ols_residual,5.0,[]
+2,2,3,ridge_8_residual,1000.0,"[119, 118, 59, 122, 197, 210, 196, 211]"
+2,2,3,ridge_16_residual,1000.0,"[119, 118, 59, 122, 197, 210, 196, 211, 40, 63, 223, 33, 222, 41, 237, 120]"
+2,3,1,ridge_all_raw,10000.0,[]
+2,3,1,pls_all_raw,2.0,[]
+2,3,1,pca_ols_raw,5.0,[]
+2,3,1,ridge_all_residual,10000.0,[]
+2,3,1,pls_all_residual,2.0,[]
+2,3,1,pca_ols_residual,100.0,[]
+2,3,1,ridge_8_residual,10000.0,"[78, 77, 76, 85, 79, 86, 75, 70]"
+2,3,1,ridge_16_residual,10000.0,"[78, 77, 76, 85, 79, 86, 75, 70, 69, 68, 108, 71, 117, 82, 125, 109]"
+2,3,2,ridge_all_raw,100.0,[]
+2,3,2,pls_all_raw,5.0,[]
+2,3,2,pca_ols_raw,5.0,[]
+2,3,2,ridge_all_residual,10000.0,[]
+2,3,2,pls_all_residual,10.0,[]
+2,3,2,pca_ols_residual,5.0,[]
+2,3,2,ridge_8_residual,10000.0,"[261, 274, 260, 262, 273, 275, 259, 263]"
+2,3,2,ridge_16_residual,10000.0,"[261, 274, 260, 262, 273, 275, 259, 263, 197, 33, 272, 222, 40, 247, 211, 41]"
+2,3,3,ridge_all_raw,10.0,[]
+2,3,3,pls_all_raw,2.0,[]
+2,3,3,pca_ols_raw,10.0,[]
+2,3,3,ridge_all_residual,1000.0,[]
+2,3,3,pls_all_residual,2.0,[]
+2,3,3,pca_ols_residual,5.0,[]
+2,3,3,ridge_8_residual,10000.0,"[23, 31, 39, 87, 86, 94, 79, 78]"
+2,3,3,ridge_16_residual,10000.0,"[23, 31, 39, 87, 86, 94, 79, 78, 222, 76, 85, 77, 216, 211, 243, 217]"
+2,4,1,ridge_all_raw,1000.0,[]
+2,4,1,pls_all_raw,2.0,[]
+2,4,1,pca_ols_raw,5.0,[]
+2,4,1,ridge_all_residual,10000.0,[]
+2,4,1,pls_all_residual,10.0,[]
+2,4,1,pca_ols_residual,20.0,[]
+2,4,1,ridge_8_residual,100.0,"[104, 96, 112, 97, 89, 80, 90, 88]"
+2,4,1,ridge_16_residual,100.0,"[104, 96, 112, 97, 89, 80, 90, 88, 98, 113, 72, 81, 64, 120, 82, 102]"
+2,4,2,ridge_all_raw,1000.0,[]
+2,4,2,pls_all_raw,2.0,[]
+2,4,2,pca_ols_raw,5.0,[]
+2,4,2,ridge_all_residual,10000.0,[]
+2,4,2,pls_all_residual,20.0,[]
+2,4,2,pca_ols_residual,5.0,[]
+2,4,2,ridge_8_residual,10000.0,"[12, 13, 4, 11, 90, 5, 3, 135]"
+2,4,2,ridge_16_residual,10000.0,"[12, 13, 4, 11, 90, 5, 3, 135, 82, 91, 73, 126, 81, 313, 312, 98]"
+2,4,3,ridge_all_raw,1.0,[]
+2,4,3,pls_all_raw,20.0,[]
+2,4,3,pca_ols_raw,5.0,[]
+2,4,3,ridge_all_residual,10000.0,[]
+2,4,3,pls_all_residual,2.0,[]
+2,4,3,pca_ols_residual,5.0,[]
+2,4,3,ridge_8_residual,1000.0,"[119, 106, 285, 276, 67, 286, 302, 277]"
+2,4,3,ridge_16_residual,1000.0,"[119, 106, 285, 276, 67, 286, 302, 277, 301, 255, 254, 231, 287, 230, 300, 253]"
+2,5,1,ridge_all_raw,10000.0,[]
+2,5,1,pls_all_raw,2.0,[]
+2,5,1,pca_ols_raw,10.0,[]
+2,5,1,ridge_all_residual,10000.0,[]
+2,5,1,pls_all_residual,2.0,[]
+2,5,1,pca_ols_residual,5.0,[]
+2,5,1,ridge_8_residual,10000.0,"[30, 38, 37, 283, 256, 278, 29, 303]"
+2,5,1,ridge_16_residual,10000.0,"[30, 38, 37, 283, 256, 278, 29, 303, 284, 210, 304, 33, 25, 223, 24, 279]"
+2,5,2,ridge_all_raw,100.0,[]
+2,5,2,pls_all_raw,5.0,[]
+2,5,2,pca_ols_raw,10.0,[]
+2,5,2,ridge_all_residual,10000.0,[]
+2,5,2,pls_all_residual,2.0,[]
+2,5,2,pca_ols_residual,5.0,[]
+2,5,2,ridge_8_residual,1000.0,"[59, 83, 24, 33, 25, 111, 19, 20]"
+2,5,2,ridge_16_residual,1000.0,"[59, 83, 24, 33, 25, 111, 19, 20, 26, 11, 12, 34, 17, 16, 18, 27]"
+2,5,3,ridge_all_raw,100.0,[]
+2,5,3,pls_all_raw,5.0,[]
+2,5,3,pca_ols_raw,20.0,[]
+2,5,3,ridge_all_residual,10.0,[]
+2,5,3,pls_all_residual,10.0,[]
+2,5,3,pca_ols_residual,20.0,[]
+2,5,3,ridge_8_residual,0.1,"[59, 24, 33, 25, 256, 34, 26, 41]"
+2,5,3,ridge_16_residual,1.0,"[59, 24, 33, 25, 256, 34, 26, 41, 40, 200, 39, 99, 279, 257, 210, 35]"
+2,6,1,ridge_all_raw,10000.0,[]
+2,6,1,pls_all_raw,2.0,[]
+2,6,1,pca_ols_raw,10.0,[]
+2,6,1,ridge_all_residual,10000.0,[]
+2,6,1,pls_all_residual,2.0,[]
+2,6,1,pca_ols_residual,20.0,[]
+2,6,1,ridge_8_residual,0.01,"[84, 197, 210, 209, 118, 198, 223, 196]"
+2,6,1,ridge_16_residual,0.1,"[84, 197, 210, 209, 118, 198, 223, 196, 211, 224, 39, 208, 199, 235, 222, 250]"
+2,6,2,ridge_all_raw,1000.0,[]
+2,6,2,pls_all_raw,10.0,[]
+2,6,2,pca_ols_raw,50.0,[]
+2,6,2,ridge_all_residual,1000.0,[]
+2,6,2,pls_all_residual,2.0,[]
+2,6,2,pca_ols_residual,5.0,[]
+2,6,2,ridge_8_residual,100.0,"[59, 119, 83, 84, 256, 210, 223, 211]"
+2,6,2,ridge_16_residual,100.0,"[59, 119, 83, 84, 256, 210, 223, 211, 196, 209, 197, 222, 208, 257, 279, 33]"
+2,6,3,ridge_all_raw,100.0,[]
+2,6,3,pls_all_raw,2.0,[]
+2,6,3,pca_ols_raw,5.0,[]
+2,6,3,ridge_all_residual,1000.0,[]
+2,6,3,pls_all_residual,10.0,[]
+2,6,3,pca_ols_residual,5.0,[]
+2,6,3,ridge_8_residual,1.0,"[39, 31, 24, 25, 34, 33, 210, 197]"
+2,6,3,ridge_16_residual,1.0,"[39, 31, 24, 25, 34, 33, 210, 197, 26, 211, 16, 42, 196, 223, 95, 17]"
+2,7,1,ridge_all_raw,1000.0,[]
+2,7,1,pls_all_raw,2.0,[]
+2,7,1,pca_ols_raw,20.0,[]
+2,7,1,ridge_all_residual,10000.0,[]
+2,7,1,pls_all_residual,2.0,[]
+2,7,1,pca_ols_residual,5.0,[]
+2,7,1,ridge_8_residual,0.01,"[13, 12, 21, 22, 14, 20, 5, 11]"
+2,7,1,ridge_16_residual,1000.0,"[13, 12, 21, 22, 14, 20, 5, 11, 4, 3, 174, 2, 173, 1, 10, 6]"
+2,7,2,ridge_all_raw,100.0,[]
+2,7,2,pls_all_raw,10.0,[]
+2,7,2,pca_ols_raw,50.0,[]
+2,7,2,ridge_all_residual,1000.0,[]
+2,7,2,pls_all_residual,2.0,[]
+2,7,2,pca_ols_residual,5.0,[]
+2,7,2,ridge_8_residual,1.0,"[12, 11, 13, 4, 3, 21, 5, 201]"
+2,7,2,ridge_16_residual,10.0,"[12, 11, 13, 4, 3, 21, 5, 201, 20, 202, 14, 203, 10, 2, 206, 205]"
+2,7,3,ridge_all_raw,0.1,[]
+2,7,3,pls_all_raw,20.0,[]
+2,7,3,pca_ols_raw,150.0,[]
+2,7,3,ridge_all_residual,10000.0,[]
+2,7,3,pls_all_residual,2.0,[]
+2,7,3,pca_ols_residual,5.0,[]
+2,7,3,ridge_8_residual,10000.0,"[123, 67, 84, 94, 12, 102, 11, 3]"
+2,7,3,ridge_16_residual,10000.0,"[123, 67, 84, 94, 12, 102, 11, 3, 47, 4, 202, 203, 13, 201, 95, 110]"
+3,1,1,ridge_all_raw,10.0,[]
+3,1,1,pls_all_raw,5.0,[]
+3,1,1,pca_ols_raw,100.0,[]
+3,1,1,ridge_all_residual,10000.0,[]
+3,1,1,pls_all_residual,2.0,[]
+3,1,1,pca_ols_residual,20.0,[]
+3,1,1,ridge_8_residual,10000.0,"[20, 301, 131, 132, 124, 123, 122, 280]"
+3,1,1,ridge_16_residual,10000.0,"[20, 301, 131, 132, 124, 123, 122, 280, 125, 121, 133, 116, 115, 130, 113, 279]"
+3,1,2,ridge_all_raw,10000.0,[]
+3,1,2,pls_all_raw,2.0,[]
+3,1,2,pca_ols_raw,5.0,[]
+3,1,2,ridge_all_residual,10000.0,[]
+3,1,2,pls_all_residual,2.0,[]
+3,1,2,pca_ols_residual,5.0,[]
+3,1,2,ridge_8_residual,10000.0,"[19, 3, 239, 87, 90, 112, 58, 41]"
+3,1,2,ridge_16_residual,10000.0,"[19, 3, 239, 87, 90, 112, 58, 41, 42, 105, 104, 136, 311, 144, 128, 18]"
+3,1,3,ridge_all_raw,10000.0,[]
+3,1,3,pls_all_raw,2.0,[]
+3,1,3,pca_ols_raw,10.0,[]
+3,1,3,ridge_all_residual,1000.0,[]
+3,1,3,pls_all_residual,2.0,[]
+3,1,3,pca_ols_residual,10.0,[]
+3,1,3,ridge_8_residual,0.1,"[62, 65, 66, 82, 74, 61, 83, 193]"
+3,1,3,ridge_16_residual,1.0,"[62, 65, 66, 82, 74, 61, 83, 193, 75, 64, 70, 67, 248, 69, 73, 91]"
+3,2,2,ridge_all_raw,100.0,[]
+3,2,2,pls_all_raw,10.0,[]
+3,2,2,pca_ols_raw,100.0,[]
+3,2,2,ridge_all_residual,1000.0,[]
+3,2,2,pls_all_residual,2.0,[]
+3,2,2,pca_ols_residual,5.0,[]
+3,2,2,ridge_8_residual,1000.0,"[261, 273, 274, 262, 260, 287, 143, 288]"
+3,2,2,ridge_16_residual,1000.0,"[261, 273, 274, 262, 260, 287, 143, 288, 275, 256, 308, 282, 279, 305, 135, 263]"
+3,2,3,ridge_all_raw,10.0,[]
+3,2,3,pls_all_raw,5.0,[]
+3,2,3,pca_ols_raw,100.0,[]
+3,2,3,ridge_all_residual,10000.0,[]
+3,2,3,pls_all_residual,2.0,[]
+3,2,3,pca_ols_residual,10.0,[]
+3,2,3,ridge_8_residual,10000.0,"[217, 268, 267, 32, 39, 128, 259, 136]"
+3,2,3,ridge_16_residual,1000.0,"[217, 268, 267, 32, 39, 128, 259, 136, 40, 47, 258, 17, 43, 276, 48, 159]"
+3,3,1,ridge_all_raw,10000.0,[]
+3,3,1,pls_all_raw,2.0,[]
+3,3,1,pca_ols_raw,50.0,[]
+3,3,1,ridge_all_residual,10000.0,[]
+3,3,1,pls_all_residual,2.0,[]
+3,3,1,pca_ols_residual,10.0,[]
+3,3,1,ridge_8_residual,10000.0,"[287, 300, 313, 274, 260, 299, 288, 275]"
+3,3,1,ridge_16_residual,10000.0,"[287, 300, 313, 274, 260, 299, 288, 275, 261, 286, 259, 312, 314, 258, 273, 262]"
+3,3,2,ridge_all_raw,100.0,[]
+3,3,2,pls_all_raw,2.0,[]
+3,3,2,pca_ols_raw,20.0,[]
+3,3,2,ridge_all_residual,100.0,[]
+3,3,2,pls_all_residual,5.0,[]
+3,3,2,pca_ols_residual,5.0,[]
+3,3,2,ridge_8_residual,10.0,"[32, 35, 43, 239, 253, 41, 254, 276]"
+3,3,2,ridge_16_residual,10.0,"[32, 35, 43, 239, 253, 41, 254, 276, 228, 232, 231, 27, 28, 15, 310, 23]"
+3,3,3,ridge_all_raw,0.1,[]
+3,3,3,pls_all_raw,40.0,[]
+3,3,3,pca_ols_raw,20.0,[]
+3,3,3,ridge_all_residual,100.0,[]
+3,3,3,pls_all_residual,2.0,[]
+3,3,3,pca_ols_residual,10.0,[]
+3,3,3,ridge_8_residual,1.0,"[294, 293, 192, 194, 214, 213, 193, 215]"
+3,3,3,ridge_16_residual,10.0,"[294, 293, 192, 194, 214, 213, 193, 215, 243, 242, 216, 218, 95, 219, 87, 318]"
+3,4,1,ridge_all_raw,0.1,[]
+3,4,1,pls_all_raw,40.0,[]
+3,4,1,pca_ols_raw,100.0,[]
+3,4,1,ridge_all_residual,10000.0,[]
+3,4,1,pls_all_residual,2.0,[]
+3,4,1,pca_ols_residual,5.0,[]
+3,4,1,ridge_8_residual,10000.0,"[30, 31, 46, 29, 38, 264, 39, 20]"
+3,4,1,ridge_16_residual,10000.0,"[30, 31, 46, 29, 38, 264, 39, 20, 37, 23, 21, 22, 252, 251, 28, 45]"
+3,4,2,ridge_all_raw,1000.0,[]
+3,4,2,pls_all_raw,2.0,[]
+3,4,2,pca_ols_raw,10.0,[]
+3,4,2,ridge_all_residual,10000.0,[]
+3,4,2,pls_all_residual,2.0,[]
+3,4,2,pca_ols_residual,5.0,[]
+3,4,2,ridge_8_residual,10000.0,"[35, 292, 239, 135, 273, 289, 134, 288]"
+3,4,2,ridge_16_residual,10000.0,"[35, 292, 239, 135, 273, 289, 134, 288, 262, 272, 299, 314, 263, 264, 287, 261]"
+3,4,3,ridge_all_raw,100.0,[]
+3,4,3,pls_all_raw,10.0,[]
+3,4,3,pca_ols_raw,20.0,[]
+3,4,3,ridge_all_residual,10.0,[]
+3,4,3,pls_all_residual,10.0,[]
+3,4,3,pca_ols_residual,50.0,[]
+3,4,3,ridge_8_residual,0.01,"[231, 254, 228, 255, 300, 230, 15, 205]"
+3,4,3,ridge_16_residual,1.0,"[231, 254, 228, 255, 300, 230, 15, 205, 299, 287, 229, 253, 288, 28, 314, 27]"
+3,5,1,ridge_all_raw,10000.0,[]
+3,5,1,pls_all_raw,2.0,[]
+3,5,1,pca_ols_raw,20.0,[]
+3,5,1,ridge_all_residual,10000.0,[]
+3,5,1,pls_all_residual,2.0,[]
+3,5,1,pca_ols_residual,10.0,[]
+3,5,1,ridge_8_residual,1000.0,"[90, 279, 278, 277, 281, 256, 280, 215]"
+3,5,1,ridge_16_residual,1000.0,"[90, 279, 278, 277, 281, 256, 280, 215, 245, 306, 200, 207, 204, 250, 257, 289]"
+3,5,2,ridge_all_raw,10000.0,[]
+3,5,2,pls_all_raw,2.0,[]
+3,5,2,pca_ols_raw,5.0,[]
+3,5,2,ridge_all_residual,10000.0,[]
+3,5,2,pls_all_residual,2.0,[]
+3,5,2,pca_ols_residual,5.0,[]
+3,5,2,ridge_8_residual,1000.0,"[135, 146, 308, 162, 145, 137, 169, 158]"
+3,5,2,ridge_16_residual,10000.0,"[135, 146, 308, 162, 145, 137, 169, 158, 140, 151, 155, 97, 170, 152, 156, 98]"
+3,5,3,ridge_all_raw,100.0,[]
+3,5,3,pls_all_raw,10.0,[]
+3,5,3,pca_ols_raw,50.0,[]
+3,5,3,ridge_all_residual,10000.0,[]
+3,5,3,pls_all_residual,2.0,[]
+3,5,3,pca_ols_residual,5.0,[]
+3,5,3,ridge_8_residual,1000.0,"[87, 228, 231, 232, 205, 202, 227, 229]"
+3,5,3,ridge_16_residual,1000.0,"[87, 228, 231, 232, 205, 202, 227, 229, 204, 253, 254, 29, 230, 28, 203, 206]"
+3,6,1,ridge_all_raw,100.0,[]
+3,6,1,pls_all_raw,2.0,[]
+3,6,1,pca_ols_raw,20.0,[]
+3,6,1,ridge_all_residual,10000.0,[]
+3,6,1,pls_all_residual,2.0,[]
+3,6,1,pca_ols_residual,20.0,[]
+3,6,1,ridge_8_residual,10000.0,"[239, 47, 291, 262, 319, 303, 311, 293]"
+3,6,1,ridge_16_residual,10000.0,"[239, 47, 291, 262, 319, 303, 311, 293, 309, 308, 3, 267, 105, 268, 112, 196]"
+3,6,2,ridge_all_raw,10.0,[]
+3,6,2,pls_all_raw,10.0,[]
+3,6,2,pca_ols_raw,5.0,[]
+3,6,2,ridge_all_residual,1000.0,[]
+3,6,2,pls_all_residual,2.0,[]
+3,6,2,pca_ols_residual,5.0,[]
+3,6,2,ridge_8_residual,1.0,"[276, 258, 277, 282, 305, 280, 203, 259]"
+3,6,2,ridge_16_residual,10.0,"[276, 258, 277, 282, 305, 280, 203, 259, 105, 281, 204, 304, 256, 279, 306, 308]"
+3,6,3,ridge_all_raw,100.0,[]
+3,6,3,pls_all_raw,5.0,[]
+3,6,3,pca_ols_raw,100.0,[]
+3,6,3,ridge_all_residual,10000.0,[]
+3,6,3,pls_all_residual,10.0,[]
+3,6,3,pca_ols_residual,10.0,[]
+3,6,3,ridge_8_residual,1000.0,"[3, 202, 203, 201, 204, 200, 229, 205]"
+3,6,3,ridge_16_residual,1000.0,"[3, 202, 203, 201, 204, 200, 229, 205, 199, 32, 206, 230, 280, 281, 20, 228]"
+3,7,1,ridge_all_raw,10000.0,[]
+3,7,1,pls_all_raw,2.0,[]
+3,7,1,pca_ols_raw,20.0,[]
+3,7,1,ridge_all_residual,10000.0,[]
+3,7,1,pls_all_residual,2.0,[]
+3,7,1,pca_ols_residual,10.0,[]
+3,7,1,ridge_8_residual,100.0,"[259, 284, 256, 167, 175, 159, 191, 202]"
+3,7,1,ridge_16_residual,100.0,"[259, 284, 256, 167, 175, 159, 191, 202, 183, 204, 260, 229, 281, 61, 174, 166]"
+3,7,2,ridge_all_raw,100.0,[]
+3,7,2,pls_all_raw,40.0,[]
+3,7,2,pca_ols_raw,100.0,[]
+3,7,2,ridge_all_residual,10000.0,[]
+3,7,2,pls_all_residual,2.0,[]
+3,7,2,pca_ols_residual,5.0,[]
+3,7,2,ridge_8_residual,10000.0,"[11, 309, 311, 19, 310, 215, 18, 35]"
+3,7,2,ridge_16_residual,10000.0,"[11, 309, 311, 19, 310, 215, 18, 35, 24, 25, 302, 26, 295, 15, 27, 253]"
+3,7,3,ridge_all_raw,100.0,[]
+3,7,3,pls_all_raw,10.0,[]
+3,7,3,pca_ols_raw,10.0,[]
+3,7,3,ridge_all_residual,10000.0,[]
+3,7,3,pls_all_residual,2.0,[]
+3,7,3,pca_ols_residual,5.0,[]
+3,7,3,ridge_8_residual,10000.0,"[302, 295, 232, 227, 231, 206, 254, 228]"
+3,7,3,ridge_16_residual,10000.0,"[302, 295, 232, 227, 231, 206, 254, 228, 253, 18, 205, 201, 226, 200, 20, 207]"
+4,1,2,ridge_all_raw,100.0,[]
+4,1,2,pls_all_raw,5.0,[]
+4,1,2,pca_ols_raw,150.0,[]
+4,1,2,ridge_all_residual,100.0,[]
+4,1,2,pls_all_residual,2.0,[]
+4,1,2,pca_ols_residual,20.0,[]
+4,1,2,ridge_8_residual,0.01,"[32, 8, 14, 6, 7, 15, 260, 264]"
+4,1,2,ridge_16_residual,1.0,"[32, 8, 14, 6, 7, 15, 260, 264, 265, 84, 225, 263, 226, 208, 266, 261]"
+4,1,3,ridge_all_raw,10.0,[]
+4,1,3,pls_all_raw,10.0,[]
+4,1,3,pca_ols_raw,150.0,[]
+4,1,3,ridge_all_residual,1000.0,[]
+4,1,3,pls_all_residual,2.0,[]
+4,1,3,pca_ols_residual,10.0,[]
+4,1,3,ridge_8_residual,10000.0,"[275, 261, 286, 274, 101, 109, 108, 110]"
+4,1,3,ridge_16_residual,10000.0,"[275, 261, 286, 274, 101, 109, 108, 110, 102, 185, 111, 247, 2, 107, 103, 186]"
+4,2,2,ridge_all_raw,10.0,[]
+4,2,2,pls_all_raw,5.0,[]
+4,2,2,pca_ols_raw,100.0,[]
+4,2,2,ridge_all_residual,10000.0,[]
+4,2,2,pls_all_residual,2.0,[]
+4,2,2,pca_ols_residual,50.0,[]
+4,2,2,ridge_8_residual,10000.0,"[33, 34, 35, 41, 36, 42, 40, 24]"
+4,2,2,ridge_16_residual,10000.0,"[33, 34, 35, 41, 36, 42, 40, 24, 43, 25, 37, 45, 44, 27, 194, 46]"
+4,2,3,ridge_all_raw,1000.0,[]
+4,2,3,pls_all_raw,2.0,[]
+4,2,3,pca_ols_raw,10.0,[]
+4,2,3,ridge_all_residual,10000.0,[]
+4,2,3,pls_all_residual,2.0,[]
+4,2,3,pca_ols_residual,5.0,[]
+4,2,3,ridge_8_residual,1.0,"[67, 102, 101, 93, 94, 110, 109, 103]"
+4,2,3,ridge_16_residual,1.0,"[67, 102, 101, 93, 94, 110, 109, 103, 95, 86, 92, 87, 85, 249, 248, 111]"
+4,3,1,ridge_all_raw,10000.0,[]
+4,3,1,pls_all_raw,40.0,[]
+4,3,1,pca_ols_raw,5.0,[]
+4,3,1,ridge_all_residual,1000.0,[]
+4,3,1,pls_all_residual,2.0,[]
+4,3,1,pca_ols_residual,5.0,[]
+4,3,1,ridge_8_residual,10000.0,"[64, 65, 311, 40, 301, 88, 96, 262]"
+4,3,1,ridge_16_residual,10000.0,"[64, 65, 311, 40, 301, 88, 96, 262, 72, 259, 48, 263, 66, 302, 56, 260]"
+4,3,2,ridge_all_raw,1.0,[]
+4,3,2,pls_all_raw,20.0,[]
+4,3,2,pca_ols_raw,20.0,[]
+4,3,2,ridge_all_residual,1000.0,[]
+4,3,2,pls_all_residual,5.0,[]
+4,3,2,pca_ols_residual,150.0,[]
+4,3,2,ridge_8_residual,10000.0,"[47, 276, 263, 259, 285, 273, 272, 262]"
+4,3,2,ridge_16_residual,1.0,"[47, 276, 263, 259, 285, 273, 272, 262, 288, 264, 284, 271, 260, 299, 258, 289]"
+4,3,3,ridge_all_raw,1.0,[]
+4,3,3,pls_all_raw,20.0,[]
+4,3,3,pca_ols_raw,50.0,[]
+4,3,3,ridge_all_residual,10000.0,[]
+4,3,3,pls_all_residual,80.0,[]
+4,3,3,pca_ols_residual,5.0,[]
+4,3,3,ridge_8_residual,1000.0,"[78, 220, 186, 185, 258, 259, 313, 277]"
+4,3,3,ridge_16_residual,1000.0,"[78, 220, 186, 185, 258, 259, 313, 277, 177, 176, 214, 2, 219, 5, 184, 193]"
+4,4,1,ridge_all_raw,10000.0,[]
+4,4,1,pls_all_raw,2.0,[]
+4,4,1,pca_ols_raw,20.0,[]
+4,4,1,ridge_all_residual,10000.0,[]
+4,4,1,pls_all_residual,2.0,[]
+4,4,1,pca_ols_residual,5.0,[]
+4,4,1,ridge_8_residual,10000.0,"[9, 16, 185, 108, 186, 184, 2, 110]"
+4,4,1,ridge_16_residual,10000.0,"[9, 16, 185, 108, 186, 184, 2, 110, 178, 107, 109, 177, 10, 117, 100, 309]"
+4,4,2,ridge_all_raw,100.0,[]
+4,4,2,pls_all_raw,5.0,[]
+4,4,2,pca_ols_raw,50.0,[]
+4,4,2,ridge_all_residual,1.0,[]
+4,4,2,pls_all_residual,10.0,[]
+4,4,2,pca_ols_residual,150.0,[]
+4,4,2,ridge_8_residual,10000.0,"[99, 83, 105, 276, 285, 123, 275, 259]"
+4,4,2,ridge_16_residual,10000.0,"[99, 83, 105, 276, 285, 123, 275, 259, 260, 96, 286, 277, 258, 261, 284, 302]"
+4,4,3,ridge_all_raw,10.0,[]
+4,4,3,pls_all_raw,5.0,[]
+4,4,3,pca_ols_raw,100.0,[]
+4,4,3,ridge_all_residual,10000.0,[]
+4,4,3,pls_all_residual,2.0,[]
+4,4,3,pca_ols_residual,5.0,[]
+4,4,3,ridge_8_residual,1.0,"[213, 274, 275, 194, 214, 219, 36, 220]"
+4,4,3,ridge_16_residual,1.0,"[213, 274, 275, 194, 214, 219, 36, 220, 193, 37, 39, 195, 261, 38, 35, 240]"
+4,5,1,ridge_all_raw,100.0,[]
+4,5,1,pls_all_raw,2.0,[]
+4,5,1,pca_ols_raw,50.0,[]
+4,5,1,ridge_all_residual,100.0,[]
+4,5,1,pls_all_residual,5.0,[]
+4,5,1,pca_ols_residual,10.0,[]
+4,5,1,ridge_8_residual,1000.0,"[39, 24, 25, 16, 31, 106, 17, 8]"
+4,5,1,ridge_16_residual,1000.0,"[39, 24, 25, 16, 31, 106, 17, 8, 64, 48, 56, 248, 0, 26, 9, 184]"
+4,5,2,ridge_all_raw,10.0,[]
+4,5,2,pls_all_raw,10.0,[]
+4,5,2,pca_ols_raw,50.0,[]
+4,5,2,ridge_all_residual,10000.0,[]
+4,5,2,pls_all_residual,2.0,[]
+4,5,2,pca_ols_residual,5.0,[]
+4,5,2,ridge_8_residual,10000.0,"[259, 258, 277, 276, 32, 257, 284, 278]"
+4,5,2,ridge_16_residual,10000.0,"[259, 258, 277, 276, 32, 257, 284, 278, 260, 100, 283, 110, 285, 256, 279, 305]"
+4,5,3,ridge_all_raw,0.1,[]
+4,5,3,pls_all_raw,40.0,[]
+4,5,3,pca_ols_raw,100.0,[]
+4,5,3,ridge_all_residual,10000.0,[]
+4,5,3,pls_all_residual,2.0,[]
+4,5,3,pca_ols_residual,100.0,[]
+4,5,3,ridge_8_residual,10.0,"[239, 194, 33, 213, 220, 212, 193, 195]"
+4,5,3,ridge_16_residual,10.0,"[239, 194, 33, 213, 220, 212, 193, 195, 221, 238, 44, 214, 240, 42, 43, 38]"
+4,6,1,ridge_all_raw,1000.0,[]
+4,6,1,pls_all_raw,2.0,[]
+4,6,1,pca_ols_raw,100.0,[]
+4,6,1,ridge_all_residual,1000.0,[]
+4,6,1,pls_all_residual,2.0,[]
+4,6,1,pca_ols_residual,50.0,[]
+4,6,1,ridge_8_residual,10000.0,"[84, 186, 106, 187, 185, 312, 181, 2]"
+4,6,1,ridge_16_residual,10000.0,"[84, 186, 106, 187, 185, 312, 181, 2, 182, 3, 123, 180, 183, 188, 4, 8]"
+4,6,2,ridge_all_raw,0.1,[]
+4,6,2,pls_all_raw,40.0,[]
+4,6,2,pca_ols_raw,150.0,[]
+4,6,2,ridge_all_residual,10000.0,[]
+4,6,2,pls_all_residual,2.0,[]
+4,6,2,pca_ols_residual,5.0,[]
+4,6,2,ridge_8_residual,10000.0,"[186, 206, 187, 228, 185, 231, 201, 183]"
+4,6,2,ridge_16_residual,10000.0,"[186, 206, 187, 228, 185, 231, 201, 183, 205, 177, 227, 64, 176, 178, 202, 232]"
+4,6,3,ridge_all_raw,0.1,[]
+4,6,3,pls_all_raw,40.0,[]
+4,6,3,pca_ols_raw,20.0,[]
+4,6,3,ridge_all_residual,10000.0,[]
+4,6,3,pls_all_residual,2.0,[]
+4,6,3,pca_ols_residual,20.0,[]
+4,6,3,ridge_8_residual,10000.0,"[239, 245, 0, 31, 246, 8, 84, 99]"
+4,6,3,ridge_16_residual,10000.0,"[239, 245, 0, 31, 246, 8, 84, 99, 312, 249, 202, 201, 206, 248, 207, 200]"
+4,7,1,ridge_all_raw,100.0,[]
+4,7,1,pls_all_raw,2.0,[]
+4,7,1,pca_ols_raw,100.0,[]
+4,7,1,ridge_all_residual,10000.0,[]
+4,7,1,pls_all_residual,2.0,[]
+4,7,1,pca_ols_residual,5.0,[]
+4,7,1,ridge_8_residual,10000.0,"[89, 90, 88, 82, 91, 97, 95, 94]"
+4,7,1,ridge_16_residual,10000.0,"[89, 90, 88, 82, 91, 97, 95, 94, 98, 101, 102, 87, 103, 96, 93, 86]"
+4,7,2,ridge_all_raw,10000.0,[]
+4,7,2,pls_all_raw,20.0,[]
+4,7,2,pca_ols_raw,5.0,[]
+4,7,2,ridge_all_residual,10000.0,[]
+4,7,2,pls_all_residual,10.0,[]
+4,7,2,pca_ols_residual,150.0,[]
+4,7,2,ridge_8_residual,10000.0,"[228, 205, 206, 227, 231, 229, 204, 232]"
+4,7,2,ridge_16_residual,10000.0,"[228, 205, 206, 227, 231, 229, 204, 232, 230, 203, 201, 202, 280, 256, 254, 255]"
+4,7,3,ridge_all_raw,100.0,[]
+4,7,3,pls_all_raw,5.0,[]
+4,7,3,pca_ols_raw,150.0,[]
+4,7,3,ridge_all_residual,100.0,[]
+4,7,3,pls_all_residual,5.0,[]
+4,7,3,pca_ols_residual,50.0,[]
+4,7,3,ridge_8_residual,1.0,"[24, 16, 91, 18, 93, 103, 38, 19]"
+4,7,3,ridge_16_residual,10.0,"[24, 16, 91, 18, 93, 103, 38, 19, 26, 95, 101, 27, 17, 37, 94, 264]"
+5,1,1,ridge_all_raw,1.0,[]
+5,1,1,pls_all_raw,20.0,[]
+5,1,1,pca_ols_raw,10.0,[]
+5,1,1,ridge_all_residual,100.0,[]
+5,1,1,pls_all_residual,2.0,[]
+5,1,1,pca_ols_residual,10.0,[]
+5,1,1,ridge_8_residual,10.0,"[277, 258, 284, 259, 303, 276, 257, 285]"
+5,1,1,ridge_16_residual,100.0,"[277, 258, 284, 259, 303, 276, 257, 285, 143, 142, 310, 278, 134, 135, 119, 304]"
+5,1,2,ridge_all_raw,100.0,[]
+5,1,2,pls_all_raw,5.0,[]
+5,1,2,pca_ols_raw,20.0,[]
+5,1,2,ridge_all_residual,1000.0,[]
+5,1,2,pls_all_residual,5.0,[]
+5,1,2,pca_ols_residual,5.0,[]
+5,1,2,ridge_8_residual,100.0,"[98, 97, 143, 93, 135, 111, 85, 119]"
+5,1,2,ridge_16_residual,100.0,"[98, 97, 143, 93, 135, 111, 85, 119, 142, 103, 92, 151, 313, 110, 102, 104]"
+5,1,3,ridge_all_raw,1.0,[]
+5,1,3,pls_all_raw,40.0,[]
+5,1,3,pca_ols_raw,5.0,[]
+5,1,3,ridge_all_residual,10000.0,[]
+5,1,3,pls_all_residual,2.0,[]
+5,1,3,pca_ols_residual,5.0,[]
+5,1,3,ridge_8_residual,10000.0,"[251, 250, 256, 15, 235, 234, 224, 203]"
+5,1,3,ridge_16_residual,10000.0,"[251, 250, 256, 15, 235, 234, 224, 203, 202, 225, 249, 23, 204, 279, 205, 280]"
+5,2,2,ridge_all_raw,1000.0,[]
+5,2,2,pls_all_raw,80.0,[]
+5,2,2,pca_ols_raw,20.0,[]
+5,2,2,ridge_all_residual,10000.0,[]
+5,2,2,pls_all_residual,2.0,[]
+5,2,2,pca_ols_residual,5.0,[]
+5,2,2,ridge_8_residual,10000.0,"[193, 215, 214, 192, 125, 218, 229, 203]"
+5,2,2,ridge_16_residual,10.0,"[193, 215, 214, 192, 125, 218, 229, 203, 204, 228, 205, 219, 281, 306, 202, 115]"
+5,2,3,ridge_all_raw,10.0,[]
+5,2,3,pls_all_raw,10.0,[]
+5,2,3,pca_ols_raw,10.0,[]
+5,2,3,ridge_all_residual,10000.0,[]
+5,2,3,pls_all_residual,2.0,[]
+5,2,3,pca_ols_residual,10.0,[]
+5,2,3,ridge_8_residual,10000.0,"[303, 310, 304, 309, 308, 305, 302, 311]"
+5,2,3,ridge_16_residual,10000.0,"[303, 310, 304, 309, 308, 305, 302, 311, 283, 307, 126, 282, 125, 256, 141, 285]"
+5,3,1,ridge_all_raw,1.0,[]
+5,3,1,pls_all_raw,10.0,[]
+5,3,1,pca_ols_raw,5.0,[]
+5,3,1,ridge_all_residual,10000.0,[]
+5,3,1,pls_all_residual,2.0,[]
+5,3,1,pca_ols_residual,5.0,[]
+5,3,1,ridge_8_residual,10000.0,"[195, 238, 221, 212, 213, 220, 194, 196]"
+5,3,1,ridge_16_residual,10000.0,"[195, 238, 221, 212, 213, 220, 194, 196, 247, 239, 246, 214, 193, 219, 211, 240]"
+5,3,2,ridge_all_raw,10000.0,[]
+5,3,2,pls_all_raw,20.0,[]
+5,3,2,pca_ols_raw,5.0,[]
+5,3,2,ridge_all_residual,10000.0,[]
+5,3,2,pls_all_residual,2.0,[]
+5,3,2,pca_ols_residual,5.0,[]
+5,3,2,ridge_8_residual,10000.0,"[257, 284, 277, 258, 303, 285, 87, 80]"
+5,3,2,ridge_16_residual,10000.0,"[257, 284, 277, 258, 303, 285, 87, 80, 278, 283, 63, 62, 276, 94, 86, 91]"
+5,3,3,ridge_all_raw,100.0,[]
+5,3,3,pls_all_raw,10.0,[]
+5,3,3,pca_ols_raw,100.0,[]
+5,3,3,ridge_all_residual,1000.0,[]
+5,3,3,pls_all_residual,2.0,[]
+5,3,3,pca_ols_residual,50.0,[]
+5,3,3,ridge_8_residual,10000.0,"[257, 258, 278, 284, 277, 259, 303, 224]"
+5,3,3,ridge_16_residual,10000.0,"[257, 258, 278, 284, 277, 259, 303, 224, 235, 223, 276, 236, 310, 250, 234, 260]"
+5,4,1,ridge_all_raw,10.0,[]
+5,4,1,pls_all_raw,5.0,[]
+5,4,1,pca_ols_raw,50.0,[]
+5,4,1,ridge_all_residual,10000.0,[]
+5,4,1,pls_all_residual,20.0,[]
+5,4,1,pca_ols_residual,50.0,[]
+5,4,1,ridge_8_residual,10000.0,"[96, 97, 94, 86, 98, 316, 91, 87]"
+5,4,1,ridge_16_residual,10000.0,"[96, 97, 94, 86, 98, 316, 91, 87, 289, 315, 95, 104, 90, 107, 85, 298]"
+5,4,2,ridge_all_raw,1.0,[]
+5,4,2,pls_all_raw,40.0,[]
+5,4,2,pca_ols_raw,20.0,[]
+5,4,2,ridge_all_residual,10000.0,[]
+5,4,2,pls_all_residual,5.0,[]
+5,4,2,pca_ols_residual,5.0,[]
+5,4,2,ridge_8_residual,1000.0,"[256, 67, 97, 98, 94, 93, 20, 279]"
+5,4,2,ridge_16_residual,1000.0,"[256, 67, 97, 98, 94, 93, 20, 279, 90, 95, 19, 92, 101, 107, 86, 96]"
+5,4,3,ridge_all_raw,10.0,[]
+5,4,3,pls_all_raw,10.0,[]
+5,4,3,pca_ols_raw,20.0,[]
+5,4,3,ridge_all_residual,10000.0,[]
+5,4,3,pls_all_residual,2.0,[]
+5,4,3,pca_ols_residual,5.0,[]
+5,4,3,ridge_8_residual,100.0,"[104, 113, 112, 289, 94, 114, 120, 298]"
+5,4,3,ridge_16_residual,100.0,"[104, 113, 112, 289, 94, 114, 120, 298, 96, 122, 39, 95, 97, 18, 121, 288]"
+5,5,1,ridge_all_raw,100.0,[]
+5,5,1,pls_all_raw,5.0,[]
+5,5,1,pca_ols_raw,100.0,[]
+5,5,1,ridge_all_residual,10000.0,[]
+5,5,1,pls_all_residual,2.0,[]
+5,5,1,pca_ols_residual,20.0,[]
+5,5,1,ridge_8_residual,10000.0,"[56, 154, 243, 64, 153, 319, 292, 294]"
+5,5,1,ridge_16_residual,10000.0,"[56, 154, 243, 64, 153, 319, 292, 294, 295, 293, 267, 116, 268, 242, 57, 318]"
+5,5,2,ridge_all_raw,100.0,[]
+5,5,2,pls_all_raw,5.0,[]
+5,5,2,pca_ols_raw,50.0,[]
+5,5,2,ridge_all_residual,10000.0,[]
+5,5,2,pls_all_residual,2.0,[]
+5,5,2,pca_ols_residual,5.0,[]
+5,5,2,ridge_8_residual,100.0,"[20, 13, 21, 12, 225, 252, 19, 234]"
+5,5,2,ridge_16_residual,100.0,"[20, 13, 21, 12, 225, 252, 19, 234, 14, 28, 15, 233, 251, 11, 18, 4]"
+5,5,3,ridge_all_raw,100.0,[]
+5,5,3,pls_all_raw,10.0,[]
+5,5,3,pca_ols_raw,100.0,[]
+5,5,3,ridge_all_residual,100.0,[]
+5,5,3,pls_all_residual,5.0,[]
+5,5,3,pca_ols_residual,5.0,[]
+5,5,3,ridge_8_residual,10000.0,"[26, 27, 17, 128, 18, 137, 120, 129]"
+5,5,3,ridge_16_residual,10000.0,"[26, 27, 17, 128, 18, 137, 120, 129, 136, 121, 33, 9, 138, 16, 112, 25]"
+5,6,1,ridge_all_raw,10000.0,[]
+5,6,1,pls_all_raw,80.0,[]
+5,6,1,pca_ols_raw,50.0,[]
+5,6,1,ridge_all_residual,1000.0,[]
+5,6,1,pls_all_residual,5.0,[]
+5,6,1,pca_ols_residual,20.0,[]
+5,6,1,ridge_8_residual,10000.0,"[28, 21, 208, 20, 225, 15, 14, 234]"
+5,6,1,ridge_16_residual,10000.0,"[28, 21, 208, 20, 225, 15, 14, 234, 226, 8, 9, 13, 185, 1, 233, 2]"
+5,6,2,ridge_all_raw,0.1,[]
+5,6,2,pls_all_raw,40.0,[]
+5,6,2,pca_ols_raw,10.0,[]
+5,6,2,ridge_all_residual,10000.0,[]
+5,6,2,pls_all_residual,2.0,[]
+5,6,2,pca_ols_residual,5.0,[]
+5,6,2,ridge_8_residual,10000.0,"[225, 224, 234, 235, 209, 251, 208, 16]"
+5,6,2,ridge_16_residual,10000.0,"[225, 224, 234, 235, 209, 251, 208, 16, 250, 29, 17, 30, 8, 28, 9, 233]"
+5,6,3,ridge_all_raw,1.0,[]
+5,6,3,pls_all_raw,20.0,[]
+5,6,3,pca_ols_raw,5.0,[]
+5,6,3,ridge_all_residual,10000.0,[]
+5,6,3,pls_all_residual,2.0,[]
+5,6,3,pca_ols_residual,5.0,[]
+5,6,3,ridge_8_residual,1000.0,"[19, 20, 18, 11, 126, 12, 10, 27]"
+5,6,3,ridge_16_residual,1000.0,"[19, 20, 18, 11, 126, 12, 10, 27, 21, 28, 26, 13, 29, 208, 257, 9]"
+5,7,1,ridge_all_raw,1000.0,[]
+5,7,1,pls_all_raw,2.0,[]
+5,7,1,pca_ols_raw,5.0,[]
+5,7,1,ridge_all_residual,10000.0,[]
+5,7,1,pls_all_residual,2.0,[]
+5,7,1,pca_ols_residual,5.0,[]
+5,7,1,ridge_8_residual,10000.0,"[80, 29, 196, 195, 21, 14, 13, 20]"
+5,7,1,ridge_16_residual,10000.0,"[80, 29, 196, 195, 21, 14, 13, 20, 211, 28, 212, 88, 81, 73, 23, 12]"
+5,7,2,ridge_all_raw,1000.0,[]
+5,7,2,pls_all_raw,2.0,[]
+5,7,2,pca_ols_raw,10.0,[]
+5,7,2,ridge_all_residual,10000.0,[]
+5,7,2,pls_all_residual,2.0,[]
+5,7,2,pca_ols_residual,5.0,[]
+5,7,2,ridge_8_residual,10000.0,"[84, 19, 20, 234, 11, 18, 225, 126]"
+5,7,2,ridge_16_residual,10000.0,"[84, 19, 20, 234, 11, 18, 225, 126, 27, 251, 12, 10, 28, 233, 208, 252]"
+5,7,3,ridge_all_raw,1.0,[]
+5,7,3,pls_all_raw,40.0,[]
+5,7,3,pca_ols_raw,50.0,[]
+5,7,3,ridge_all_residual,10000.0,[]
+5,7,3,pls_all_residual,2.0,[]
+5,7,3,pca_ols_residual,5.0,[]
+5,7,3,ridge_8_residual,10000.0,"[264, 256, 279, 257, 280, 263, 278, 271]"
+5,7,3,ridge_16_residual,10000.0,"[264, 256, 279, 257, 280, 263, 278, 271, 282, 208, 281, 203, 226, 199, 272, 204]"
+6,1,1,ridge_all_raw,10000.0,[]
+6,1,1,pls_all_raw,2.0,[]
+6,1,1,pca_ols_raw,50.0,[]
+6,1,1,ridge_all_residual,10000.0,[]
+6,1,1,pls_all_residual,5.0,[]
+6,1,1,pca_ols_residual,10.0,[]
+6,1,1,ridge_8_residual,10000.0,"[69, 246, 249, 193, 240, 219, 248, 245]"
+6,1,1,ridge_16_residual,10000.0,"[69, 246, 249, 193, 240, 219, 248, 245, 138, 239, 63, 250, 194, 139, 247, 220]"
+6,1,2,ridge_all_raw,10000.0,[]
+6,1,2,pls_all_raw,2.0,[]
+6,1,2,pca_ols_raw,10.0,[]
+6,1,2,ridge_all_residual,10000.0,[]
+6,1,2,pls_all_residual,2.0,[]
+6,1,2,pca_ols_residual,10.0,[]
+6,1,2,ridge_8_residual,10000.0,"[83, 210, 195, 196, 262, 194, 211, 212]"
+6,1,2,ridge_16_residual,10000.0,"[83, 210, 195, 196, 262, 194, 211, 212, 260, 259, 193, 223, 213, 263, 261, 209]"
+6,1,3,ridge_all_raw,10000.0,[]
+6,1,3,pls_all_raw,2.0,[]
+6,1,3,pca_ols_raw,20.0,[]
+6,1,3,ridge_all_residual,1000.0,[]
+6,1,3,pls_all_residual,2.0,[]
+6,1,3,pca_ols_residual,10.0,[]
+6,1,3,ridge_8_residual,100.0,"[137, 136, 138, 128, 129, 145, 99, 144]"
+6,1,3,ridge_16_residual,1000.0,"[137, 136, 138, 128, 129, 145, 99, 144, 105, 257, 100, 130, 116, 272, 139, 123]"
+6,2,2,ridge_all_raw,1000.0,[]
+6,2,2,pls_all_raw,5.0,[]
+6,2,2,pca_ols_raw,5.0,[]
+6,2,2,ridge_all_residual,10000.0,[]
+6,2,2,pls_all_residual,2.0,[]
+6,2,2,pca_ols_residual,100.0,[]
+6,2,2,ridge_8_residual,0.1,"[100, 110, 118, 126, 119, 127, 111, 134]"
+6,2,2,ridge_16_residual,0.1,"[100, 110, 118, 126, 119, 127, 111, 134, 102, 135, 103, 109, 125, 101, 117, 25]"
+6,2,3,ridge_all_raw,10.0,[]
+6,2,3,pls_all_raw,10.0,[]
+6,2,3,pca_ols_raw,50.0,[]
+6,2,3,ridge_all_residual,1000.0,[]
+6,2,3,pls_all_residual,2.0,[]
+6,2,3,pca_ols_residual,5.0,[]
+6,2,3,ridge_8_residual,0.01,"[230, 278, 229, 204, 255, 280, 205, 228]"
+6,2,3,ridge_16_residual,10000.0,"[230, 278, 229, 204, 255, 280, 205, 228, 256, 231, 279, 281, 203, 307, 282, 183]"
+6,3,1,ridge_all_raw,1.0,[]
+6,3,1,pls_all_raw,2.0,[]
+6,3,1,pca_ols_raw,20.0,[]
+6,3,1,ridge_all_residual,0.1,[]
+6,3,1,pls_all_residual,40.0,[]
+6,3,1,pca_ols_residual,5.0,[]
+6,3,1,ridge_8_residual,10000.0,"[138, 146, 139, 137, 147, 128, 136, 145]"
+6,3,1,ridge_16_residual,0.1,"[138, 146, 139, 137, 147, 128, 136, 145, 129, 140, 144, 130, 148, 131, 154, 153]"
+6,3,2,ridge_all_raw,1.0,[]
+6,3,2,pls_all_raw,40.0,[]
+6,3,2,pca_ols_raw,150.0,[]
+6,3,2,ridge_all_residual,10000.0,[]
+6,3,2,pls_all_residual,2.0,[]
+6,3,2,pca_ols_residual,5.0,[]
+6,3,2,ridge_8_residual,10000.0,"[79, 87, 95, 86, 94, 78, 103, 110]"
+6,3,2,ridge_16_residual,10000.0,"[79, 87, 95, 86, 94, 78, 103, 110, 297, 111, 85, 284, 310, 102, 319, 119]"
+6,3,3,ridge_all_raw,0.1,[]
+6,3,3,pls_all_raw,20.0,[]
+6,3,3,pca_ols_raw,5.0,[]
+6,3,3,ridge_all_residual,1000.0,[]
+6,3,3,pls_all_residual,2.0,[]
+6,3,3,pca_ols_residual,5.0,[]
+6,3,3,ridge_8_residual,10000.0,"[224, 208, 209, 199, 225, 198, 105, 200]"
+6,3,3,ridge_16_residual,10000.0,"[224, 208, 209, 199, 225, 198, 105, 200, 116, 207, 106, 235, 226, 234, 201, 206]"
+6,4,1,ridge_all_raw,10000.0,[]
+6,4,1,pls_all_raw,2.0,[]
+6,4,1,pca_ols_raw,20.0,[]
+6,4,1,ridge_all_residual,1.0,[]
+6,4,1,pls_all_residual,20.0,[]
+6,4,1,pca_ols_residual,150.0,[]
+6,4,1,ridge_8_residual,0.1,"[250, 88, 56, 251, 48, 95, 234, 226]"
+6,4,1,ridge_16_residual,1.0,"[250, 88, 56, 251, 48, 95, 234, 226, 87, 80, 201, 96, 49, 81, 50, 51]"
+6,4,2,ridge_all_raw,1.0,[]
+6,4,2,pls_all_raw,5.0,[]
+6,4,2,pca_ols_raw,5.0,[]
+6,4,2,ridge_all_residual,10000.0,[]
+6,4,2,pls_all_residual,2.0,[]
+6,4,2,pca_ols_residual,5.0,[]
+6,4,2,ridge_8_residual,10000.0,"[295, 318, 317, 292, 269, 270, 268, 242]"
+6,4,2,ridge_16_residual,10000.0,"[295, 318, 317, 292, 269, 270, 268, 242, 296, 291, 267, 217, 266, 294, 319, 293]"
+6,4,3,ridge_all_raw,0.01,[]
+6,4,3,pls_all_raw,80.0,[]
+6,4,3,pca_ols_raw,150.0,[]
+6,4,3,ridge_all_residual,10000.0,[]
+6,4,3,pls_all_residual,5.0,[]
+6,4,3,pca_ols_residual,5.0,[]
+6,4,3,ridge_8_residual,10000.0,"[49, 48, 53, 45, 52, 50, 46, 57]"
+6,4,3,ridge_16_residual,10000.0,"[49, 48, 53, 45, 52, 50, 46, 57, 44, 56, 54, 51, 58, 40, 37, 41]"
+6,5,1,ridge_all_raw,100.0,[]
+6,5,1,pls_all_raw,5.0,[]
+6,5,1,pca_ols_raw,100.0,[]
+6,5,1,ridge_all_residual,10000.0,[]
+6,5,1,pls_all_residual,2.0,[]
+6,5,1,pca_ols_residual,150.0,[]
+6,5,1,ridge_8_residual,10000.0,"[257, 156, 256, 278, 279, 164, 155, 159]"
+6,5,1,ridge_16_residual,10000.0,"[257, 156, 256, 278, 279, 164, 155, 159, 163, 157, 154, 148, 167, 283, 147, 309]"
+6,5,2,ridge_all_raw,10.0,[]
+6,5,2,pls_all_raw,10.0,[]
+6,5,2,pca_ols_raw,150.0,[]
+6,5,2,ridge_all_residual,1.0,[]
+6,5,2,pls_all_residual,20.0,[]
+6,5,2,pca_ols_residual,150.0,[]
+6,5,2,ridge_8_residual,10000.0,"[129, 128, 136, 137, 130, 144, 167, 138]"
+6,5,2,ridge_16_residual,10000.0,"[129, 128, 136, 137, 130, 144, 167, 138, 139, 140, 159, 157, 145, 149, 152, 131]"
+6,5,3,ridge_all_raw,1000.0,[]
+6,5,3,pls_all_raw,2.0,[]
+6,5,3,pca_ols_raw,5.0,[]
+6,5,3,ridge_all_residual,10000.0,[]
+6,5,3,pls_all_residual,2.0,[]
+6,5,3,pca_ols_residual,20.0,[]
+6,5,3,ridge_8_residual,10000.0,"[261, 260, 274, 262, 275, 273, 263, 287]"
+6,5,3,ridge_16_residual,10000.0,"[261, 260, 274, 262, 275, 273, 263, 287, 252, 286, 272, 264, 288, 253, 251, 300]"
+6,6,1,ridge_all_raw,1000.0,[]
+6,6,1,pls_all_raw,5.0,[]
+6,6,1,pca_ols_raw,20.0,[]
+6,6,1,ridge_all_residual,10000.0,[]
+6,6,1,pls_all_residual,2.0,[]
+6,6,1,pca_ols_residual,10.0,[]
+6,6,1,ridge_8_residual,10.0,"[283, 304, 159, 309, 167, 158, 277, 303]"
+6,6,1,ridge_16_residual,10.0,"[283, 304, 159, 309, 167, 158, 277, 303, 166, 310, 155, 278, 154, 156, 157, 305]"
+6,6,2,ridge_all_raw,1000.0,[]
+6,6,2,pls_all_raw,2.0,[]
+6,6,2,pca_ols_raw,150.0,[]
+6,6,2,ridge_all_residual,1000.0,[]
+6,6,2,pls_all_residual,2.0,[]
+6,6,2,pca_ols_residual,10.0,[]
+6,6,2,ridge_8_residual,10.0,"[152, 144, 153, 162, 154, 146, 128, 161]"
+6,6,2,ridge_16_residual,10.0,"[152, 144, 153, 162, 154, 146, 128, 161, 136, 155, 145, 147, 129, 151, 239, 120]"
+6,6,3,ridge_all_raw,1.0,[]
+6,6,3,pls_all_raw,20.0,[]
+6,6,3,pca_ols_raw,10.0,[]
+6,6,3,ridge_all_residual,10000.0,[]
+6,6,3,pls_all_residual,2.0,[]
+6,6,3,pca_ols_residual,50.0,[]
+6,6,3,ridge_8_residual,10000.0,"[136, 128, 137, 144, 139, 145, 138, 129]"
+6,6,3,ridge_16_residual,10000.0,"[136, 128, 137, 144, 139, 145, 138, 129, 146, 140, 147, 130, 131, 148, 153, 152]"
+6,7,1,ridge_all_raw,1.0,[]
+6,7,1,pls_all_raw,20.0,[]
+6,7,1,pca_ols_raw,100.0,[]
+6,7,1,ridge_all_residual,1000.0,[]
+6,7,1,pls_all_residual,5.0,[]
+6,7,1,pca_ols_residual,10.0,[]
+6,7,1,ridge_8_residual,10000.0,"[65, 209, 208, 197, 57, 198, 64, 224]"
+6,7,1,ridge_16_residual,10000.0,"[65, 209, 208, 197, 57, 198, 64, 224, 194, 199, 223, 225, 207, 212, 193, 219]"
+6,7,2,ridge_all_raw,0.01,[]
+6,7,2,pls_all_raw,80.0,[]
+6,7,2,pca_ols_raw,10.0,[]
+6,7,2,ridge_all_residual,1000.0,[]
+6,7,2,pls_all_residual,5.0,[]
+6,7,2,pca_ols_residual,5.0,[]
+6,7,2,ridge_8_residual,10000.0,"[210, 202, 201, 205, 105, 167, 199, 203]"
+6,7,2,ridge_16_residual,10000.0,"[210, 202, 201, 205, 105, 167, 199, 203, 308, 155, 159, 224, 156, 154, 157, 206]"
+6,7,3,ridge_all_raw,100.0,[]
+6,7,3,pls_all_raw,5.0,[]
+6,7,3,pca_ols_raw,150.0,[]
+6,7,3,ridge_all_residual,10000.0,[]
+6,7,3,pls_all_residual,2.0,[]
+6,7,3,pca_ols_residual,5.0,[]
+6,7,3,ridge_8_residual,10000.0,"[128, 129, 138, 139, 137, 136, 130, 131]"
+6,7,3,ridge_16_residual,10000.0,"[128, 129, 138, 139, 137, 136, 130, 131, 145, 146, 140, 144, 147, 148, 154, 153]"
+7,1,1,ridge_all_raw,10000.0,[]
+7,1,1,pls_all_raw,2.0,[]
+7,1,1,pca_ols_raw,50.0,[]
+7,1,1,ridge_all_residual,10000.0,[]
+7,1,1,pls_all_residual,2.0,[]
+7,1,1,pca_ols_residual,20.0,[]
+7,1,1,ridge_8_residual,10000.0,"[56, 57, 49, 0, 3, 168, 2, 185]"
+7,1,1,ridge_16_residual,10000.0,"[56, 57, 49, 0, 3, 168, 2, 185, 177, 11, 184, 186, 169, 187, 1, 188]"
+7,1,2,ridge_all_raw,10.0,[]
+7,1,2,pls_all_raw,10.0,[]
+7,1,2,pca_ols_raw,100.0,[]
+7,1,2,ridge_all_residual,100.0,[]
+7,1,2,pls_all_residual,2.0,[]
+7,1,2,pca_ols_residual,10.0,[]
+7,1,2,ridge_8_residual,100.0,"[277, 259, 260, 284, 275, 258, 278, 276]"
+7,1,2,ridge_16_residual,100.0,"[277, 259, 260, 284, 275, 258, 278, 276, 304, 283, 309, 205, 12, 201, 204, 303]"
+7,1,3,ridge_all_raw,10000.0,[]
+7,1,3,pls_all_raw,2.0,[]
+7,1,3,pca_ols_raw,5.0,[]
+7,1,3,ridge_all_residual,10000.0,[]
+7,1,3,pls_all_residual,2.0,[]
+7,1,3,pca_ols_residual,5.0,[]
+7,1,3,ridge_8_residual,10000.0,"[13, 56, 257, 45, 256, 12, 46, 282]"
+7,1,3,ridge_16_residual,10000.0,"[13, 56, 257, 45, 256, 12, 46, 282, 279, 53, 57, 14, 44, 278, 283, 4]"
+7,2,2,ridge_all_raw,1000.0,[]
+7,2,2,pls_all_raw,2.0,[]
+7,2,2,pca_ols_raw,150.0,[]
+7,2,2,ridge_all_residual,10000.0,[]
+7,2,2,pls_all_residual,2.0,[]
+7,2,2,pca_ols_residual,50.0,[]
+7,2,2,ridge_8_residual,1000.0,"[170, 96, 44, 249, 50, 236, 57, 49]"
+7,2,2,ridge_16_residual,1000.0,"[170, 96, 44, 249, 50, 236, 57, 49, 195, 36, 194, 47, 113, 55, 43, 104]"
+7,2,3,ridge_all_raw,1000.0,[]
+7,2,3,pls_all_raw,2.0,[]
+7,2,3,pca_ols_raw,20.0,[]
+7,2,3,ridge_all_residual,10000.0,[]
+7,2,3,pls_all_residual,2.0,[]
+7,2,3,pca_ols_residual,150.0,[]
+7,2,3,ridge_8_residual,10.0,"[209, 196, 195, 249, 210, 236, 248, 120]"
+7,2,3,ridge_16_residual,10.0,"[209, 196, 195, 249, 210, 236, 248, 120, 250, 223, 224, 113, 235, 237, 56, 47]"
+7,3,1,ridge_all_raw,10000.0,[]
+7,3,1,pls_all_raw,2.0,[]
+7,3,1,pca_ols_raw,20.0,[]
+7,3,1,ridge_all_residual,10000.0,[]
+7,3,1,pls_all_residual,2.0,[]
+7,3,1,pca_ols_residual,10.0,[]
+7,3,1,ridge_8_residual,1000.0,"[117, 7, 95, 302, 311, 208, 29, 30]"
+7,3,1,ridge_16_residual,10000.0,"[117, 7, 95, 302, 311, 208, 29, 30, 119, 52, 207, 285, 115, 284, 283, 27]"
+7,3,2,ridge_all_raw,100.0,[]
+7,3,2,pls_all_raw,5.0,[]
+7,3,2,pca_ols_raw,5.0,[]
+7,3,2,ridge_all_residual,10000.0,[]
+7,3,2,pls_all_residual,5.0,[]
+7,3,2,pca_ols_residual,20.0,[]
+7,3,2,ridge_8_residual,10000.0,"[256, 278, 257, 115, 280, 277, 279, 281]"
+7,3,2,ridge_16_residual,10000.0,"[256, 278, 257, 115, 280, 277, 279, 281, 283, 306, 32, 284, 308, 307, 304, 258]"
+7,3,3,ridge_all_raw,1.0,[]
+7,3,3,pls_all_raw,40.0,[]
+7,3,3,pca_ols_raw,10.0,[]
+7,3,3,ridge_all_residual,10000.0,[]
+7,3,3,pls_all_residual,2.0,[]
+7,3,3,pca_ols_residual,5.0,[]
+7,3,3,ridge_8_residual,10000.0,"[259, 56, 260, 195, 196, 276, 212, 275]"
+7,3,3,ridge_16_residual,10000.0,"[259, 56, 260, 195, 196, 276, 212, 275, 221, 247, 318, 55, 211, 194, 47, 238]"
+7,4,1,ridge_all_raw,10000.0,[]
+7,4,1,pls_all_raw,2.0,[]
+7,4,1,pca_ols_raw,5.0,[]
+7,4,1,ridge_all_residual,100.0,[]
+7,4,1,pls_all_residual,5.0,[]
+7,4,1,pca_ols_residual,100.0,[]
+7,4,1,ridge_8_residual,10000.0,"[217, 216, 242, 286, 260, 218, 275, 197]"
+7,4,1,ridge_16_residual,10000.0,"[217, 216, 242, 286, 260, 218, 275, 197, 196, 215, 88, 301, 276, 241, 243, 192]"
+7,4,2,ridge_all_raw,10000.0,[]
+7,4,2,pls_all_raw,2.0,[]
+7,4,2,pca_ols_raw,100.0,[]
+7,4,2,ridge_all_residual,10000.0,[]
+7,4,2,pls_all_residual,2.0,[]
+7,4,2,pca_ols_residual,5.0,[]
+7,4,2,ridge_8_residual,10000.0,"[199, 256, 160, 257, 198, 23, 279, 278]"
+7,4,2,ridge_16_residual,10000.0,"[199, 256, 160, 257, 198, 23, 279, 278, 304, 280, 282, 283, 310, 309, 305, 281]"
+7,4,3,ridge_all_raw,1000.0,[]
+7,4,3,pls_all_raw,2.0,[]
+7,4,3,pca_ols_raw,20.0,[]
+7,4,3,ridge_all_residual,10000.0,[]
+7,4,3,pls_all_residual,2.0,[]
+7,4,3,pca_ols_residual,5.0,[]
+7,4,3,ridge_8_residual,10000.0,"[91, 256, 257, 279, 280, 278, 155, 281]"
+7,4,3,ridge_16_residual,10000.0,"[91, 256, 257, 279, 280, 278, 155, 281, 282, 147, 305, 156, 148, 306, 203, 283]"
+7,5,1,ridge_all_raw,10000.0,[]
+7,5,1,pls_all_raw,2.0,[]
+7,5,1,pca_ols_raw,5.0,[]
+7,5,1,ridge_all_residual,10000.0,[]
+7,5,1,pls_all_residual,2.0,[]
+7,5,1,pca_ols_residual,5.0,[]
+7,5,1,ridge_8_residual,1000.0,"[24, 25, 26, 28, 27, 34, 19, 35]"
+7,5,1,ridge_16_residual,1000.0,"[24, 25, 26, 28, 27, 34, 19, 35, 44, 29, 16, 12, 37, 176, 13, 36]"
+7,5,2,ridge_all_raw,1.0,[]
+7,5,2,pls_all_raw,40.0,[]
+7,5,2,pca_ols_raw,5.0,[]
+7,5,2,ridge_all_residual,10000.0,[]
+7,5,2,pls_all_residual,2.0,[]
+7,5,2,pca_ols_residual,5.0,[]
+7,5,2,ridge_8_residual,10000.0,"[247, 23, 248, 319, 39, 31, 238, 249]"
+7,5,2,ridge_16_residual,10000.0,"[247, 23, 248, 319, 39, 31, 238, 249, 250, 318, 237, 246, 295, 296, 47, 294]"
+7,5,3,ridge_all_raw,1.0,[]
+7,5,3,pls_all_raw,20.0,[]
+7,5,3,pca_ols_raw,20.0,[]
+7,5,3,ridge_all_residual,10000.0,[]
+7,5,3,pls_all_residual,20.0,[]
+7,5,3,pca_ols_residual,5.0,[]
+7,5,3,ridge_8_residual,10000.0,"[23, 22, 274, 15, 200, 207, 251, 201]"
+7,5,3,ridge_16_residual,10000.0,"[23, 22, 274, 15, 200, 207, 251, 201, 234, 206, 226, 233, 208, 225, 166, 252]"
+7,6,1,ridge_all_raw,10000.0,[]
+7,6,1,pls_all_raw,2.0,[]
+7,6,1,pca_ols_raw,5.0,[]
+7,6,1,ridge_all_residual,10000.0,[]
+7,6,1,pls_all_residual,2.0,[]
+7,6,1,pca_ols_residual,10.0,[]
+7,6,1,ridge_8_residual,10000.0,"[223, 210, 209, 224, 235, 222, 236, 234]"
+7,6,1,ridge_16_residual,10000.0,"[223, 210, 209, 224, 235, 222, 236, 234, 225, 211, 250, 284, 249, 278, 237, 233]"
+7,6,2,ridge_all_raw,10000.0,[]
+7,6,2,pls_all_raw,2.0,[]
+7,6,2,pca_ols_raw,10.0,[]
+7,6,2,ridge_all_residual,10000.0,[]
+7,6,2,pls_all_residual,2.0,[]
+7,6,2,pca_ols_residual,5.0,[]
+7,6,2,ridge_8_residual,100.0,"[47, 55, 273, 287, 39, 247, 46, 318]"
+7,6,2,ridge_16_residual,100.0,"[47, 55, 273, 287, 39, 247, 46, 318, 44, 319, 54, 274, 262, 198, 272, 197]"
+7,6,3,ridge_all_raw,10000.0,[]
+7,6,3,pls_all_raw,20.0,[]
+7,6,3,pca_ols_raw,50.0,[]
+7,6,3,ridge_all_residual,10000.0,[]
+7,6,3,pls_all_residual,2.0,[]
+7,6,3,pca_ols_residual,5.0,[]
+7,6,3,ridge_8_residual,1000.0,"[47, 46, 56, 135, 45, 39, 42, 44]"
+7,6,3,ridge_16_residual,1000.0,"[47, 46, 56, 135, 45, 39, 42, 44, 51, 43, 55, 16, 144, 19, 37, 38]"
+7,7,1,ridge_all_raw,10000.0,[]
+7,7,1,pls_all_raw,80.0,[]
+7,7,1,pca_ols_raw,10.0,[]
+7,7,1,ridge_all_residual,10000.0,[]
+7,7,1,pls_all_residual,2.0,[]
+7,7,1,pca_ols_residual,10.0,[]
+7,7,1,ridge_8_residual,100.0,"[26, 28, 25, 24, 29, 27, 188, 189]"
+7,7,1,ridge_16_residual,100.0,"[26, 28, 25, 24, 29, 27, 188, 189, 187, 50, 34, 51, 42, 58, 16, 57]"
+7,7,2,ridge_all_raw,10.0,[]
+7,7,2,pls_all_raw,10.0,[]
+7,7,2,pca_ols_raw,150.0,[]
+7,7,2,ridge_all_residual,10000.0,[]
+7,7,2,pls_all_residual,2.0,[]
+7,7,2,pca_ols_residual,5.0,[]
+7,7,2,ridge_8_residual,1.0,"[228, 231, 232, 205, 227, 254, 230, 255]"
+7,7,2,ridge_16_residual,10000.0,"[228, 231, 232, 205, 227, 254, 230, 255, 253, 229, 283, 278, 183, 204, 257, 202]"
+7,7,3,ridge_all_raw,10000.0,[]
+7,7,3,pls_all_raw,5.0,[]
+7,7,3,pca_ols_raw,150.0,[]
+7,7,3,ridge_all_residual,10000.0,[]
+7,7,3,pls_all_residual,2.0,[]
+7,7,3,pca_ols_residual,5.0,[]
+7,7,3,ridge_8_residual,10000.0,"[200, 201, 226, 207, 233, 206, 227, 252]"
+7,7,3,ridge_16_residual,10000.0,"[200, 201, 226, 207, 233, 206, 227, 252, 232, 234, 19, 7, 202, 12, 205, 11]"
+8,1,1,ridge_all_raw,1000.0,[]
+8,1,1,pls_all_raw,2.0,[]
+8,1,1,pca_ols_raw,5.0,[]
+8,1,1,ridge_all_residual,10000.0,[]
+8,1,1,pls_all_residual,2.0,[]
+8,1,1,pca_ols_residual,5.0,[]
+8,1,1,ridge_8_residual,10000.0,"[203, 202, 204, 205, 229, 228, 201, 206]"
+8,1,1,ridge_16_residual,10000.0,"[203, 202, 204, 205, 229, 228, 201, 206, 230, 227, 280, 231, 255, 281, 232, 194]"
+8,1,2,ridge_all_raw,1000.0,[]
+8,1,2,pls_all_raw,2.0,[]
+8,1,2,pca_ols_raw,10.0,[]
+8,1,2,ridge_all_residual,10000.0,[]
+8,1,2,pls_all_residual,5.0,[]
+8,1,2,pca_ols_residual,5.0,[]
+8,1,2,ridge_8_residual,100.0,"[74, 75, 67, 73, 72, 66, 65, 76]"
+8,1,2,ridge_16_residual,100.0,"[74, 75, 67, 73, 72, 66, 65, 76, 82, 64, 81, 68, 80, 317, 77, 58]"
+8,1,3,ridge_all_raw,10.0,[]
+8,1,3,pls_all_raw,5.0,[]
+8,1,3,pca_ols_raw,50.0,[]
+8,1,3,ridge_all_residual,1000.0,[]
+8,1,3,pls_all_residual,2.0,[]
+8,1,3,pca_ols_residual,5.0,[]
+8,1,3,ridge_8_residual,100.0,"[217, 216, 292, 269, 295, 268, 267, 271]"
+8,1,3,ridge_16_residual,100.0,"[217, 216, 292, 269, 295, 268, 267, 271, 291, 293, 270, 263, 215, 296, 242, 318]"
+8,2,2,ridge_all_raw,10.0,[]
+8,2,2,pls_all_raw,10.0,[]
+8,2,2,pca_ols_raw,50.0,[]
+8,2,2,ridge_all_residual,10000.0,[]
+8,2,2,pls_all_residual,2.0,[]
+8,2,2,pca_ols_residual,5.0,[]
+8,2,2,ridge_8_residual,1000.0,"[111, 109, 108, 126, 127, 107, 110, 117]"
+8,2,2,ridge_16_residual,0.1,"[111, 109, 108, 126, 127, 107, 110, 117, 106, 101, 119, 98, 102, 103, 125, 113]"
+8,2,3,ridge_all_raw,1.0,[]
+8,2,3,pls_all_raw,5.0,[]
+8,2,3,pca_ols_raw,20.0,[]
+8,2,3,ridge_all_residual,10000.0,[]
+8,2,3,pls_all_residual,2.0,[]
+8,2,3,pca_ols_residual,5.0,[]
+8,2,3,ridge_8_residual,100.0,"[64, 262, 263, 317, 264, 272, 297, 316]"
+8,2,3,ridge_16_residual,100.0,"[64, 262, 263, 317, 264, 272, 297, 316, 298, 289, 72, 290, 273, 271, 261, 296]"
+8,3,1,ridge_all_raw,0.01,[]
+8,3,1,pls_all_raw,10.0,[]
+8,3,1,pca_ols_raw,20.0,[]
+8,3,1,ridge_all_residual,10000.0,[]
+8,3,1,pls_all_residual,10.0,[]
+8,3,1,pca_ols_residual,5.0,[]
+8,3,1,ridge_8_residual,10000.0,"[84, 105, 118, 200, 201, 206, 207, 99]"
+8,3,1,ridge_16_residual,1.0,"[84, 105, 118, 200, 201, 206, 207, 99, 202, 205, 229, 83, 227, 199, 270, 37]"
+8,3,2,ridge_all_raw,0.01,[]
+8,3,2,pls_all_raw,40.0,[]
+8,3,2,pca_ols_raw,50.0,[]
+8,3,2,ridge_all_residual,10000.0,[]
+8,3,2,pls_all_residual,2.0,[]
+8,3,2,pca_ols_residual,5.0,[]
+8,3,2,ridge_8_residual,10000.0,"[106, 32, 114, 80, 81, 82, 89, 122]"
+8,3,2,ridge_16_residual,10000.0,"[106, 32, 114, 80, 81, 82, 89, 122, 88, 90, 98, 73, 97, 74, 115, 113]"
+8,3,3,ridge_all_raw,1.0,[]
+8,3,3,pls_all_raw,20.0,[]
+8,3,3,pca_ols_raw,150.0,[]
+8,3,3,ridge_all_residual,10000.0,[]
+8,3,3,pls_all_residual,5.0,[]
+8,3,3,pca_ols_residual,5.0,[]
+8,3,3,ridge_8_residual,0.01,"[1, 184, 185, 0, 176, 9, 233, 177]"
+8,3,3,ridge_16_residual,10.0,"[1, 184, 185, 0, 176, 9, 233, 177, 2, 251, 10, 252, 234, 168, 8, 186]"
+8,4,1,ridge_all_raw,1.0,[]
+8,4,1,pls_all_raw,40.0,[]
+8,4,1,pca_ols_raw,5.0,[]
+8,4,1,ridge_all_residual,100.0,[]
+8,4,1,pls_all_residual,5.0,[]
+8,4,1,pca_ols_residual,5.0,[]
+8,4,1,ridge_8_residual,10.0,"[116, 84, 32, 123, 105, 118, 227, 206]"
+8,4,1,ridge_16_residual,0.01,"[116, 84, 32, 123, 105, 118, 227, 206, 202, 201, 205, 228, 20, 21, 19, 23]"
+8,4,2,ridge_all_raw,10.0,[]
+8,4,2,pls_all_raw,5.0,[]
+8,4,2,pca_ols_raw,5.0,[]
+8,4,2,ridge_all_residual,10000.0,[]
+8,4,2,pls_all_residual,2.0,[]
+8,4,2,pca_ols_residual,5.0,[]
+8,4,2,ridge_8_residual,1000.0,"[260, 261, 259, 258, 171, 262, 151, 163]"
+8,4,2,ridge_16_residual,10000.0,"[260, 261, 259, 258, 171, 262, 151, 163, 143, 118, 162, 275, 170, 172, 159, 164]"
+8,4,3,ridge_all_raw,10000.0,[]
+8,4,3,pls_all_raw,2.0,[]
+8,4,3,pca_ols_raw,100.0,[]
+8,4,3,ridge_all_residual,100.0,[]
+8,4,3,pls_all_residual,5.0,[]
+8,4,3,pca_ols_residual,5.0,[]
+8,4,3,ridge_8_residual,10.0,"[290, 271, 291, 297, 296, 263, 264, 270]"
+8,4,3,ridge_16_residual,100.0,"[290, 271, 291, 297, 296, 263, 264, 270, 317, 272, 289, 316, 292, 265, 262, 269]"
+8,5,1,ridge_all_raw,10000.0,[]
+8,5,1,pls_all_raw,2.0,[]
+8,5,1,pca_ols_raw,5.0,[]
+8,5,1,ridge_all_residual,10000.0,[]
+8,5,1,pls_all_residual,2.0,[]
+8,5,1,pca_ols_residual,10.0,[]
+8,5,1,ridge_8_residual,10000.0,"[289, 272, 288, 196, 271, 260, 290, 298]"
+8,5,1,ridge_16_residual,10000.0,"[289, 272, 288, 196, 271, 260, 290, 298, 274, 296, 259, 275, 297, 291, 195, 264]"
+8,5,2,ridge_all_raw,10.0,[]
+8,5,2,pls_all_raw,5.0,[]
+8,5,2,pca_ols_raw,100.0,[]
+8,5,2,ridge_all_residual,10000.0,[]
+8,5,2,pls_all_residual,5.0,[]
+8,5,2,pca_ols_residual,5.0,[]
+8,5,2,ridge_8_residual,1000.0,"[180, 181, 172, 282, 279, 173, 280, 189]"
+8,5,2,ridge_16_residual,10000.0,"[180, 181, 172, 282, 279, 173, 280, 189, 179, 199, 171, 281, 305, 188, 256, 174]"
+8,5,3,ridge_all_raw,10000.0,[]
+8,5,3,pls_all_raw,20.0,[]
+8,5,3,pca_ols_raw,20.0,[]
+8,5,3,ridge_all_residual,1000.0,[]
+8,5,3,pls_all_residual,5.0,[]
+8,5,3,pca_ols_residual,100.0,[]
+8,5,3,ridge_8_residual,10000.0,"[2, 8, 16, 0, 10, 3, 186, 4]"
+8,5,3,ridge_16_residual,10000.0,"[2, 8, 16, 0, 10, 3, 186, 4, 184, 187, 176, 1, 178, 188, 185, 177]"
+8,6,1,ridge_all_raw,1.0,[]
+8,6,1,pls_all_raw,40.0,[]
+8,6,1,pca_ols_raw,5.0,[]
+8,6,1,ridge_all_residual,100.0,[]
+8,6,1,pls_all_residual,5.0,[]
+8,6,1,pca_ols_residual,5.0,[]
+8,6,1,ridge_8_residual,0.01,"[189, 188, 5, 6, 4, 304, 308, 305]"
+8,6,1,ridge_16_residual,1.0,"[189, 188, 5, 6, 4, 304, 308, 305, 187, 282, 309, 283, 190, 180, 179, 171]"
+8,6,2,ridge_all_raw,100.0,[]
+8,6,2,pls_all_raw,5.0,[]
+8,6,2,pca_ols_raw,5.0,[]
+8,6,2,ridge_all_residual,10000.0,[]
+8,6,2,pls_all_residual,20.0,[]
+8,6,2,pca_ols_residual,5.0,[]
+8,6,2,ridge_8_residual,10.0,"[16, 24, 8, 25, 17, 33, 0, 85]"
+8,6,2,ridge_16_residual,10.0,"[16, 24, 8, 25, 17, 33, 0, 85, 77, 9, 40, 100, 93, 26, 78, 34]"
+8,6,3,ridge_all_raw,100.0,[]
+8,6,3,pls_all_raw,5.0,[]
+8,6,3,pca_ols_raw,100.0,[]
+8,6,3,ridge_all_residual,10000.0,[]
+8,6,3,pls_all_residual,5.0,[]
+8,6,3,pca_ols_residual,50.0,[]
+8,6,3,ridge_8_residual,10.0,"[100, 115, 114, 253, 315, 107, 124, 117]"
+8,6,3,ridge_16_residual,10000.0,"[100, 115, 114, 253, 315, 107, 124, 117, 113, 122, 98, 125, 195, 193, 108, 194]"
+8,7,1,ridge_all_raw,1000.0,[]
+8,7,1,pls_all_raw,5.0,[]
+8,7,1,pca_ols_raw,50.0,[]
+8,7,1,ridge_all_residual,10000.0,[]
+8,7,1,pls_all_residual,2.0,[]
+8,7,1,pca_ols_residual,100.0,[]
+8,7,1,ridge_8_residual,10000.0,"[279, 257, 256, 278, 277, 258, 280, 283]"
+8,7,1,ridge_16_residual,10000.0,"[279, 257, 256, 278, 277, 258, 280, 283, 286, 276, 285, 282, 284, 288, 259, 281]"
+8,7,2,ridge_all_raw,100.0,[]
+8,7,2,pls_all_raw,5.0,[]
+8,7,2,pca_ols_raw,50.0,[]
+8,7,2,ridge_all_residual,1.0,[]
+8,7,2,pls_all_residual,20.0,[]
+8,7,2,pca_ols_residual,150.0,[]
+8,7,2,ridge_8_residual,10000.0,"[219, 193, 214, 194, 218, 213, 192, 96]"
+8,7,2,ridge_16_residual,10000.0,"[219, 193, 214, 194, 218, 213, 192, 96, 240, 220, 215, 239, 103, 88, 97, 245]"
+8,7,3,ridge_all_raw,10.0,[]
+8,7,3,pls_all_raw,10.0,[]
+8,7,3,pca_ols_raw,100.0,[]
+8,7,3,ridge_all_residual,10000.0,[]
+8,7,3,pls_all_residual,2.0,[]
+8,7,3,pca_ols_residual,5.0,[]
+8,7,3,ridge_8_residual,1000.0,"[184, 176, 185, 177, 0, 1, 168, 169]"
+8,7,3,ridge_16_residual,1000.0,"[184, 176, 185, 177, 0, 1, 168, 169, 186, 160, 161, 9, 152, 178, 170, 8]"
+9,1,1,ridge_all_raw,1.0,[]
+9,1,1,pls_all_raw,20.0,[]
+9,1,1,pca_ols_raw,50.0,[]
+9,1,1,ridge_all_residual,1000.0,[]
+9,1,1,pls_all_residual,5.0,[]
+9,1,1,pca_ols_residual,5.0,[]
+9,1,1,ridge_8_residual,1000.0,"[304, 260, 261, 308, 237, 309, 154, 262]"
+9,1,1,ridge_16_residual,10000.0,"[304, 260, 261, 308, 237, 309, 154, 262, 247, 274, 222, 259, 303, 197, 283, 196]"
+9,1,2,ridge_all_raw,0.01,[]
+9,1,2,pls_all_raw,80.0,[]
+9,1,2,pca_ols_raw,150.0,[]
+9,1,2,ridge_all_residual,1000.0,[]
+9,1,2,pls_all_residual,5.0,[]
+9,1,2,pca_ols_residual,5.0,[]
+9,1,2,ridge_8_residual,10.0,"[32, 263, 237, 245, 273, 249, 246, 31]"
+9,1,2,ridge_16_residual,100.0,"[32, 263, 237, 245, 273, 249, 246, 31, 272, 236, 239, 30, 38, 262, 264, 199]"
+9,1,3,ridge_all_raw,100.0,[]
+9,1,3,pls_all_raw,10.0,[]
+9,1,3,pca_ols_raw,100.0,[]
+9,1,3,ridge_all_residual,1000.0,[]
+9,1,3,pls_all_residual,2.0,[]
+9,1,3,pca_ols_residual,5.0,[]
+9,1,3,ridge_8_residual,100.0,"[32, 262, 274, 273, 261, 263, 275, 287]"
+9,1,3,ridge_16_residual,1000.0,"[32, 262, 274, 273, 261, 263, 275, 287, 38, 37, 36, 259, 46, 260, 45, 29]"
+9,2,2,ridge_all_raw,1000.0,[]
+9,2,2,pls_all_raw,5.0,[]
+9,2,2,pca_ols_raw,150.0,[]
+9,2,2,ridge_all_residual,10000.0,[]
+9,2,2,pls_all_residual,2.0,[]
+9,2,2,pca_ols_residual,5.0,[]
+9,2,2,ridge_8_residual,10000.0,"[201, 200, 206, 207, 202, 226, 227, 232]"
+9,2,2,ridge_16_residual,10000.0,"[201, 200, 206, 207, 202, 226, 227, 232, 208, 233, 225, 234, 253, 199, 224, 252]"
+9,2,3,ridge_all_raw,10000.0,[]
+9,2,3,pls_all_raw,2.0,[]
+9,2,3,pca_ols_raw,5.0,[]
+9,2,3,ridge_all_residual,10000.0,[]
+9,2,3,pls_all_residual,80.0,[]
+9,2,3,pca_ols_residual,5.0,[]
+9,2,3,ridge_8_residual,100.0,"[203, 256, 257, 280, 276, 279, 204, 277]"
+9,2,3,ridge_16_residual,1000.0,"[203, 256, 257, 280, 276, 279, 204, 277, 258, 278, 229, 259, 260, 275, 32, 230]"
+9,3,1,ridge_all_raw,10.0,[]
+9,3,1,pls_all_raw,10.0,[]
+9,3,1,pca_ols_raw,150.0,[]
+9,3,1,ridge_all_residual,10000.0,[]
+9,3,1,pls_all_residual,2.0,[]
+9,3,1,pca_ols_residual,150.0,[]
+9,3,1,ridge_8_residual,10000.0,"[83, 159, 310, 144, 309, 167, 308, 303]"
+9,3,1,ridge_16_residual,10000.0,"[83, 159, 310, 144, 309, 167, 308, 303, 136, 304, 164, 150, 149, 142, 151, 157]"
+9,3,2,ridge_all_raw,1.0,[]
+9,3,2,pls_all_raw,2.0,[]
+9,3,2,pca_ols_raw,100.0,[]
+9,3,2,ridge_all_residual,10000.0,[]
+9,3,2,pls_all_residual,2.0,[]
+9,3,2,pca_ols_residual,50.0,[]
+9,3,2,ridge_8_residual,100.0,"[36, 35, 27, 28, 37, 111, 34, 26]"
+9,3,2,ridge_16_residual,100.0,"[36, 35, 27, 28, 37, 111, 34, 26, 44, 119, 29, 118, 110, 20, 43, 19]"
+9,3,3,ridge_all_raw,0.01,[]
+9,3,3,pls_all_raw,80.0,[]
+9,3,3,pca_ols_raw,5.0,[]
+9,3,3,ridge_all_residual,10000.0,[]
+9,3,3,pls_all_residual,2.0,[]
+9,3,3,pca_ols_residual,5.0,[]
+9,3,3,ridge_8_residual,0.01,"[319, 318, 295, 294, 103, 111, 102, 317]"
+9,3,3,ridge_16_residual,0.1,"[319, 318, 295, 294, 103, 111, 102, 317, 296, 292, 110, 293, 291, 95, 119, 269]"
+9,4,1,ridge_all_raw,100.0,[]
+9,4,1,pls_all_raw,5.0,[]
+9,4,1,pca_ols_raw,100.0,[]
+9,4,1,ridge_all_residual,1000.0,[]
+9,4,1,pls_all_residual,5.0,[]
+9,4,1,pca_ols_residual,100.0,[]
+9,4,1,ridge_8_residual,10.0,"[281, 310, 309, 307, 311, 308, 306, 305]"
+9,4,1,ridge_16_residual,100.0,"[281, 310, 309, 307, 311, 308, 306, 305, 280, 167, 230, 204, 256, 279, 282, 302]"
+9,4,2,ridge_all_raw,1000.0,[]
+9,4,2,pls_all_raw,2.0,[]
+9,4,2,pca_ols_raw,5.0,[]
+9,4,2,ridge_all_residual,1000.0,[]
+9,4,2,pls_all_residual,2.0,[]
+9,4,2,pca_ols_residual,10.0,[]
+9,4,2,ridge_8_residual,10.0,"[123, 88, 96, 80, 90, 86, 293, 294]"
+9,4,2,ridge_16_residual,10.0,"[123, 88, 96, 80, 90, 86, 293, 294, 319, 78, 268, 267, 295, 77, 269, 76]"
+9,4,3,ridge_all_raw,0.1,[]
+9,4,3,pls_all_raw,80.0,[]
+9,4,3,pca_ols_raw,50.0,[]
+9,4,3,ridge_all_residual,100.0,[]
+9,4,3,pls_all_residual,5.0,[]
+9,4,3,pca_ols_residual,10.0,[]
+9,4,3,ridge_8_residual,1000.0,"[200, 207, 226, 201, 225, 199, 208, 206]"
+9,4,3,ridge_16_residual,10000.0,"[200, 207, 226, 201, 225, 199, 208, 206, 262, 227, 261, 273, 224, 263, 88, 264]"
+9,5,1,ridge_all_raw,10000.0,[]
+9,5,1,pls_all_raw,2.0,[]
+9,5,1,pca_ols_raw,20.0,[]
+9,5,1,ridge_all_residual,10000.0,[]
+9,5,1,pls_all_residual,2.0,[]
+9,5,1,pca_ols_residual,10.0,[]
+9,5,1,ridge_8_residual,10000.0,"[309, 154, 304, 147, 146, 310, 303, 308]"
+9,5,1,ridge_16_residual,10000.0,"[309, 154, 304, 147, 146, 310, 303, 308, 155, 145, 284, 283, 305, 159, 148, 150]"
+9,5,2,ridge_all_raw,100.0,[]
+9,5,2,pls_all_raw,5.0,[]
+9,5,2,pca_ols_raw,20.0,[]
+9,5,2,ridge_all_residual,10000.0,[]
+9,5,2,pls_all_residual,2.0,[]
+9,5,2,pca_ols_residual,10.0,[]
+9,5,2,ridge_8_residual,1000.0,"[65, 198, 64, 56, 57, 73, 48, 113]"
+9,5,2,ridge_16_residual,1000.0,"[65, 198, 64, 56, 57, 73, 48, 113, 72, 81, 114, 52, 97, 60, 107, 197]"
+9,5,3,ridge_all_raw,10000.0,[]
+9,5,3,pls_all_raw,2.0,[]
+9,5,3,pca_ols_raw,5.0,[]
+9,5,3,ridge_all_residual,10000.0,[]
+9,5,3,pls_all_residual,2.0,[]
+9,5,3,pca_ols_residual,5.0,[]
+9,5,3,ridge_8_residual,10000.0,"[309, 308, 304, 310, 303, 305, 147, 154]"
+9,5,3,ridge_16_residual,10000.0,"[309, 308, 304, 310, 303, 305, 147, 154, 159, 146, 155, 307, 148, 283, 167, 284]"
+9,6,1,ridge_all_raw,10000.0,[]
+9,6,1,pls_all_raw,2.0,[]
+9,6,1,pca_ols_raw,100.0,[]
+9,6,1,ridge_all_residual,10000.0,[]
+9,6,1,pls_all_residual,2.0,[]
+9,6,1,pca_ols_residual,5.0,[]
+9,6,1,ridge_8_residual,10000.0,"[147, 155, 148, 154, 139, 146, 151, 156]"
+9,6,1,ridge_16_residual,10000.0,"[147, 155, 148, 154, 139, 146, 151, 156, 140, 158, 159, 150, 162, 163, 153, 145]"
+9,6,2,ridge_all_raw,10.0,[]
+9,6,2,pls_all_raw,10.0,[]
+9,6,2,pca_ols_raw,50.0,[]
+9,6,2,ridge_all_residual,10000.0,[]
+9,6,2,pls_all_residual,2.0,[]
+9,6,2,pca_ols_residual,20.0,[]
+9,6,2,ridge_8_residual,10000.0,"[258, 257, 256, 202, 259, 203, 199, 55]"
+9,6,2,ridge_16_residual,10000.0,"[258, 257, 256, 202, 259, 203, 199, 55, 209, 201, 47, 205, 200, 260, 208, 198]"
+9,6,3,ridge_all_raw,10.0,[]
+9,6,3,pls_all_raw,5.0,[]
+9,6,3,pca_ols_raw,50.0,[]
+9,6,3,ridge_all_residual,10000.0,[]
+9,6,3,pls_all_residual,10.0,[]
+9,6,3,pca_ols_residual,150.0,[]
+9,6,3,ridge_8_residual,100.0,"[226, 225, 227, 207, 29, 28, 30, 27]"
+9,6,3,ridge_16_residual,1000.0,"[226, 225, 227, 207, 29, 28, 30, 27, 37, 20, 206, 38, 19, 21, 232, 233]"
+9,7,1,ridge_all_raw,0.1,[]
+9,7,1,pls_all_raw,80.0,[]
+9,7,1,pca_ols_raw,20.0,[]
+9,7,1,ridge_all_residual,10000.0,[]
+9,7,1,pls_all_residual,2.0,[]
+9,7,1,pca_ols_residual,5.0,[]
+9,7,1,ridge_8_residual,100.0,"[198, 295, 294, 204, 230, 199, 255, 229]"
+9,7,1,ridge_16_residual,1000.0,"[198, 295, 294, 204, 230, 199, 255, 229, 319, 233, 296, 293, 209, 210, 268, 228]"
+9,7,2,ridge_all_raw,0.01,[]
+9,7,2,pls_all_raw,2.0,[]
+9,7,2,pca_ols_raw,5.0,[]
+9,7,2,ridge_all_residual,10000.0,[]
+9,7,2,pls_all_residual,5.0,[]
+9,7,2,pca_ols_residual,20.0,[]
+9,7,2,ridge_8_residual,10000.0,"[85, 267, 93, 195, 295, 268, 266, 294]"
+9,7,2,ridge_16_residual,10000.0,"[85, 267, 93, 195, 295, 268, 266, 294, 293, 76, 75, 92, 319, 286, 194, 269]"
+9,7,3,ridge_all_raw,10.0,[]
+9,7,3,pls_all_raw,10.0,[]
+9,7,3,pca_ols_raw,20.0,[]
+9,7,3,ridge_all_residual,10000.0,[]
+9,7,3,pls_all_residual,2.0,[]
+9,7,3,pca_ols_residual,20.0,[]
+9,7,3,ridge_8_residual,100.0,"[196, 211, 222, 237, 197, 23, 15, 223]"
+9,7,3,ridge_16_residual,1000.0,"[196, 211, 222, 237, 197, 23, 15, 223, 249, 210, 236, 212, 202, 238, 7, 221]"
+10,1,1,ridge_all_raw,10000.0,[]
+10,1,1,pls_all_raw,5.0,[]
+10,1,1,pca_ols_raw,150.0,[]
+10,1,1,ridge_all_residual,1000.0,[]
+10,1,1,pls_all_residual,5.0,[]
+10,1,1,pca_ols_residual,100.0,[]
+10,1,1,ridge_8_residual,1.0,"[48, 38, 39, 64, 47, 190, 194, 46]"
+10,1,1,ridge_16_residual,10000.0,"[48, 38, 39, 64, 47, 190, 194, 46, 195, 40, 181, 214, 72, 239, 245, 220]"
+10,1,2,ridge_all_raw,10.0,[]
+10,1,2,pls_all_raw,20.0,[]
+10,1,2,pca_ols_raw,5.0,[]
+10,1,2,ridge_all_residual,10000.0,[]
+10,1,2,pls_all_residual,2.0,[]
+10,1,2,pca_ols_residual,5.0,[]
+10,1,2,ridge_8_residual,1000.0,"[202, 228, 205, 206, 232, 227, 204, 201]"
+10,1,2,ridge_16_residual,1000.0,"[202, 228, 205, 206, 232, 227, 204, 201, 197, 196, 261, 233, 209, 262, 254, 203]"
+10,1,3,ridge_all_raw,1.0,[]
+10,1,3,pls_all_raw,20.0,[]
+10,1,3,pca_ols_raw,10.0,[]
+10,1,3,ridge_all_residual,10000.0,[]
+10,1,3,pls_all_residual,10.0,[]
+10,1,3,pca_ols_residual,10.0,[]
+10,1,3,ridge_8_residual,1000.0,"[199, 198, 197, 200, 196, 208, 209, 48]"
+10,1,3,ridge_16_residual,1000.0,"[199, 198, 197, 200, 196, 208, 209, 48, 195, 49, 207, 210, 201, 41, 211, 40]"
+10,2,2,ridge_all_raw,1000.0,[]
+10,2,2,pls_all_raw,10.0,[]
+10,2,2,pca_ols_raw,50.0,[]
+10,2,2,ridge_all_residual,10000.0,[]
+10,2,2,pls_all_residual,2.0,[]
+10,2,2,pca_ols_residual,5.0,[]
+10,2,2,ridge_8_residual,10.0,"[65, 59, 48, 208, 64, 56, 226, 58]"
+10,2,2,ridge_16_residual,100.0,"[65, 59, 48, 208, 64, 56, 226, 58, 60, 225, 224, 207, 74, 104, 52, 61]"
+10,2,3,ridge_all_raw,10000.0,[]
+10,2,3,pls_all_raw,10.0,[]
+10,2,3,pca_ols_raw,5.0,[]
+10,2,3,ridge_all_residual,10000.0,[]
+10,2,3,pls_all_residual,2.0,[]
+10,2,3,pca_ols_residual,5.0,[]
+10,2,3,ridge_8_residual,1000.0,"[313, 300, 312, 301, 299, 109, 314, 287]"
+10,2,3,ridge_16_residual,1000.0,"[313, 300, 312, 301, 299, 109, 314, 287, 94, 49, 34, 76, 93, 311, 35, 77]"
+10,3,1,ridge_all_raw,1000.0,[]
+10,3,1,pls_all_raw,2.0,[]
+10,3,1,pca_ols_raw,20.0,[]
+10,3,1,ridge_all_residual,10000.0,[]
+10,3,1,pls_all_residual,2.0,[]
+10,3,1,pca_ols_residual,5.0,[]
+10,3,1,ridge_8_residual,1.0,"[275, 274, 286, 287, 261, 273, 262, 300]"
+10,3,1,ridge_16_residual,1000.0,"[275, 274, 286, 287, 261, 273, 262, 300, 288, 202, 260, 299, 301, 272, 203, 285]"
+10,3,2,ridge_all_raw,100.0,[]
+10,3,2,pls_all_raw,10.0,[]
+10,3,2,pca_ols_raw,100.0,[]
+10,3,2,ridge_all_residual,100.0,[]
+10,3,2,pls_all_residual,5.0,[]
+10,3,2,pca_ols_residual,100.0,[]
+10,3,2,ridge_8_residual,100.0,"[199, 198, 208, 197, 209, 200, 207, 225]"
+10,3,2,ridge_16_residual,100.0,"[199, 198, 208, 197, 209, 200, 207, 225, 196, 224, 226, 210, 195, 211, 201, 234]"
+10,3,3,ridge_all_raw,100.0,[]
+10,3,3,pls_all_raw,5.0,[]
+10,3,3,pca_ols_raw,20.0,[]
+10,3,3,ridge_all_residual,10000.0,[]
+10,3,3,pls_all_residual,2.0,[]
+10,3,3,pca_ols_residual,5.0,[]
+10,3,3,ridge_8_residual,1000.0,"[48, 40, 33, 41, 49, 24, 25, 104]"
+10,3,3,ridge_16_residual,1000.0,"[48, 40, 33, 41, 49, 24, 25, 104, 36, 27, 28, 56, 240, 26, 246, 18]"
+10,4,1,ridge_all_raw,100.0,[]
+10,4,1,pls_all_raw,10.0,[]
+10,4,1,pca_ols_raw,50.0,[]
+10,4,1,ridge_all_residual,1000.0,[]
+10,4,1,pls_all_residual,5.0,[]
+10,4,1,pca_ols_residual,20.0,[]
+10,4,1,ridge_8_residual,100.0,"[197, 196, 203, 64, 202, 210, 211, 198]"
+10,4,1,ridge_16_residual,100.0,"[197, 196, 203, 64, 202, 210, 211, 198, 204, 72, 205, 201, 171, 206, 65, 222]"
+10,4,2,ridge_all_raw,1000.0,[]
+10,4,2,pls_all_raw,2.0,[]
+10,4,2,pca_ols_raw,5.0,[]
+10,4,2,ridge_all_residual,10000.0,[]
+10,4,2,pls_all_residual,2.0,[]
+10,4,2,pca_ols_residual,5.0,[]
+10,4,2,ridge_8_residual,10000.0,"[253, 68, 166, 18, 15, 19, 23, 17]"
+10,4,2,ridge_16_residual,10000.0,"[253, 68, 166, 18, 15, 19, 23, 17, 16, 11, 14, 24, 315, 10, 298, 314]"
+10,4,3,ridge_all_raw,0.1,[]
+10,4,3,pls_all_raw,40.0,[]
+10,4,3,pca_ols_raw,50.0,[]
+10,4,3,ridge_all_residual,10000.0,[]
+10,4,3,pls_all_residual,2.0,[]
+10,4,3,pca_ols_residual,10.0,[]
+10,4,3,ridge_8_residual,10000.0,"[72, 286, 188, 275, 274, 301, 74, 64]"
+10,4,3,ridge_16_residual,10000.0,"[72, 286, 188, 275, 274, 301, 74, 64, 189, 312, 287, 180, 179, 302, 311, 181]"
+10,5,1,ridge_all_raw,10.0,[]
+10,5,1,pls_all_raw,10.0,[]
+10,5,1,pca_ols_raw,150.0,[]
+10,5,1,ridge_all_residual,10000.0,[]
+10,5,1,pls_all_residual,2.0,[]
+10,5,1,pca_ols_residual,5.0,[]
+10,5,1,ridge_8_residual,10000.0,"[267, 266, 156, 269, 270, 265, 216, 268]"
+10,5,1,ridge_16_residual,10000.0,"[267, 266, 156, 269, 270, 265, 216, 268, 271, 74, 91, 75, 264, 92, 192, 81]"
+10,5,2,ridge_all_raw,0.1,[]
+10,5,2,pls_all_raw,80.0,[]
+10,5,2,pca_ols_raw,5.0,[]
+10,5,2,ridge_all_residual,100.0,[]
+10,5,2,pls_all_residual,5.0,[]
+10,5,2,pca_ols_residual,20.0,[]
+10,5,2,ridge_8_residual,10000.0,"[64, 194, 213, 202, 195, 193, 65, 220]"
+10,5,2,ridge_16_residual,10000.0,"[64, 194, 213, 202, 195, 193, 65, 220, 104, 57, 214, 58, 39, 212, 192, 221]"
+10,5,3,ridge_all_raw,1.0,[]
+10,5,3,pls_all_raw,20.0,[]
+10,5,3,pca_ols_raw,100.0,[]
+10,5,3,ridge_all_residual,10000.0,[]
+10,5,3,pls_all_residual,2.0,[]
+10,5,3,pca_ols_residual,5.0,[]
+10,5,3,ridge_8_residual,10000.0,"[46, 38, 47, 39, 245, 30, 241, 45]"
+10,5,3,ridge_16_residual,10000.0,"[46, 38, 47, 39, 245, 30, 241, 45, 244, 219, 240, 37, 54, 21, 239, 31]"
+10,6,1,ridge_all_raw,0.1,[]
+10,6,1,pls_all_raw,80.0,[]
+10,6,1,pca_ols_raw,50.0,[]
+10,6,1,ridge_all_residual,10000.0,[]
+10,6,1,pls_all_residual,2.0,[]
+10,6,1,pca_ols_residual,10.0,[]
+10,6,1,ridge_8_residual,10000.0,"[277, 278, 257, 258, 283, 284, 18, 10]"
+10,6,1,ridge_16_residual,10000.0,"[277, 278, 257, 258, 283, 284, 18, 10, 48, 17, 159, 25, 35, 40, 19, 104]"
+10,6,2,ridge_all_raw,100.0,[]
+10,6,2,pls_all_raw,5.0,[]
+10,6,2,pca_ols_raw,100.0,[]
+10,6,2,ridge_all_residual,10000.0,[]
+10,6,2,pls_all_residual,2.0,[]
+10,6,2,pca_ols_residual,5.0,[]
+10,6,2,ridge_8_residual,1000.0,"[156, 85, 277, 219, 220, 83, 213, 193]"
+10,6,2,ridge_16_residual,1000.0,"[156, 85, 277, 219, 220, 83, 213, 193, 194, 214, 284, 240, 39, 278, 112, 239]"
+10,6,3,ridge_all_raw,1.0,[]
+10,6,3,pls_all_raw,40.0,[]
+10,6,3,pca_ols_raw,150.0,[]
+10,6,3,ridge_all_residual,10000.0,[]
+10,6,3,pls_all_residual,2.0,[]
+10,6,3,pca_ols_residual,5.0,[]
+10,6,3,ridge_8_residual,1000.0,"[48, 245, 240, 39, 35, 36, 239, 219]"
+10,6,3,ridge_16_residual,1000.0,"[48, 245, 240, 39, 35, 36, 239, 219, 40, 41, 38, 246, 37, 241, 49, 33]"
+10,7,1,ridge_all_raw,10.0,[]
+10,7,1,pls_all_raw,20.0,[]
+10,7,1,pca_ols_raw,20.0,[]
+10,7,1,ridge_all_residual,10000.0,[]
+10,7,1,pls_all_residual,2.0,[]
+10,7,1,pca_ols_residual,20.0,[]
+10,7,1,ridge_8_residual,1000.0,"[112, 104, 40, 48, 24, 56, 256, 41]"
+10,7,1,ridge_16_residual,1000.0,"[112, 104, 40, 48, 24, 56, 256, 41, 49, 31, 38, 37, 246, 34, 247, 27]"
+10,7,2,ridge_all_raw,1000.0,[]
+10,7,2,pls_all_raw,5.0,[]
+10,7,2,pca_ols_raw,50.0,[]
+10,7,2,ridge_all_residual,1000.0,[]
+10,7,2,pls_all_residual,5.0,[]
+10,7,2,pca_ols_residual,50.0,[]
+10,7,2,ridge_8_residual,100.0,"[64, 202, 65, 48, 193, 205, 57, 203]"
+10,7,2,ridge_16_residual,1000.0,"[64, 202, 65, 48, 193, 205, 57, 203, 72, 58, 214, 204, 42, 40, 219, 43]"
+10,7,3,ridge_all_raw,10000.0,[]
+10,7,3,pls_all_raw,5.0,[]
+10,7,3,pca_ols_raw,20.0,[]
+10,7,3,ridge_all_residual,10000.0,[]
+10,7,3,pls_all_residual,2.0,[]
+10,7,3,pca_ols_residual,5.0,[]
+10,7,3,ridge_8_residual,1000.0,"[117, 109, 108, 277, 115, 18, 131, 107]"
+10,7,3,ridge_16_residual,1000.0,"[117, 109, 108, 277, 115, 18, 131, 107, 10, 258, 24, 19, 25, 112, 278, 26]"
+11,1,1,ridge_all_raw,10000.0,[]
+11,1,1,pls_all_raw,5.0,[]
+11,1,1,pca_ols_raw,150.0,[]
+11,1,1,ridge_all_residual,10000.0,[]
+11,1,1,pls_all_residual,2.0,[]
+11,1,1,pca_ols_residual,5.0,[]
+11,1,1,ridge_8_residual,1000.0,"[261, 262, 260, 263, 248, 247, 237, 264]"
+11,1,1,ridge_16_residual,1000.0,"[261, 262, 260, 263, 248, 247, 237, 264, 236, 238, 249, 274, 222, 265, 250, 235]"
+11,1,2,ridge_all_raw,10.0,[]
+11,1,2,pls_all_raw,2.0,[]
+11,1,2,pca_ols_raw,150.0,[]
+11,1,2,ridge_all_residual,100.0,[]
+11,1,2,pls_all_residual,5.0,[]
+11,1,2,pca_ols_residual,50.0,[]
+11,1,2,ridge_8_residual,1.0,"[144, 152, 145, 140, 132, 139, 146, 137]"
+11,1,2,ridge_16_residual,1.0,"[144, 152, 145, 140, 132, 139, 146, 137, 153, 136, 141, 147, 138, 148, 131, 130]"
+11,1,3,ridge_all_raw,10000.0,[]
+11,1,3,pls_all_raw,5.0,[]
+11,1,3,pca_ols_raw,10.0,[]
+11,1,3,ridge_all_residual,10000.0,[]
+11,1,3,pls_all_residual,5.0,[]
+11,1,3,pca_ols_residual,5.0,[]
+11,1,3,ridge_8_residual,1000.0,"[261, 260, 262, 64, 274, 208, 246, 209]"
+11,1,3,ridge_16_residual,1000.0,"[261, 260, 262, 64, 274, 208, 246, 209, 225, 224, 247, 199, 198, 207, 235, 245]"
+11,2,2,ridge_all_raw,1000.0,[]
+11,2,2,pls_all_raw,5.0,[]
+11,2,2,pca_ols_raw,10.0,[]
+11,2,2,ridge_all_residual,1000.0,[]
+11,2,2,pls_all_residual,2.0,[]
+11,2,2,pca_ols_residual,50.0,[]
+11,2,2,ridge_8_residual,10000.0,"[29, 133, 54, 67, 117, 256, 47, 39]"
+11,2,2,ridge_16_residual,10000.0,"[29, 133, 54, 67, 117, 256, 47, 39, 46, 32, 305, 280, 257, 55, 282, 308]"
+11,2,3,ridge_all_raw,10000.0,[]
+11,2,3,pls_all_raw,5.0,[]
+11,2,3,pca_ols_raw,5.0,[]
+11,2,3,ridge_all_residual,10000.0,[]
+11,2,3,pls_all_residual,10.0,[]
+11,2,3,pca_ols_residual,5.0,[]
+11,2,3,ridge_8_residual,1000.0,"[25, 26, 24, 17, 18, 16, 172, 169]"
+11,2,3,ridge_16_residual,1000.0,"[25, 26, 24, 17, 18, 16, 172, 169, 171, 27, 170, 164, 163, 180, 162, 179]"
+11,3,1,ridge_all_raw,0.1,[]
+11,3,1,pls_all_raw,80.0,[]
+11,3,1,pca_ols_raw,50.0,[]
+11,3,1,ridge_all_residual,0.1,[]
+11,3,1,pls_all_residual,80.0,[]
+11,3,1,pca_ols_residual,20.0,[]
+11,3,1,ridge_8_residual,0.01,"[30, 119, 118, 111, 252, 253, 110, 254]"
+11,3,1,ridge_16_residual,0.1,"[30, 119, 118, 111, 252, 253, 110, 254, 232, 233, 127, 126, 109, 125, 251, 231]"
+11,3,2,ridge_all_raw,100.0,[]
+11,3,2,pls_all_raw,5.0,[]
+11,3,2,pca_ols_raw,100.0,[]
+11,3,2,ridge_all_residual,1000.0,[]
+11,3,2,pls_all_residual,2.0,[]
+11,3,2,pca_ols_residual,20.0,[]
+11,3,2,ridge_8_residual,100.0,"[54, 100, 90, 105, 230, 229, 255, 311]"
+11,3,2,ridge_16_residual,0.1,"[54, 100, 90, 105, 230, 229, 255, 311, 228, 231, 302, 24, 310, 306, 281, 204]"
+11,3,3,ridge_all_raw,1.0,[]
+11,3,3,pls_all_raw,40.0,[]
+11,3,3,pca_ols_raw,10.0,[]
+11,3,3,ridge_all_residual,100.0,[]
+11,3,3,pls_all_residual,10.0,[]
+11,3,3,pca_ols_residual,150.0,[]
+11,3,3,ridge_8_residual,1.0,"[302, 203, 256, 204, 202, 71, 191, 311]"
+11,3,3,ridge_16_residual,10.0,"[302, 203, 256, 204, 202, 71, 191, 311, 190, 303, 70, 130, 129, 205, 183, 229]"
+11,4,1,ridge_all_raw,1000.0,[]
+11,4,1,pls_all_raw,2.0,[]
+11,4,1,pca_ols_raw,5.0,[]
+11,4,1,ridge_all_residual,10000.0,[]
+11,4,1,pls_all_residual,2.0,[]
+11,4,1,pca_ols_residual,5.0,[]
+11,4,1,ridge_8_residual,1000.0,"[196, 195, 197, 212, 211, 194, 198, 213]"
+11,4,1,ridge_16_residual,1000.0,"[196, 195, 197, 212, 211, 194, 198, 213, 210, 221, 209, 133, 222, 193, 29, 282]"
+11,4,2,ridge_all_raw,1.0,[]
+11,4,2,pls_all_raw,20.0,[]
+11,4,2,pca_ols_raw,150.0,[]
+11,4,2,ridge_all_residual,10000.0,[]
+11,4,2,pls_all_residual,2.0,[]
+11,4,2,pca_ols_residual,5.0,[]
+11,4,2,ridge_8_residual,10000.0,"[133, 257, 256, 278, 203, 258, 202, 145]"
+11,4,2,ridge_16_residual,10000.0,"[133, 257, 256, 278, 203, 258, 202, 145, 279, 136, 283, 137, 201, 144, 138, 130]"
+11,4,3,ridge_all_raw,10000.0,[]
+11,4,3,pls_all_raw,2.0,[]
+11,4,3,pca_ols_raw,20.0,[]
+11,4,3,ridge_all_residual,10000.0,[]
+11,4,3,pls_all_residual,5.0,[]
+11,4,3,pca_ols_residual,100.0,[]
+11,4,3,ridge_8_residual,100.0,"[54, 194, 193, 213, 192, 195, 214, 212]"
+11,4,3,ridge_16_residual,1000.0,"[54, 194, 193, 213, 192, 195, 214, 212, 196, 220, 211, 221, 215, 222, 197, 210]"
+11,5,1,ridge_all_raw,10000.0,[]
+11,5,1,pls_all_raw,2.0,[]
+11,5,1,pca_ols_raw,150.0,[]
+11,5,1,ridge_all_residual,1000.0,[]
+11,5,1,pls_all_residual,2.0,[]
+11,5,1,pca_ols_residual,10.0,[]
+11,5,1,ridge_8_residual,1.0,"[144, 136, 137, 145, 152, 128, 129, 153]"
+11,5,1,ridge_16_residual,1.0,"[144, 136, 137, 145, 152, 128, 129, 153, 138, 130, 303, 284, 276, 285, 146, 277]"
+11,5,2,ridge_all_raw,10000.0,[]
+11,5,2,pls_all_raw,80.0,[]
+11,5,2,pca_ols_raw,5.0,[]
+11,5,2,ridge_all_residual,10000.0,[]
+11,5,2,pls_all_residual,2.0,[]
+11,5,2,pca_ols_residual,5.0,[]
+11,5,2,ridge_8_residual,10000.0,"[279, 256, 257, 133, 259, 260, 276, 277]"
+11,5,2,ridge_16_residual,10000.0,"[279, 256, 257, 133, 259, 260, 276, 277, 278, 258, 285, 280, 284, 282, 283, 275]"
+11,5,3,ridge_all_raw,10.0,[]
+11,5,3,pls_all_raw,10.0,[]
+11,5,3,pca_ols_raw,100.0,[]
+11,5,3,ridge_all_residual,10000.0,[]
+11,5,3,pls_all_residual,2.0,[]
+11,5,3,pca_ols_residual,5.0,[]
+11,5,3,ridge_8_residual,1000.0,"[144, 152, 145, 136, 137, 153, 128, 129]"
+11,5,3,ridge_16_residual,1000.0,"[144, 152, 145, 136, 137, 153, 128, 129, 160, 138, 130, 146, 56, 57, 161, 154]"
+11,6,1,ridge_all_raw,1000.0,[]
+11,6,1,pls_all_raw,5.0,[]
+11,6,1,pca_ols_raw,50.0,[]
+11,6,1,ridge_all_residual,10.0,[]
+11,6,1,pls_all_residual,10.0,[]
+11,6,1,pca_ols_residual,5.0,[]
+11,6,1,ridge_8_residual,0.1,"[99, 282, 283, 278, 280, 85, 69, 279]"
+11,6,1,ridge_16_residual,10.0,"[99, 282, 283, 278, 280, 85, 69, 279, 306, 70, 71, 79, 87, 77, 307, 304]"
+11,6,2,ridge_all_raw,10000.0,[]
+11,6,2,pls_all_raw,2.0,[]
+11,6,2,pca_ols_raw,150.0,[]
+11,6,2,ridge_all_residual,10.0,[]
+11,6,2,pls_all_residual,20.0,[]
+11,6,2,pca_ols_residual,150.0,[]
+11,6,2,ridge_8_residual,10000.0,"[54, 80, 47, 257, 167, 174, 173, 79]"
+11,6,2,ridge_16_residual,10000.0,"[54, 80, 47, 257, 167, 174, 173, 79, 127, 166, 181, 165, 159, 175, 180, 113]"
+11,6,3,ridge_all_raw,10000.0,[]
+11,6,3,pls_all_raw,2.0,[]
+11,6,3,pca_ols_raw,10.0,[]
+11,6,3,ridge_all_residual,10000.0,[]
+11,6,3,pls_all_residual,2.0,[]
+11,6,3,pca_ols_residual,20.0,[]
+11,6,3,ridge_8_residual,10000.0,"[133, 30, 106, 122, 199, 209, 198, 116]"
+11,6,3,ridge_16_residual,10000.0,"[133, 30, 106, 122, 199, 209, 198, 116, 224, 200, 105, 210, 197, 84, 208, 235]"
+11,7,1,ridge_all_raw,100.0,[]
+11,7,1,pls_all_raw,10.0,[]
+11,7,1,pca_ols_raw,50.0,[]
+11,7,1,ridge_all_residual,10000.0,[]
+11,7,1,pls_all_residual,2.0,[]
+11,7,1,pca_ols_residual,5.0,[]
+11,7,1,ridge_8_residual,10000.0,"[202, 205, 203, 204, 201, 229, 228, 206]"
+11,7,1,ridge_16_residual,10000.0,"[202, 205, 203, 204, 201, 229, 228, 206, 5, 252, 231, 253, 118, 119, 7, 124]"
+11,7,2,ridge_all_raw,100.0,[]
+11,7,2,pls_all_raw,5.0,[]
+11,7,2,pca_ols_raw,50.0,[]
+11,7,2,ridge_all_residual,10000.0,[]
+11,7,2,pls_all_residual,2.0,[]
+11,7,2,pca_ols_residual,5.0,[]
+11,7,2,ridge_8_residual,10000.0,"[54, 100, 23, 75, 105, 122, 106, 192]"
+11,7,2,ridge_16_residual,10000.0,"[54, 100, 23, 75, 105, 122, 106, 192, 194, 193, 214, 195, 213, 190, 71, 201]"
+11,7,3,ridge_all_raw,10000.0,[]
+11,7,3,pls_all_raw,40.0,[]
+11,7,3,pca_ols_raw,100.0,[]
+11,7,3,ridge_all_residual,1000.0,[]
+11,7,3,pls_all_residual,2.0,[]
+11,7,3,pca_ols_residual,5.0,[]
+11,7,3,ridge_8_residual,10000.0,"[116, 83, 106, 250, 235, 236, 249, 234]"
+11,7,3,ridge_16_residual,1.0,"[116, 83, 106, 250, 235, 236, 249, 234, 226, 225, 223, 127, 126, 224, 251, 227]"
+12,1,1,ridge_all_raw,10000.0,[]
+12,1,1,pls_all_raw,2.0,[]
+12,1,1,pca_ols_raw,5.0,[]
+12,1,1,ridge_all_residual,10000.0,[]
+12,1,1,pls_all_residual,2.0,[]
+12,1,1,pca_ols_residual,10.0,[]
+12,1,1,ridge_8_residual,1000.0,"[22, 214, 193, 129, 213, 128, 212, 194]"
+12,1,1,ridge_16_residual,1000.0,"[22, 214, 193, 129, 213, 128, 212, 194, 220, 195, 219, 221, 196, 138, 240, 137]"
+12,1,2,ridge_all_raw,1000.0,[]
+12,1,2,pls_all_raw,2.0,[]
+12,1,2,pca_ols_raw,20.0,[]
+12,1,2,ridge_all_residual,100.0,[]
+12,1,2,pls_all_residual,2.0,[]
+12,1,2,pca_ols_residual,5.0,[]
+12,1,2,ridge_8_residual,10.0,"[128, 138, 129, 137, 130, 131, 139, 146]"
+12,1,2,ridge_16_residual,10.0,"[128, 138, 129, 137, 130, 131, 139, 146, 136, 245, 10, 219, 147, 145, 239, 246]"
+12,1,3,ridge_all_raw,1.0,[]
+12,1,3,pls_all_raw,20.0,[]
+12,1,3,pca_ols_raw,150.0,[]
+12,1,3,ridge_all_residual,10000.0,[]
+12,1,3,pls_all_residual,2.0,[]
+12,1,3,pca_ols_residual,5.0,[]
+12,1,3,ridge_8_residual,1000.0,"[18, 16, 128, 263, 137, 240, 245, 138]"
+12,1,3,ridge_16_residual,1.0,"[18, 16, 128, 263, 137, 240, 245, 138, 24, 219, 214, 25, 129, 17, 239, 264]"
+12,2,2,ridge_all_raw,1000.0,[]
+12,2,2,pls_all_raw,2.0,[]
+12,2,2,pca_ols_raw,50.0,[]
+12,2,2,ridge_all_residual,10000.0,[]
+12,2,2,pls_all_residual,2.0,[]
+12,2,2,pca_ols_residual,5.0,[]
+12,2,2,ridge_8_residual,1000.0,"[252, 15, 226, 207, 225, 251, 233, 7]"
+12,2,2,ridge_16_residual,1000.0,"[252, 15, 226, 207, 225, 251, 233, 7, 14, 208, 234, 13, 200, 12, 262, 253]"
+12,2,3,ridge_all_raw,100.0,[]
+12,2,3,pls_all_raw,5.0,[]
+12,2,3,pca_ols_raw,5.0,[]
+12,2,3,ridge_all_residual,1000.0,[]
+12,2,3,pls_all_residual,2.0,[]
+12,2,3,pca_ols_residual,5.0,[]
+12,2,3,ridge_8_residual,1.0,"[128, 129, 131, 138, 137, 139, 130, 136]"
+12,2,3,ridge_16_residual,1.0,"[128, 129, 131, 138, 137, 139, 130, 136, 319, 294, 66, 132, 87, 73, 86, 94]"
+12,3,1,ridge_all_raw,1000.0,[]
+12,3,1,pls_all_raw,2.0,[]
+12,3,1,pca_ols_raw,20.0,[]
+12,3,1,ridge_all_residual,1000.0,[]
+12,3,1,pls_all_residual,2.0,[]
+12,3,1,pca_ols_residual,10.0,[]
+12,3,1,ridge_8_residual,10000.0,"[6, 139, 2, 138, 136, 129, 137, 128]"
+12,3,1,ridge_16_residual,10000.0,"[6, 139, 2, 138, 136, 129, 137, 128, 146, 131, 145, 130, 17, 144, 25, 94]"
+12,3,2,ridge_all_raw,1000.0,[]
+12,3,2,pls_all_raw,2.0,[]
+12,3,2,pca_ols_raw,20.0,[]
+12,3,2,ridge_all_residual,10000.0,[]
+12,3,2,pls_all_residual,10.0,[]
+12,3,2,pca_ols_residual,150.0,[]
+12,3,2,ridge_8_residual,10.0,"[22, 95, 103, 94, 102, 248, 101, 247]"
+12,3,2,ridge_16_residual,1000.0,"[22, 95, 103, 94, 102, 248, 101, 247, 318, 237, 87, 111, 93, 238, 110, 317]"
+12,3,3,ridge_all_raw,1000.0,[]
+12,3,3,pls_all_raw,2.0,[]
+12,3,3,pca_ols_raw,5.0,[]
+12,3,3,ridge_all_residual,10000.0,[]
+12,3,3,pls_all_residual,40.0,[]
+12,3,3,pca_ols_residual,20.0,[]
+12,3,3,ridge_8_residual,10.0,"[212, 193, 194, 195, 213, 221, 219, 214]"
+12,3,3,ridge_16_residual,10.0,"[212, 193, 194, 195, 213, 221, 219, 214, 192, 240, 220, 245, 222, 239, 266, 218]"
+12,4,1,ridge_all_raw,1000.0,[]
+12,4,1,pls_all_raw,2.0,[]
+12,4,1,pca_ols_raw,20.0,[]
+12,4,1,ridge_all_residual,10000.0,[]
+12,4,1,pls_all_residual,2.0,[]
+12,4,1,pca_ols_residual,5.0,[]
+12,4,1,ridge_8_residual,10.0,"[197, 210, 235, 250, 236, 198, 223, 262]"
+12,4,1,ridge_16_residual,10.0,"[197, 210, 235, 250, 236, 198, 223, 262, 224, 249, 234, 209, 196, 34, 251, 263]"
+12,4,2,ridge_all_raw,10.0,[]
+12,4,2,pls_all_raw,10.0,[]
+12,4,2,pca_ols_raw,50.0,[]
+12,4,2,ridge_all_residual,10000.0,[]
+12,4,2,pls_all_residual,2.0,[]
+12,4,2,pca_ols_residual,10.0,[]
+12,4,2,ridge_8_residual,10.0,"[240, 245, 193, 219, 239, 220, 246, 64]"
+12,4,2,ridge_16_residual,1000.0,"[240, 245, 193, 219, 239, 220, 246, 64, 213, 214, 194, 241, 192, 218, 244, 195]"
+12,4,3,ridge_all_raw,0.01,[]
+12,4,3,pls_all_raw,80.0,[]
+12,4,3,pca_ols_raw,20.0,[]
+12,4,3,ridge_all_residual,10000.0,[]
+12,4,3,pls_all_residual,2.0,[]
+12,4,3,pca_ols_residual,50.0,[]
+12,4,3,ridge_8_residual,1000.0,"[236, 210, 250, 249, 235, 197, 224, 223]"
+12,4,3,ridge_16_residual,1000.0,"[236, 210, 250, 249, 235, 197, 224, 223, 209, 234, 198, 251, 207, 225, 226, 208]"
+12,5,1,ridge_all_raw,0.1,[]
+12,5,1,pls_all_raw,20.0,[]
+12,5,1,pca_ols_raw,5.0,[]
+12,5,1,ridge_all_residual,10000.0,[]
+12,5,1,pls_all_residual,2.0,[]
+12,5,1,pca_ols_residual,10.0,[]
+12,5,1,ridge_8_residual,10000.0,"[196, 211, 212, 222, 221, 139, 131, 138]"
+12,5,1,ridge_16_residual,10000.0,"[196, 211, 212, 222, 221, 139, 131, 138, 137, 129, 173, 141, 128, 263, 195, 130]"
+12,5,2,ridge_all_raw,10000.0,[]
+12,5,2,pls_all_raw,20.0,[]
+12,5,2,pca_ols_raw,150.0,[]
+12,5,2,ridge_all_residual,10000.0,[]
+12,5,2,pls_all_residual,2.0,[]
+12,5,2,pca_ols_residual,10.0,[]
+12,5,2,ridge_8_residual,10000.0,"[217, 208, 225, 30, 22, 21, 224, 199]"
+12,5,2,ridge_16_residual,10000.0,"[217, 208, 225, 30, 22, 21, 224, 199, 31, 209, 13, 24, 29, 38, 197, 250]"
+12,5,3,ridge_all_raw,100.0,[]
+12,5,3,pls_all_raw,5.0,[]
+12,5,3,pca_ols_raw,10.0,[]
+12,5,3,ridge_all_residual,10000.0,[]
+12,5,3,pls_all_residual,5.0,[]
+12,5,3,pca_ols_residual,20.0,[]
+12,5,3,ridge_8_residual,10000.0,"[5, 137, 146, 145, 0, 210, 198, 197]"
+12,5,3,ridge_16_residual,10000.0,"[5, 137, 146, 145, 0, 210, 198, 197, 136, 142, 184, 185, 144, 1, 143, 186]"
+12,6,1,ridge_all_raw,10.0,[]
+12,6,1,pls_all_raw,10.0,[]
+12,6,1,pca_ols_raw,5.0,[]
+12,6,1,ridge_all_residual,10.0,[]
+12,6,1,pls_all_residual,10.0,[]
+12,6,1,pca_ols_residual,20.0,[]
+12,6,1,ridge_8_residual,10000.0,"[258, 259, 260, 56, 48, 257, 277, 276]"
+12,6,1,ridge_16_residual,10000.0,"[258, 259, 260, 56, 48, 257, 277, 276, 274, 57, 49, 261, 40, 278, 285, 256]"
+12,6,2,ridge_all_raw,10000.0,[]
+12,6,2,pls_all_raw,2.0,[]
+12,6,2,pca_ols_raw,150.0,[]
+12,6,2,ridge_all_residual,10000.0,[]
+12,6,2,pls_all_residual,2.0,[]
+12,6,2,pca_ols_residual,20.0,[]
+12,6,2,ridge_8_residual,1000.0,"[143, 133, 135, 285, 311, 302, 142, 284]"
+12,6,2,ridge_16_residual,10000.0,"[143, 133, 135, 285, 311, 302, 142, 284, 132, 134, 141, 98, 303, 125, 312, 151]"
+12,6,3,ridge_all_raw,100.0,[]
+12,6,3,pls_all_raw,5.0,[]
+12,6,3,pca_ols_raw,5.0,[]
+12,6,3,ridge_all_residual,10000.0,[]
+12,6,3,pls_all_residual,5.0,[]
+12,6,3,pca_ols_residual,100.0,[]
+12,6,3,ridge_8_residual,1000.0,"[225, 208, 199, 234, 224, 209, 233, 226]"
+12,6,3,ridge_16_residual,10000.0,"[225, 208, 199, 234, 224, 209, 233, 226, 198, 207, 252, 277, 258, 200, 260, 184]"
+12,7,1,ridge_all_raw,10.0,[]
+12,7,1,pls_all_raw,10.0,[]
+12,7,1,pca_ols_raw,100.0,[]
+12,7,1,ridge_all_residual,10.0,[]
+12,7,1,pls_all_residual,10.0,[]
+12,7,1,pca_ols_residual,5.0,[]
+12,7,1,ridge_8_residual,100.0,"[246, 239, 193, 245, 241, 244, 192, 295]"
+12,7,1,ridge_16_residual,100.0,"[246, 239, 193, 245, 241, 244, 192, 295, 240, 215, 294, 298, 319, 219, 293, 291]"
+12,7,2,ridge_all_raw,100.0,[]
+12,7,2,pls_all_raw,2.0,[]
+12,7,2,pca_ols_raw,100.0,[]
+12,7,2,ridge_all_residual,10000.0,[]
+12,7,2,pls_all_residual,2.0,[]
+12,7,2,pca_ols_residual,5.0,[]
+12,7,2,ridge_8_residual,10000.0,"[260, 301, 259, 275, 300, 312, 276, 313]"
+12,7,2,ridge_16_residual,10000.0,"[260, 301, 259, 275, 300, 312, 276, 313, 261, 311, 302, 286, 287, 314, 310, 258]"
+12,7,3,ridge_all_raw,10.0,[]
+12,7,3,pls_all_raw,2.0,[]
+12,7,3,pca_ols_raw,10.0,[]
+12,7,3,ridge_all_residual,10000.0,[]
+12,7,3,pls_all_residual,2.0,[]
+12,7,3,pca_ols_residual,10.0,[]
+12,7,3,ridge_8_residual,100.0,"[256, 56, 257, 58, 67, 57, 73, 284]"
+12,7,3,ridge_16_residual,100.0,"[256, 56, 257, 58, 67, 57, 73, 284, 66, 64, 72, 283, 68, 190, 303, 74]"
+13,1,1,ridge_all_raw,10.0,[]
+13,1,1,pls_all_raw,5.0,[]
+13,1,1,pca_ols_raw,10.0,[]
+13,1,1,ridge_all_residual,100.0,[]
+13,1,1,pls_all_residual,5.0,[]
+13,1,1,pca_ols_residual,50.0,[]
+13,1,1,ridge_8_residual,0.01,"[199, 198, 213, 208, 220, 207, 200, 214]"
+13,1,1,ridge_16_residual,0.1,"[199, 198, 213, 208, 220, 207, 200, 214, 195, 206, 212, 219, 209, 228, 240, 239]"
+13,1,2,ridge_all_raw,10.0,[]
+13,1,2,pls_all_raw,5.0,[]
+13,1,2,pca_ols_raw,10.0,[]
+13,1,2,ridge_all_residual,100.0,[]
+13,1,2,pls_all_residual,5.0,[]
+13,1,2,pca_ols_residual,10.0,[]
+13,1,2,ridge_8_residual,0.1,"[226, 207, 223, 236, 225, 250, 222, 224]"
+13,1,2,ridge_16_residual,0.1,"[226, 207, 223, 236, 225, 250, 222, 224, 235, 251, 233, 234, 208, 252, 211, 258]"
+13,1,3,ridge_all_raw,100.0,[]
+13,1,3,pls_all_raw,10.0,[]
+13,1,3,pca_ols_raw,50.0,[]
+13,1,3,ridge_all_residual,10000.0,[]
+13,1,3,pls_all_residual,2.0,[]
+13,1,3,pca_ols_residual,5.0,[]
+13,1,3,ridge_8_residual,10000.0,"[151, 142, 127, 143, 159, 134, 150, 119]"
+13,1,3,ridge_16_residual,10000.0,"[151, 142, 127, 143, 159, 134, 150, 119, 126, 141, 118, 158, 149, 140, 9, 125]"
+13,2,2,ridge_all_raw,0.1,[]
+13,2,2,pls_all_raw,5.0,[]
+13,2,2,pca_ols_raw,10.0,[]
+13,2,2,ridge_all_residual,10000.0,[]
+13,2,2,pls_all_residual,2.0,[]
+13,2,2,pca_ols_residual,150.0,[]
+13,2,2,ridge_8_residual,10000.0,"[286, 125, 116, 117, 122, 124, 126, 114]"
+13,2,2,ridge_16_residual,10000.0,"[286, 125, 116, 117, 122, 124, 126, 114, 123, 301, 118, 115, 127, 140, 121, 130]"
+13,2,3,ridge_all_raw,0.1,[]
+13,2,3,pls_all_raw,40.0,[]
+13,2,3,pca_ols_raw,5.0,[]
+13,2,3,ridge_all_residual,10000.0,[]
+13,2,3,pls_all_residual,5.0,[]
+13,2,3,pca_ols_residual,20.0,[]
+13,2,3,ridge_8_residual,10000.0,"[213, 220, 212, 219, 240, 221, 239, 214]"
+13,2,3,ridge_16_residual,10000.0,"[213, 220, 212, 219, 240, 221, 239, 214, 199, 245, 195, 241, 194, 208, 79, 207]"
+13,3,1,ridge_all_raw,100.0,[]
+13,3,1,pls_all_raw,5.0,[]
+13,3,1,pca_ols_raw,150.0,[]
+13,3,1,ridge_all_residual,10000.0,[]
+13,3,1,pls_all_residual,2.0,[]
+13,3,1,pca_ols_residual,10.0,[]
+13,3,1,ridge_8_residual,10000.0,"[289, 273, 237, 55, 248, 222, 247, 56]"
+13,3,1,ridge_16_residual,10000.0,"[289, 273, 237, 55, 248, 222, 247, 56, 54, 47, 64, 238, 63, 249, 221, 211]"
+13,3,2,ridge_all_raw,1.0,[]
+13,3,2,pls_all_raw,20.0,[]
+13,3,2,pca_ols_raw,20.0,[]
+13,3,2,ridge_all_residual,10000.0,[]
+13,3,2,pls_all_residual,2.0,[]
+13,3,2,pca_ols_residual,5.0,[]
+13,3,2,ridge_8_residual,10000.0,"[286, 301, 312, 275, 313, 285, 259, 302]"
+13,3,2,ridge_16_residual,10000.0,"[286, 301, 312, 275, 313, 285, 259, 302, 276, 300, 287, 274, 127, 126, 311, 125]"
+13,3,3,ridge_all_raw,100.0,[]
+13,3,3,pls_all_raw,5.0,[]
+13,3,3,pca_ols_raw,50.0,[]
+13,3,3,ridge_all_residual,10000.0,[]
+13,3,3,pls_all_residual,2.0,[]
+13,3,3,pca_ols_residual,50.0,[]
+13,3,3,ridge_8_residual,10.0,"[197, 196, 223, 195, 236, 222, 210, 237]"
+13,3,3,ridge_16_residual,1000.0,"[197, 196, 223, 195, 236, 222, 210, 237, 194, 211, 298, 216, 192, 193, 217, 272]"
+13,4,1,ridge_all_raw,10.0,[]
+13,4,1,pls_all_raw,5.0,[]
+13,4,1,pca_ols_raw,100.0,[]
+13,4,1,ridge_all_residual,1000.0,[]
+13,4,1,pls_all_residual,2.0,[]
+13,4,1,pca_ols_residual,10.0,[]
+13,4,1,ridge_8_residual,10.0,"[288, 16, 17, 24, 25, 8, 216, 76]"
+13,4,1,ridge_16_residual,10.0,"[288, 16, 17, 24, 25, 8, 216, 76, 9, 83, 82, 75, 84, 26, 68, 254]"
+13,4,2,ridge_all_raw,1000.0,[]
+13,4,2,pls_all_raw,2.0,[]
+13,4,2,pca_ols_raw,20.0,[]
+13,4,2,ridge_all_residual,10000.0,[]
+13,4,2,pls_all_residual,2.0,[]
+13,4,2,pca_ols_residual,5.0,[]
+13,4,2,ridge_8_residual,10000.0,"[208, 199, 225, 207, 226, 234, 209, 224]"
+13,4,2,ridge_16_residual,10000.0,"[208, 199, 225, 207, 226, 234, 209, 224, 198, 200, 233, 235, 206, 251, 227, 250]"
+13,4,3,ridge_all_raw,10.0,[]
+13,4,3,pls_all_raw,5.0,[]
+13,4,3,pca_ols_raw,100.0,[]
+13,4,3,ridge_all_residual,10000.0,[]
+13,4,3,pls_all_residual,2.0,[]
+13,4,3,pca_ols_residual,5.0,[]
+13,4,3,ridge_8_residual,10000.0,"[298, 226, 233, 207, 252, 225, 251, 217]"
+13,4,3,ridge_16_residual,10000.0,"[298, 226, 233, 207, 252, 225, 251, 217, 234, 64, 206, 216, 208, 227, 31, 232]"
+13,5,1,ridge_all_raw,10.0,[]
+13,5,1,pls_all_raw,10.0,[]
+13,5,1,pca_ols_raw,5.0,[]
+13,5,1,ridge_all_residual,10000.0,[]
+13,5,1,pls_all_residual,2.0,[]
+13,5,1,pca_ols_residual,5.0,[]
+13,5,1,ridge_8_residual,1000.0,"[197, 55, 210, 52, 222, 53, 237, 51]"
+13,5,1,ridge_16_residual,1000.0,"[197, 55, 210, 52, 222, 53, 237, 51, 223, 60, 63, 54, 59, 61, 211, 236]"
+13,5,2,ridge_all_raw,1000.0,[]
+13,5,2,pls_all_raw,5.0,[]
+13,5,2,pca_ols_raw,5.0,[]
+13,5,2,ridge_all_residual,10000.0,[]
+13,5,2,pls_all_residual,2.0,[]
+13,5,2,pca_ols_residual,5.0,[]
+13,5,2,ridge_8_residual,1000.0,"[32, 15, 307, 192, 134, 230, 190, 255]"
+13,5,2,ridge_16_residual,1000.0,"[32, 15, 307, 192, 134, 230, 190, 255, 14, 306, 231, 272, 254, 216, 263, 271]"
+13,5,3,ridge_all_raw,1.0,[]
+13,5,3,pls_all_raw,40.0,[]
+13,5,3,pca_ols_raw,100.0,[]
+13,5,3,ridge_all_residual,10000.0,[]
+13,5,3,pls_all_residual,2.0,[]
+13,5,3,pca_ols_residual,10.0,[]
+13,5,3,ridge_8_residual,1000.0,"[253, 232, 252, 227, 233, 231, 254, 23]"
+13,5,3,ridge_16_residual,1000.0,"[253, 232, 252, 227, 233, 231, 254, 23, 31, 30, 226, 228, 251, 206, 29, 255]"
+13,6,1,ridge_all_raw,10000.0,[]
+13,6,1,pls_all_raw,2.0,[]
+13,6,1,pca_ols_raw,5.0,[]
+13,6,1,ridge_all_residual,10000.0,[]
+13,6,1,pls_all_residual,2.0,[]
+13,6,1,pca_ols_residual,20.0,[]
+13,6,1,ridge_8_residual,10000.0,"[64, 134, 132, 141, 131, 133, 202, 257]"
+13,6,1,ridge_16_residual,10000.0,"[64, 134, 132, 141, 131, 133, 202, 257, 201, 122, 123, 124, 130, 113, 258, 114]"
+13,6,2,ridge_all_raw,10.0,[]
+13,6,2,pls_all_raw,5.0,[]
+13,6,2,pca_ols_raw,50.0,[]
+13,6,2,ridge_all_residual,10000.0,[]
+13,6,2,pls_all_residual,40.0,[]
+13,6,2,pca_ols_residual,5.0,[]
+13,6,2,ridge_8_residual,10.0,"[22, 13, 12, 4, 5, 14, 9, 21]"
+13,6,2,ridge_16_residual,10.0,"[22, 13, 12, 4, 5, 14, 9, 21, 3, 30, 63, 10, 188, 11, 187, 2]"
+13,6,3,ridge_all_raw,0.01,[]
+13,6,3,pls_all_raw,80.0,[]
+13,6,3,pca_ols_raw,150.0,[]
+13,6,3,ridge_all_residual,10000.0,[]
+13,6,3,pls_all_residual,2.0,[]
+13,6,3,pca_ols_residual,5.0,[]
+13,6,3,ridge_8_residual,10000.0,"[298, 223, 210, 209, 277, 222, 224, 284]"
+13,6,3,ridge_16_residual,10000.0,"[298, 223, 210, 209, 277, 222, 224, 284, 236, 55, 237, 47, 235, 48, 258, 250]"
+13,7,1,ridge_all_raw,100.0,[]
+13,7,1,pls_all_raw,2.0,[]
+13,7,1,pca_ols_raw,5.0,[]
+13,7,1,ridge_all_residual,10000.0,[]
+13,7,1,pls_all_residual,2.0,[]
+13,7,1,pca_ols_residual,100.0,[]
+13,7,1,ridge_8_residual,10000.0,"[227, 232, 206, 233, 252, 226, 205, 202]"
+13,7,1,ridge_16_residual,10000.0,"[227, 232, 206, 233, 252, 226, 205, 202, 203, 253, 201, 207, 56, 228, 48, 57]"
+13,7,2,ridge_all_raw,0.1,[]
+13,7,2,pls_all_raw,10.0,[]
+13,7,2,pca_ols_raw,50.0,[]
+13,7,2,ridge_all_residual,1000.0,[]
+13,7,2,pls_all_residual,2.0,[]
+13,7,2,pca_ols_residual,5.0,[]
+13,7,2,ridge_8_residual,10000.0,"[56, 206, 227, 234, 226, 225, 207, 233]"
+13,7,2,ridge_16_residual,10000.0,"[56, 206, 227, 234, 226, 225, 207, 233, 201, 200, 232, 202, 252, 208, 251, 253]"
+13,7,3,ridge_all_raw,100.0,[]
+13,7,3,pls_all_raw,10.0,[]
+13,7,3,pca_ols_raw,10.0,[]
+13,7,3,ridge_all_residual,10000.0,[]
+13,7,3,pls_all_residual,2.0,[]
+13,7,3,pca_ols_residual,5.0,[]
+13,7,3,ridge_8_residual,1000.0,"[244, 241, 106, 31, 240, 253, 97, 39]"
+13,7,3,ridge_16_residual,1000.0,"[244, 241, 106, 31, 240, 253, 97, 39, 254, 95, 87, 243, 237, 251, 23, 94]"
