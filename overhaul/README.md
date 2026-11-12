@@ -1,23 +1,38 @@
 # CEMHSEY GRASP overhaul pipeline
 
-Single-pass replacement for the earlier rclone/Google Drive workflow. Each of the 6,005 GRASP recordings is read once from Zenodo (HTTP range reads of `GRASP_S{n}.zip`; ZIP CRC-32 verified; SHA-256 recorded), reduced to window features for band-passed and unfiltered EMG plus the raw force trace, and stored in `cache/` (~23 GB). Raw MAT files are not kept: Zenodo is the archival copy. If range reads fail for a participant, the pipeline downloads that participant's whole archive, verifies Zenodo's MD5, processes it locally and deletes it.
+This branch adds the completed full-GRASP analysis and its recorded outputs. **Read `RESULTS.md` and `CORRECTIONS_AND_LIMITATIONS.md` before interpreting the statistical results.** The original pipeline, plan files, SHA-256 fingerprints and all raw numerical CSV outputs are preserved; reporting corrections are documented separately.
 
-Original local copies under `C:\work\CEMHSEY` are reused instead of downloaded.
+## Source design and eligibility
 
-## Run
-The launcher waits for `READY.txt`, installs `requirements.txt` into the analysis venv and runs `run_all.py`, logging to `run.log`. To restart after an interruption, run `python run_all.py` again: cached recordings and finished analysis conditions are reused.
+The code inventoried and extracted features from 6,005 available MAT recordings for 13 CEMHSEY GRASP participants (7 sessions × 3 force tasks × 11 days × 2 trials, less one documented failed acquisition). The original 21-condition timing gate reports `passed=false` because the lumbrical/10%-MVC cell was excluded by its condition rule. The historical reference reproduction check passed. Model inference uses the 20 eligible grasp–force cells and independent participant N=13.
 
-## Stages and outputs (`results/`)
-1. `inventory/` — recording manifest with source CRC-32, SHA-256 and byte counts.
-2. `gate/` — protocol-timing QC for every grasp × force level, and reproduction of the earlier Session 1 / Task 2 protocol-prior R² (participants 1–10, tolerance 0.002). A reproduction failure stops the run; grasp × force cells off the nominal trapezoid are excluded and listed.
-3. `primary_bandpass_physical/`, `sensitivity_unfiltered_physical/`, `sensitivity_bandpass_normalized/` — held-out metrics, phase metrics, protocol tracking, hyperparameters, participant and cohort summaries, exploratory per-condition summaries, familiarization slopes, `run_metadata.json`.
-4. `RUN_REPORT.md`, `provenance.json`, `pip_freeze.txt`.
+The original method train/validation/test split is Day-1 Trial 1 / Day-1 Trial 2 / held-out Days 2–11 Trial 2; unlabeled later-day Trial 1 supports optional affine alignment. The later **post hoc** protected-decoder analysis additionally trains a supervised within-day model on each current day's force-labelled Trial 1.
 
-Results (without checkpoints) are copied to `G:\My Drive\CEMHSEY_full_GRASP_2026\analysis\overhaul_<timestamp>` when Drive for desktop is available.
+## Original computational pipeline
 
-`STATUS.json` shows the current stage; `DONE.txt` appears on success.
+`cemhsey_overhaul.py` supports feature extraction, source inventory and timing QC. The driver `run_all.py` runs original model-fitting and generates primary and sensitivity outputs. Local `cache/` and checkpoints allow resumption. Original 320-channel MAT files are retrieved from the dataset author's Zenodo archives or read from local copies; the 23-GB feature cache and 251-GB raw dataset are not committed.
 
-The pre-specified analysis is in `ANALYSIS_PLAN.md`; its hash is stored with every result.
+Python environment and dependencies: see `requirements.txt` and `results/pip_freeze.txt`. The original study's environment, pipeline source fingerprints and plan fingerprint are in `results/provenance.json`.
 
-## Tests
-`python -m pytest tests` (set `CEMHSEY_TEST_DIR` to a folder holding `S1/D1/S1_Day1_Session1_Task2_Trial1.mat` and `S6/D2/S6_Day2_Session1_Task2_Trial2.mat` for the real-data tests).
+## Archived-result verification (no raw MAT files required)
+
+From this repository checkout:
+
+```powershell
+python -m pip install -r .\overhaul\requirements.txt
+python .\overhaul\verify_archived_results.py
+python -m pytest -q .\overhaul\tests
+```
+
+The audit checks manifest cardinality, protocol gates, source fingerprints, scoring equations, reconstructed participant/cohort summaries, post hoc model comparisons and timing-QC count. It does not claim independent raw-data reexecution. A subset of tests requiring original MAT files will skip unless supplied through the documented `CEMHSEY_TEST_DIR` test fixture.
+
+## Result products
+
+- `results/inventory/` — manifest of 6,005 recordings with checksums
+- `results/gate/` — 21 condition timing QC and restricted eligibility (one failure)
+- `results/primary_bandpass_physical/` — original recorded model results and participant/cohort tables
+- `results/sensitivity_unfiltered_physical/` and `results/sensitivity_bandpass_normalized/` — sensitivity variants
+- `results/posthoc_robustness/` — exploratory protected decoders and within-day versus across-day contrasts
+- `results/posthoc_timing_qc_sensitivity.csv` — additional flagged-recording sensitivity, performed **after** the original analysis
+
+The complete three phase-metric CSVs are not in this GitHub branch; see `DATA_PRODUCTS.md` for their verified Drive locations and outstanding public-archive work. The previous `v1.0.3` release describes an earlier restricted analysis and must not be reused as the DOI for these data.

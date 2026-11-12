@@ -1,37 +1,52 @@
-# Full-GRASP overhaul: findings
+# Full-GRASP overhaul: verified findings and reporting scope
 
-Run completed 2026-11-12 on all 6,005 usable CEMHSEY GRASP recordings (13 participants × 11 days × 7 grasps × 3 force levels × 2 trials; 251 GB read once from Zenodo, CRC-verified, SHA-256 recorded in `results/inventory/recording_manifest.csv`). Pipeline `overhaul-1.0`; code and plan hashes are in `results/provenance.json`.
+Completed-run snapshot dated 2026-11-12. The dataset was inventoried and reduced to windowed features for 6,005 CEMHSEY GRASP recordings spanning 13 participants, seven grasp sessions, three force levels and 11 days. The manifest records MAT source checksums. All findings below come from the archived CSV and JSON outputs, whose numeric data have not been changed in this corrective update.
 
-## Quality gate
-- **Reproduction.** The protocol-prior R² for Session 1 / Task 2 (participants 1–10) matches the earlier analysis to six decimals (`results/gate/reference_reproduction.csv`).
-- **Protocol timing.** Twenty of 21 grasp × force cells follow the nominal 5–10–20–25 s trapezoid. Lumbrical grasp at 10 % MVC departs from it (median half-target crossings 0.9 s early and 0.8 s late; 172/286 recordings flagged) and is excluded by the pre-specified rule (`results/gate/protocol_timing_qc_by_condition.csv`).
+**Scientific scope:** The model-performance analysis uses **20 of 21 grasp–force combinations**, excluding lumbrical grasp at 10% MVC after a predefined condition-level protocol-timing rule was applied. The original timing gate was **not fully passed** (`results/gate/gate_summary.json` has `passed: false`). The independent historic reference reproduction gate did pass (largest |ΔR²| = 4.67×10⁻⁷). Inference uses participants (N=13), not repeated trials as independent observations. One Subject-4 condition lacks Day-1 training data, leaving 2,590 model evaluations from 2,600 eligible later-day Trial-2 recordings.
 
-## Pre-specified analysis (`ANALYSIS_PLAN.md`; `results/primary_bandpass_physical/`)
-Skill is `1 − SSE(model)/SSE(protocol prior)`; 0 equals the prescribed trajectory, positive is better.
+## Original documented analysis plan
 
-- Across days (train Day 1, test Days 2–11), no EMG decoder or empirical template beats the prescribed trajectory. The best decoder (8-channel ridge on the residual from the prior, Trial-1 label-free alignment) reaches median skill −0.08 (95 % CI −0.33 to −0.04; 3/13 participants positive; RMSE 1.49 vs 1.32 % MVC). The best template (leave-one-participant-out pooled Day-1 force) reaches −0.22.
-- The pre-specified primary contrast (all-channel residual ridge, no alignment) gives −17.9 (CI −65.1 to −1.8; 0/13 positive; Wilcoxon p = 0.0002). Inspection showed this value is dominated by extreme outputs when a few of 320 channels change after electrode re-application; see the post hoc analysis below.
-- At 30 % and 50 % MVC the best decoder approaches the prior (−0.02, −0.002); at 10 % MVC it is clearly worse (−0.40).
-- Familiarization: protocol-tracking RMSE (as % of the target level) falls across days in all 13 participants (median slope −0.18 percentage points/day, CI −0.20 to −0.07, p = 0.0002), which explains why Day-1 force templates lose to the nominal trajectory.
-- Conclusions are unchanged with unfiltered EMG (`results/sensitivity_unfiltered_physical/`) and with normalized force–EMG time alignment (`results/sensitivity_bandpass_normalized/`).
+The original analysis plan, `ANALYSIS_PLAN.md`, states that it was written before the full run; its SHA-256 agrees with `results/provenance.json`. The plan and results were first committed publicly together. We therefore **cannot independently verify the plan's prospective timestamp or call it externally preregistered**. The original fixed all-channel residual Ridge model had median participant skill **−17.8685**, 95% participant-bootstrap CI [−65.0995, −1.8077], 0/13 positive, and two-sided Wilcoxon **p=0.000244**. Its exceptionally negative effect is driven by severe extrapolation under channel changes; it should not be interpreted as a biological information-loss magnitude.
 
-## Post hoc robustness analysis (`ANALYSIS_PLAN_ADDENDUM.md`; `results/posthoc_robustness/`)
-Decided after the primary results and reported as post hoc. Decoders are protected against channels that change between sessions (label-free bad-channel rejection, median 7 of 320 per recording; standardized features clipped at ±5 SD), and each held-out recording (Day d Trial 2) is predicted by the same model trained either on Day 1 Trial 1 (across days) or on Day d Trial 1 (within day), with hyperparameters fixed on Day 1.
+Skill is `1 − SSE(model)/SSE(protocol prior)`, calculated per held-out recording and summarized by participant. Zero equals the prescribed trajectory; positive values improve upon it.
 
-- **Within a session, EMG adds information beyond the prescribed trajectory in every participant.** All-channel residual ridge: skill +0.13 (CI 0.085–0.16), 13/13 positive, RMSE 1.21 vs 1.32 % MVC; 8-channel: +0.12 (CI 0.09–0.17), 13/13. The gain holds at 10, 30 and 50 % MVC and on every day.
-- **Across sessions that information is lost.** The same protected models trained on Day 1 score −0.20 (all-channel) and −0.12 (8-channel), 2–3/13 positive; Trial-1 alignment does not recover it. Within-day exceeds across-days for every model in 13/13 participants (Wilcoxon p ≈ 0.0002; `within_vs_across_contrasts.csv`).
-- Protection removes the extreme outputs (maximum across-day RMSE 15.6 % MVC, down from thousands).
-- Decoders that predict total force from EMG alone remain far worse than the prior even within a day (RMSE 2.9 vs 1.3 % MVC): EMG is informative only as a correction to the prescribed trajectory.
-- Caveats: within-day models need one force-labelled calibration trial per day; one within-day recording is an extreme outlier (RMSE 75 % MVC), absorbed by participant-median summaries.
+Among the original cross-day candidates, the best is **8-channel residual Ridge with unlabeled Trial-1 alignment**, median participant skill **−0.07816** (95% percentile-bootstrap CI [−0.33354, −0.04384], 3/13 participants positive; two-sided Wilcoxon **p=0.08032**). **Its bootstrap CI excludes zero while its Wilcoxon p does not meet p<0.05**. These are distinct small-sample inferential methods. Neither result warrants a universal claim that no EMG decoder could ever exceed the protocol prior. The best leave-one-subject-out pooled Day-1 template has skill −0.21911.
 
-## Files
-| Path | Content |
-|---|---|
-| `results/RUN_REPORT.md` | Run summary written by the pipeline |
-| `results/inventory/` | Manifest of all 6,005 recordings with source CRC-32, SHA-256, byte counts |
-| `results/gate/` | Timing QC per recording and per condition; reproduction check |
-| `results/primary_bandpass_physical/` | Pre-specified analysis: held-out metrics, participant and cohort summaries, exploratory per-condition summaries, familiarization, hyperparameters |
-| `results/sensitivity_*` | Same outputs for unfiltered EMG and normalized time base |
-| `results/posthoc_robustness/` | Protected decoders, within-day vs across-days contrasts, by force level and day |
+Across-day analyses support a performance gap relative to the nominal trajectory for the tested models and dataset conditions. The pattern persists in the unfiltered-EMG and normalized-time variants. Do not treat the current benchmark as demonstrating the performance of state-of-the-art decoders not evaluated here.
 
-Phase-resolved metrics (`heldout_phase_metrics.csv`, ~54 MB per analysis) are excluded from the repository for size and are kept with the full outputs on the analysis computer and in Google Drive.
+The nominal target's tracking error decreases across recorded days (original median slope −0.17734 percentage points of target force per day, 13/13 negative, Wilcoxon p=0.000244). This is a **day-associated tracking improvement** compatible with familiarization; causation cannot be isolated from feedback, fatigue or other factors. Exclusion of individually timing-flagged recordings leaves 11/13 negative slopes (median −0.11124, p=0.002441; post hoc sensitivity).
+
+## Subsequent post hoc protected-decoder analysis
+
+`ANALYSIS_PLAN_ADDENDUM.md` and `posthoc_robustness.py` document model protection after the original cross-day instability was observed. This is a **post hoc/exploratory** analysis, not independent confirmatory replication. In particular, "within-day" refers to **force-labelled Trial-1 calibration on the same day** followed by held-out Trial-2 evaluation; "across-day" uses Day-1 force labels. The affine-alignment variant uses unlabeled later-day Trial 1.
+
+| Residual decoder | Within-day skill | Across-day fixed skill | Within-day participants positive |
+| --- | ---: | ---: | ---: |
+| Protected all-channel Ridge | +0.13033 | −0.20062 | 13/13 |
+| Protected 8-channel Ridge | +0.11841 | −0.12010 | 13/13 |
+| Protected PCA/OLS | +0.02402 | −0.85552 | 7/13 |
+| Protected PLS | −0.02194 | −1.02988 | 5/13 |
+
+Thus the positive incremental EMG finding is **specific to the tested protected Ridge residual decoders**; it does not generalize to every estimator. For all-channel residual Ridge, the median participant-wise within-minus-across fixed skill is +0.31645 (95% CI [0.20138, 0.79061], 13/13 positive, Wilcoxon p=0.000244). This paired contrast supports the role of current-day supervised calibration under the tested setup; it is not evidence that information itself disappears biologically.
+
+EMG-only raw-force Ridge remains worse than the protocol prior even within day (median RMSE 2.86554% MVC versus prior 1.32049% MVC), so the improvement is a *residual correction* to a strong task-only predictor.
+
+## Added timing-flag sensitivity (post hoc)
+
+Among the 2,600 eligible later-day Trial-2 recordings, 206 were individually flagged for timing or force-hold deviations. Excluding these flags from the 2,590 model-evaluable recordings changes the cross-day aligned 8-channel model's median skill from −0.07816 to −0.10763; the protected within-day all-channel Ridge remains positive (+0.13033 to +0.12418) and protected within-day 8-channel Ridge remains positive (+0.11841 to +0.11618). Their latter positive-participant count remains 13/13. **The condition-level selection from the original plan is unchanged.** See `results/posthoc_timing_qc_sensitivity.csv` and `CORRECTIONS_AND_LIMITATIONS.md`.
+
+## Reproducibility and public availability
+
+The complete original-run summaries, numerical comparisons, source manifest and code are on this GitHub branch. The three ~54-MB phase-resolved CSV files exist in the associated Google Drive analysis folders, but **have not yet been deposited in a stable public DOI-backed archive**. Their availability must be resolved before submission. See `DATA_PRODUCTS.md` for paths and publication status.
+
+This branch's numerical files and the original analysis-code fingerprints remain unchanged. A separate consistency checker, `verify_archived_results.py`, independently recomputes skill formulas, participant/cohort aggregations, exclusion checks, and the counts supported by the CSVs. It does not independently rerun source MAT processing; the corresponding four real-data unit tests were unavailable during the prior external audit.
+
+## Navigation
+
+- `ANALYSIS_PLAN.md` and `ANALYSIS_PLAN_ADDENDUM.md` — historical choices and stated temporal sequence, not independently timestamped preregistration
+- `results/RUN_REPORT.md` — verbatim original pipeline report (unchanged, including original `timing_ok=false`)
+- `results/inventory/` and `results/gate/` — complete source inventory and protocol QC
+- `results/primary_bandpass_physical/` and `results/sensitivity_*/` — original primary and timing/filter sensitivities
+- `results/posthoc_robustness/` — protected supervised within-day versus fixed/aligned across-day estimates
+- `results/posthoc_timing_qc_sensitivity.csv` — added flagged-recording sensitivity
+- `CORRECTIONS_AND_LIMITATIONS.md` and `DATA_PRODUCTS.md` — current interpretive qualification and missing phase archive
