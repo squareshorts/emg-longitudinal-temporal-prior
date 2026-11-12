@@ -1,0 +1,30 @@
+{
+  "pipeline": "overhaul-1.0",
+  "variant": "raw",
+  "timebase": "physical",
+  "excluded_grasp_task": [
+    [
+      2,
+      1
+    ]
+  ],
+  "script_sha256": "68db332ee381b3c92156f71da7fc8658383e4b57e79eb9994fe8b6dd65efb280",
+  "manifest_sha256": "56a796773cca3266ad622a9aa74203e7bfacc961eeccece31d76072212491e5e",
+  "analysis_plan_sha256": "0d4cb9c0a887b5ea616eae8161a6432855a1fb71a1f1e58c94d8b73e186cbf3a",
+  "conditions": 260,
+  "participants": 13,
+  "primary_contrast": "ridge_all_residual / fixed: participant-median skill_vs_prior > 0",
+  "primary_result": [
+    {
+      "model": "ridge_all_residual",
+      "alignment": "fixed",
+      "median_participant_skill": -27.794702812670117,
+      "ci95_low": -166.93993678665703,
+      "ci95_high": -2.355643762097248,
+      "participants_positive": 0,
+      "n_participants": 13,
+      "wilcoxon_p": 0.000244140625,
+      "median_rmse_pct_mvc": 8.087487866860698
+    }
+  ]
+}

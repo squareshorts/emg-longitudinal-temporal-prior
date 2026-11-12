@@ -1,0 +1,12 @@
+{
+  "unit": "participant",
+  "outcome": "median protocol-tracking RMSE (% of target level) per day",
+  "median_slope_per_day": -0.1773397347225484,
+  "ci95": [
+    -0.19750745188143623,
+    -0.066640241257888
+  ],
+  "decreasing": 13,
+  "n": 13,
+  "wilcoxon_p": 0.000244140625
+}
